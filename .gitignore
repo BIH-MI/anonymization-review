@@ -1,0 +1,7 @@
+venv/*
+.idea/*
+figs/*
+paper/*
+paper_by_reviewer/*
+paper_by_source/*
+rayyan.ai/*

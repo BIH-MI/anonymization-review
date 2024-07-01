@@ -1,0 +1,933 @@
+Title;PMID;Include;Reason for exclusion;Publishing year;ICD-10 chapter;COVID-19 research;First author;Senior author;Data source;Data origin
+Predicting the onset of type 2 diabetes using wide and deep learning with electronic health records.;31505379;Yes;n/a;2019;4;No;NZ;NZ;Practice Fusion;US
+Yield of Clinical Screening for Hypertrophic Cardiomyopathy in Child First-Degree Relatives.;31006259;Yes;n/a;2019;9;No;UK;UK;Great Ormond  Street Hospital Center;UK
+Rivaroxaban versus warfarin in patients with nonvalvular atrial fibrillation and stage IV-V chronic kidney disease.;32112872;Yes;n/a;2020;9;No;US;US;Optum;US
+Impact of schizophrenia genetic liability on the association between schizophrenia and physical illness: data-linkage study.;33168126;Yes;n/a;2020;5;No;UK;UK;SAIL Databank;UK
+Increasing Prescription of Opiates and Mortality in Patients With Inflammatory Bowel Diseases in England.;29079223;Yes;n/a;2018;11;No;UK;UK;The Phoenix Partnership ;UK
+Accuracy Beyond ISO: Introducing a New Method for Distinguishing Differences Between Blood Glucose Monitoring Systems Meeting ISO 15197:2013 Accuracy Requirements.;29542346;No (excluded in full-paper screening);No real-world application (findings not based on real-world data);2018;;;;;;
+Using machine learning to identify patterns of lifetime health problems in decedents with autism spectrum disorder.;29734508;Yes;n/a;2018;5;No;US;US;Marshfield clinic;US
+Comparison of Opioids Prescribed for Patients at Risk for Opioid Misuse Before and After Publication of the Centers for Disease Control and Prevention's Opioid Prescribing Guidelines.;33263762;Yes;n/a;2020;5;No;US;US;Optum;US
+Suicide attempts requiring hospitalization in patients with eating disorders: A retrospective cohort study.;32043625;Yes;n/a;2020;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Using SNOMED CT-encoded problems to improve ICD-10-CM coding-A randomized controlled experiment.;31029260;No (excluded in title and abstract screening);No tabular data;2019;;;;;;
+One-Year Historical Cohort Study of the Phosphate Binder Sucroferric Oxyhydroxide in Patients on Maintenance Hemodialysis.;30679076;Yes;n/a;2019;4;No;US;US;Fresenius;US
+Predicting parkinsonism side-effects of antipsychotic polypharmacy prescribed in secondary mental healthcare.;30232932;Yes;n/a;2018;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Knowing our patients: a cross-sectional study of adult patients attending an urban Aboriginal and Torres Strait Islander primary healthcare service.;30566850;No (not retrieved);Not retrieved;2019;;;;;;
+Toward Understanding the Value of Missing Social Determinants of Health Data in Care Transition Planning.;32851616;Yes;n/a;2020;;No;US;US;University of Alabama Hospital;US
+Shining the light on eating disorders, incidence, prognosis and profiling of patients in primary and secondary care: national data linkage study.;31256764;Yes;n/a;2020;5;No;UK;UK;SAIL Databank;UK
+ORBDA: An openEHR benchmark dataset for performance assessment of electronic health record servers.;29293556;No (excluded in title and abstract screening);No medical research (focus on data provision);2018;;;;;;
+Risk of cardiovascular events and death associated with initiation of SGLT2 inhibitors compared with DPP-4 inhibitors: an analysis from the CVD-REAL 2 multinational cohort study.;32559476;Yes;n/a;2020;4;No;JP;AU;Multiple;AU, CA, DK, DE, IL, JP, NO, SG, KR, ES, SE, CN, US
+A Demographic Profile of Mothers and Their Children Who Are Victims of Family and Domestic Violence: Using Linked Police and Hospital Admissions Data.;32370589;Yes;n/a;2022;21;No;AU;AU;Western Australian Data Linkage System;AU
+Customization scenarios for de-identification of clinical notes.;32000770;No (excluded in title and abstract screening);No medical research (focus on anonymization);2020;;;;;;
+Validation of a machine learning algorithm for early severe sepsis prediction: a retrospective study predicting severe sepsis up to 48 h in advance using a diverse dataset from 461 US hospitals.;33109167;Yes;n/a;2020;1;No;US;US;Cabell Huntington Hospital;US
+Effectiveness of herpes zoster vaccination in an older United Kingdom population.;29555217;Yes;n/a;2018;1;No;UK;UK;Clinical Practice Research Datalink;UK
+Identifying Predictors of Suicide in Severe Mental Illness: A Feasibility Study of a Clinical Prediction Rule (Oxford Mental Illness and Suicide Tool or OxMIS).;32351413;No (excluded in title and abstract screening);No tabular data;2020;;;;;;
+Environmental Influences on Patient Presentations: Considerations for Research and Evaluation at Mass-Gathering Events.;31495346;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2019;;;;;;
+Efficient learning from big data for cancer risk modeling: A case study with melanoma.;31112896;Yes;n/a;2019;2;No;US;US;Modernizing Medicine;US
+Evaluating the Impact of Oncology Care Model Reporting Requirements on Biomarker Testing and Treatment.;32496874;Yes;n/a;2020;2;No;US;US;Flatiron Health;US
+Safety and effectiveness of apixaban in comparison to warfarin in patients with nonvalvular atrial fibrillation: a propensity-matched analysis from Japanese administrative claims data.;29772946;Yes;n/a;2018;9;No;JP;JP;Multiple;JP
+Trends over time in Escherichia coli bloodstream infections, urinary tract infections, and antibiotic susceptibilities in Oxfordshire, UK, 1998-2016: a study of electronic health records.;30126643;Yes;n/a;2018;1;No;UK;UK;Oxford University Hospitals NHS Foundation Trust;UK
+Machine learning prediction of incidence of Alzheimer's disease using large-scale administrative health data.;32258428;Yes;n/a;2020;5;No;US;US;Korean National Health Insurance Service;KR
+Association of Programmed Cell Death Ligand 1 Expression Status With Receipt of Immune Checkpoint Inhibitors in Patients With Advanced Non-Small Cell Lung Cancer.;32511721;Yes;n/a;2020;2;No;US;US;Flatiron Health;US
+Prospective study feasibility: Screening of antenatal total abnormal pulmonary venous return.;29240234;No (excluded in title and abstract screening);No tabular data;2018;;;;;;
+Primary therapy of Graves' disease and cardiovascular morbidity and mortality: a linked-record cohort study.;30827829;Yes;n/a;2019;4;No;UK;UK;SAIL Databank;UK
+Demographic and clinical factors associated with different antidepressant treatments: a retrospective cohort study design in a UK psychiatric healthcare setting.;30185574;Yes;n/a;2018;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Machine Learning and Feature Selection Applied to SEER Data to Reliably Assess Thyroid Cancer Prognosis.;32198433;Yes;n/a;2020;2;No;US;US;National Cancer Institute;US
+De-Identification of Radiomics Data Retaining Longitudinal Temporal Information.;32240368;No (excluded in title and abstract screening);No medical research (focus on anonymization);2020;;;;;;
+Interplay between traumatic brain injury and intimate partner violence: data driven analysis utilizing electronic health records.;33287806;Yes;n/a;2020;19;No;US;US;IBM;US
+Overview of the First Natural Language Processing Challenge for Extracting Medication, Indication, and Adverse Drug Events from Electronic Health Record Notes (MADE 1.0).;30649735;No (excluded in title and abstract screening);No tabular data;2019;;;;;;
+Sexually transmissible infections among transgender men and women attending Australian sexual health clinics.;31468530;Yes;n/a;2019;1;No;AU;AU;Multiple;AU
+Physician Incentives and Sex/Gender Differences in Depression Care: An Interrupted Time Series Analysis.;32219194;Yes;n/a;2020;5;No;CA;CA;Multiple;CA
+Real-world Evidence of Diagnostic Testing and Treatment Patterns in US Patients With Breast Cancer With Implications for Treatment Biomarkers From RNA Sequencing Data.;33446413;No (not retrieved);Not retrieved;2021;;;;;;
+Development of CancerLinQ, a Health Information Learning Platform From Multiple Electronic Health Record Systems to Support Improved Quality of Care.;33104389;No (excluded in title and abstract screening);No medical research (focus on data provision);2020;;;;;;
+Reviewing a Decade of Research Into Suicide and Related Behaviour Using the South London and Maudsley NHS Foundation Trust Clinical Record Interactive Search (CRIS) System.;33329090;No (excluded in title and abstract screening);No tabular data;2020;;;;;;
+The World Health Organization's hearing-impairment grading system: an evaluation for unaided communication in age-related hearing loss.;30318941;Yes;n/a;2019;8;No;US;;Multiple;US, AU
+Differences in Management of Coronary Artery Disease in Patients With Medicare Advantage vs Traditional Fee-for-Service Medicare Among Cardiology Practices.;30785590;Yes;n/a;2019;9;No;US;US;American College of Cardiology Foundation;US
+Primary tumor location and survival in colorectal cancer: A retrospective cohort study.;32368319;Yes;n/a;2020;2;No;US;US;Flatiron Health;US
+Deep learning and feature based medication classifications from EEG in a large clinical data set.;32848165;Yes;n/a;2020;;No;US;US;Temple University Hospital;US
+Bidirectional associations between COVID-19 and psychiatric disorder: retrospective cohort studies of 62 354 COVID-19 cases in the USA.;33181098;Yes;n/a;2021;5;Yes;UK;UK;TriNetX;US
+Regulatory-accepted drug development tools are needed to accelerate innovative CNS disease treatments.;29410157;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2018;;;;;;
+Improving the phenotype risk score as a scalable approach to identifying patients with Mendelian disease.;31609419;Yes;n/a;2019;;No;US;US;Vanderbilt University Medical Center;US
+Feasibility of real-time capture of routine clinical data in the electronic health record: a hospital-based, observational service-evaluation study.;29523565;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2018;;;;;;
+Real-World Assessment of Weight Change in People with HIV-1 After Initiating Integrase Strand Transfer Inhibitors or Protease Inhibitors.;32766375;Yes;n/a;2020;1;No;US;US;Optum;US
+Prevalence of Ophthalmologic Diagnoses in Children With Autism Spectrum Disorder Using the Optum Dataset: APopulation-Based Study.;32896499;Yes;n/a;2021;7;No;US;US;Optum;US
+Prior diagnoses and medications as risk factors for COVID-19 in a Los Angeles Health System.;32637977;No (excluded before screening);Preprint;2020;;;;;;
+Real-world survival of patients with advanced BRAF V600 mutated melanoma treated with front-line BRAF/MEK inhibitors, anti-PD-1 antibodies, or nivolumab/ipilimumab.;31677253;Yes;n/a;2019;2;No;US;US;Flatiron Health;US
+Blood pressure control and adverse outcomes of COVID-19 infection in patients with concomitant hypertension in Wuhan, China.;32855527;Yes;n/a;2020;22;Yes;CN;CN;Huoshenshan Hospital;CN
+Clinical features in primary care electronic records before diagnosis of ankylosing spondylitis: a nested case-control study.;32375655;Yes;n/a;2020;13;No;UK;UK;University of Aberdeen;UK
+A Tale of 2 Constituencies: Exploring Patient and Clinician Perspectives in the Age of Big Data.;30074954;No (excluded in title and abstract screening);No medical research (focus on anonymization);2018;;;;;;
+Prevalence of suspected COVID-19 infection in patients from ethnic minority populations: a cross-sectional study in primary care.;32895242;Yes;n/a;2020;22;Yes;UK;UK;Multiple;UK
+Recommendations and Extraction of Clinical Variables of Pediatric Multiple Sclerosis Using Common Data Elements.;29652736;Yes;n/a;2018;6;No;US;US;St. Louis Children Hospital;US
+Metabolic Effects of Androgen-associated Body Mass in Klinefelter Syndrome.;30828410;Yes;n/a;2018;17;No;US;US;Cerner Corporation;US
+Long term extension of a randomised controlled trial of probiotics using electronic health records.;29769554;Yes;n/a;2018;;No;UK;UK;SAIL Databank;UK
+Dementia in People from Ethnic Minority Backgrounds: Disability, Functioning, and Pharmacotherapy at the Time of Diagnosis.;32758391;Yes;n/a;2021;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Electronic Health Record Reminders for Chlamydia Screening in an American Indian Population.;33301693;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2021;;;;;;
+Phenome-wide association study identifies marked increased in burden of comorbidities in African Americans with systemic lupus erythematosus.;29636090;Yes;n/a;2018;13;No;US;US;Vanderbilt University Medical Center;US
+Acute kidney injury: a clinical issue in hospitalized patients with heart failure with mid-range ejection fraction.;30411719;Yes;n/a;2018;14;No;RO;RO;Arad Emergency Clinical County Hospital;RO
+Developing and implementing national health identifiers in resource limited countries: why, what, who, when and how?;29502484;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2018;;;;;;
+Ethnic differences in the prevalence of frailty in the United Kingdom assessed using the electronic Frailty Index.;31942531;Yes;n/a;2019;18;No;UK;UK;AT Medics;UK
+Toward microelimination of hepatitis C and HIV coinfection in NHS Tayside, Scotland: Real-world outcomes.;33033752;Yes;n/a;2020;1;No;UK;UK;NHS Tayside ;UK
+Comparative effectiveness of second-line ipilimumab vs. nivolumab in combination with ipilimumab in patients with advanced melanoma who received frontline anti-PD-1 antibodies.;32423325;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+Systematically Prioritizing Candidates in Genome-Based Drug Repurposing.;31769998;Yes;n/a;2019;;No;US;US;Vanderbilt University Medical Center;US
+Validation of body mass index (BMI)-related ICD-9-CM and ICD-10-CM administrative diagnosis codes recorded in US claims data.;30003617;Yes;n/a;2018;;No;US;US;Optum;US
+Assessment of obesity prevalence and validity of obesity diagnoses coded in claims data for selected surgical populations: A retrospective, observational study.;31335698;Yes;n/a;2019;4;No;US;US;Optum;US
+Body mass index and insulin use as identifiers of high-cost patients with type 2 diabetes: A retrospective analysis of electronic health records linked to insurance claims data.;30768824;Yes;n/a;2019;4;No;US;US;Optum;US
+Unbiased Phenome-Wide Association Studies of Red Cell Distribution Width Identifies Key Associations with Pulmonary Hypertension.;30608875;Yes;n/a;2019;9;No;US;US;Vanderbilt University Medical Center;US
+Establishment and 12-month progress of the New Zealand Motor Neurone Disease Registry.;30473407;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2019;;;;;;
+Data resource profile: the National Health Insurance Research Database (NHIRD).;30727703;No (excluded in title and abstract screening);No medical research (focus on data provision);2018;;;;;;
+Innovative Study Designs Optimizing Clinical Pharmacology Research in Infants and Children.;30248192;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2018;;;;;;
+The Connected Intensive Care Unit Patient: Exploratory Analyses and Cohort Discovery From a Critical Care Telemedicine Database.;30679148;No (excluded in title and abstract screening);No medical research (focus on data provision);2019;;;;;;
+Environmental temperature and case fatality of patients with Ebola virus disease in Sierra Leone and Liberia, 2014-2015: a retrospective cohort study.;30307686;Yes;n/a;2019;1;No;US;US;Multiple;SL, LR
+Studying the Clinical Data of COVID Positive Patients Admitted to a Tertiary Care Academic Hospital.;33013092;Yes;n/a;2020;22;Yes;US;IN;Sarasota Memorial Hospital;US
+Pan-European Data Harmonization for Biobanks in ADOPT BBMRI-ERIC.;31509880;No (excluded in title and abstract screening);No tabular data;2019;;;;;;
+Is it time to use real-world data from primary care in Alzheimer's disease?;32423489;Yes;n/a;2020;5;No;ES;ES;SIDIAP;ES
+History of cervical insufficiency increases the risk of pelvic organ prolapse and stress urinary incontinence in parous women.;29169582;Yes;n/a;2018;14;No;US;US;IBM;US
+Primary care EMR and administrative data linkage in Alberta, Canada: describing the suitability for hypertension surveillance.;32830109;No (excluded in title and abstract screening);No medical research (focus on anonymization);2020;;;;;;
+CE: Original Research: An Investigation into the Safety of Oral Intake During Labor.;29424752;Yes;n/a;2018;15;No;US;US;Not precisely specified;US
+Community-based outreach associated with increased health utilization among Navajo individuals living with diabetes: a matched cohort study.;32450874;Yes;n/a;2020;4;No;US;US;Multiple;US
+Pediatric solid organ injury - frequency of abdominal imaging is determined by the treating department.;33157961;Yes;n/a;2020;19;No;DE;DE;Multiple;DE
+Pregnancy Outcomes after Endometrial Ablation in a Multi-institutional Cohort.;29528466;Yes;n/a;2018;15;No;US;US;IBM;US
+Comorbidities in pediatric alopecia areata.;32531131;Yes;n/a;2020;12;No;US;US;IBM;US
+Data-driven method to enhance craniofacial and oral phenotype vocabularies.;31668172;No (excluded in title and abstract screening);No tabular data;2019;;;;;;
+Using blockchain to log genome dataset access: efficient storage and query.;32693796;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2020;;;;;;
+Assessing the impact of specialist home visiting upon maltreatment in England: a feasibility study of data linkage from a public health trial to routine health and social care data.;29988307;No (excluded in title and abstract screening);No medical research (focus on anonymization);2018;;;;;;
+Cardiovascular medication changes over 5 years in a national data linkage study: implications for risk prediction models.;29391835;Yes;n/a;2018;9;No;NZ;NZ;New Zeeland Ministry of Health;NZ
+MAV-clic: management, analysis, and visualization of clinical data.;31984341;No (excluded in title and abstract screening);No medical research (focus on data provision);2019;;;;;;
+Pharmacogenetics to Predict Adverse Events Associated With Antidepressants.;33234666;Yes;n/a;2020;5;No;US;US;Vanderbilt University Medical Center;US
+Recruitment of patients with Chronic Obstructive Pulmonary Disease (COPD) from the Clinical Practice Research Datalink (CPRD) for research.;29921879;Yes;n/a;2018;10;No;UK;UK;Clinical Practice Research Datalink;UK
+Willingness to Participate in a National Precision Medicine Cohort: Attitudes of Chronic Kidney Disease Patients at a Cleveland Public Hospital.;29949895;No (excluded in title and abstract screening);No medical research (focus on data provision);2018;;;;;;
+The assessment of data quality issues for process mining in healthcare using Medical Information Mart for Intensive Care III, a freely available e-health record database.;30488750;No (excluded in title and abstract screening);No medical research (focus on data provision);2019;;;;;;
+A Social Determinant of Health May Modify Genetic Associations for Blood Pressure: Evidence From a SNP by Education Interaction in an African American Population.;31134134;Yes;n/a;2019;9;No;US;US;Vanderbilt University Medical Center;US
+Risk prediction using natural language processing of electronic mental health records in an inpatient forensic psychiatry setting.;30118855;Yes;n/a;2018;5;No;AU;AU;Wilfred Lopes Centre;AU
+Large retrospective analysis on frailty assessment in primary care: electronic Frailty Index versus frailty coding.;31039123;Yes;n/a;2019;18;No;UK;;NHS Leeds;UK
+Cancer Patient Perspectives on Sharing of Medical Records and Mobile Device Data for Research Purposes.;33457553;No (excluded in title and abstract screening);Anonymous survey;2020;;;;;;
+Relationship between very low low-density lipoprotein cholesterol concentrations not due to statin therapy and risk of type 2 diabetes: A US-based cross-sectional observational study using electronic health records.;30153257;Yes;n/a;2018;4;No;US;US;Vanderbilt University Medical Center;US
+MODELHealth: Facilitating Machine Learning on Big Health Data Networks.;31946332;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2019;;;;;;
+Identifying Individuals With Intellectual Disability Within a Population Study.;32969948;Yes;n/a;2020;5;No;US;US;Eunice Kennedy Shriver National Institute of Child Health and Human Development ;US
+Development of risk models for major adverse chronic renal outcomes among patients with type 2 diabetes mellitus using insurance claims: a retrospective observational study.;31625766;Yes;n/a;2020;4;No;US;US;Optum;US
+Development and Evaluation of the Boston University Osteoarthritis Functional Pain Short Form (BU-OA-FPS).;29684166;Yes;n/a;2018;13;No;US;US;Boston University;US
+COVID-19 in ocrelizumab-treated people with multiple sclerosis.;33482590;Yes;n/a;2021;6;Yes;CH;CH;Optum;US
+Adverse events among chronic myelogenous leukemia patients treated with tyrosine kinase inhibitors: a real-world analysis of health plan enrollees.;33283555;Yes;n/a;2021;2;No;US;US;Optum;US
+Using Ethereum blockchain to store and query pharmacogenomics data via smart contracts.;32487214;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2020;;;;;;
+Real-world effectiveness, its predictors and onset of action of cholinesterase inhibitors and memantine in dementia: retrospective health record study.;32713359;Yes;n/a;2021;5;No;UK;UK;Oxford Health NHS Foundation Trust,  Southern Health NHS Foundation Trust;UK
+HIV Status and Contraceptive Utilization among Women in Cameroon.;30776955;Yes;n/a;2019;1;No;US;US;Cameroon Baptist Convention Health Services;CM
+Kidney cancer biobanking: considerations for a single institutional biorepository.;31236340;No (excluded in title and abstract screening);No medical research (focus on data provision);2019;;;;;;
+Association of Social Behaviors With Community Discharge in Patients with Total Hip and Knee Replacement.;33041232;Yes;n/a;2021;;No;US;US;Optum;US
+Disease burden of liver cancer in China from 1997 to 2016: an observational study based on the Global Burden of Diseases.;31015269;Yes;n/a;2019;2;No;CN;CN;Institute for Health Metrics and Evaluation;CN
+Dynamic ElecTronic hEalth reCord deTection (DETECT) of individuals at risk of a first episode of psychosis: a case-control development and validation study.;33328055;Yes;n/a;2020;5;No;DK;UK;IBM;US
+A step closer to nationwide electronic health record-based chronic disease surveillance: characterizing asthma prevalence and emergency department utilization from 100 million patient records through a novel multisite collaboration.;31592525;Yes;n/a;2020;10;No;US;US;Multiple;US
+Pharmacological risk factors associated with hospital readmission rates in a psychiatric cohort identified using prescriptome data mining.;30255805;Yes;n/a;2018;5;No;US;US;Mount Sinai Hospital;US
+Agreement between primary care and hospital diagnosis of schizophrenia and bipolar disorder: A cross-sectional, observational study using record linkage.;30615653;Yes;n/a;2019;5;No;CA;CA;Multiple;CA
+Complexity in disease management: A linked data analysis of multimorbidity in Aboriginal and non-Aboriginal patients hospitalised with atherothrombotic disease in Western Australia.;30106971;Yes;n/a;2018;9;No;AU;AU;Western Australian Data Linkage System;AU
+The real-world effectiveness of sucroferric oxyhydroxide in European hemodialysis patients: a 1-year retrospective database analysis.;33287733;Yes;n/a;2020;4;No;ES;DE;Fresenius;FR, IT, PT, RU, ES
+Association of Race/Ethnicity and Sex With Differences in Health Care Use and Treatment for Acne.;32022834;Yes;n/a;2020;12;No;US;US;Optum;US
+The value of preoperative spirometry testing for predicting postoperative risk in upper abdominal and thoracic surgery assessed using big-data analysis.;32944327;Yes;n/a;2020;10;No;KR;KR;Asan Medical Center;KR
+Prenatal, Obstetric and Perinatal Factors Associated With the Development of Childhood-Onset Type 2 Diabetes.;28583472;Yes;n/a;2018;4;No;CA;CA;Manitoba Centre for Health Policy;CA
+Learning Health System for Breast Cancer: Pilot Project Experience.;31369338;Yes;n/a;2019;2;No;CA;CA;Juravinski Cancer Centre;CA
+Treatment patterns and outcomes for patients with advanced melanoma in US oncology clinical practices.;30251550;Yes;n/a;2019;2;No;US;US;Flatiron Health;US
+Individualised risk prediction model for new-onset, progression and regression of chronic kidney disease in a retrospective cohort of patients with type 2 diabetes under primary care in Hong Kong.;32641324;Yes;n/a;2020;4;No;CN;CN;New Territory West Cluster;CN
+Evaluating Pediatric Sepsis Definitions Designed for Electronic Health Record Extraction and Multicenter Quality Improvement.;32931197;Yes;n/a;2020;1;No;US;US;Multiple;US
+Cohort profile: the Nigerian HIV geriatric cohort study.;33243227;Yes;n/a;2020;1;No;NG;NG;Multiple;NG
+Clinical Research Informatics: Contributions from 2017.;30157521;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2018;;;;;;
+High Frequency of Extractable Nuclear Autoantibodies in Wheat-Related Disorders.;29977112;Yes;n/a;2018;11;No;US;US;Vibrant America Clinical Laboratory;US
+Risk factors for having diabetic retinopathy at first screening in persons with type 1 diabetes diagnosed under 18 years of age.;33262478;Yes;n/a;2021;4;No;UK;UK;SAIL Databank;UK
+Real-world progression, treatment, and survival outcomes during rapid adoption of immunotherapy for advanced non-small cell lung cancer.;31381142;Yes;n/a;2019;2;No;US;US;Flatiron Health;US
+Character-Level Neural Language Modelling in the Clinical Domain.;32570351;No (excluded in title and abstract screening);No tabular data;2020;;;;;;
+Exploring the health and service utilisation of general practice patients with a history of adverse childhood experiences (ACEs): an observational study using electronic health records.;32978186;Yes;n/a;2020;;No;UK;UK;Multiple;UK
+Functional mobility trajectories of hospitalized older adults admitted to acute geriatric wards: A retrospective observational study in an English university hospital.;30779283;Yes;n/a;2019;;No;UK;UK;Addenbrooke’s Hospital;UK
+Clinical and genetic associations with prostacyclin response in pulmonary arterial hypertension.;30142026;Yes;n/a;2018;9;No;US;US;Vanderbilt University Medical Center;US
+Multifocal motor neuropathy in Austria: a nationwide survey of clinical features and response to treatment.;30259176;Yes;n/a;2018;6;No;AT;AT;Multiple;AT
+USE OF ELECTRONIC HEALTH RECORDS TO CHARACTERIZE A RARE DISEASE IN THE U.S.: TREATMENT, COMORBIDITIES, AND FOLLOW-UP TRENDS AMONG PATIENTS WITH A CONFIRMED DIAGNOSIS OF ACROMEGALY.;29624099;Yes;n/a;2018;4;No;US;US;Multiple;US
+Concordance of real-world versus conventional progression-free survival from a phase 3 trial of endocrine therapy as first-line treatment for metastatic breast cancer.;32315295;Yes;n/a;2020;2;No;US;US;Flatiron Health;US
+Acute myocardial infarctions and stroke triggered by laboratory-confirmed respiratory infections in Denmark, 2010 to 2016.;32372757;Yes;n/a;2020;9;No;DK;DK;Multiple;DK
+External validation of the electronic Frailty Index using the population of Wales within the Secure Anonymised Information Linkage Databank.;31566668;Yes;n/a;2019;18;No;UK;UK;SAIL Databank;UK
+Retention in care among older adults living with HIV in western Kenya: A retrospective observational cohort study.;29590150;Yes;n/a;2018;1;No;KE;ZA;Multiple;KE
+Assessing the National Prevalence of HIV Screening in the United States using Electronic Health Record Data.;31501734;Yes;n/a;2019;1;No;US;US;IBM;US
+Effect of Public Deliberation on Patient Attitudes Regarding Consent and Data Use in a Learning Health Care System for Oncology.;31577472;No (excluded in title and abstract screening);Anonymous survey;2019;;;;;;
+Naloxone reversal of clonidine toxicity: dose, dose, dose.;29544366;Yes;n/a;2018;;No;US;US;Vanderbilt University Medical Center;US
+Repurposing of a Thromboxane Receptor Inhibitor Based on a Novel Role in Metastasis Identified by Phenome-Wide Association Study.;33033174;Yes;n/a;2020;2;No;US;US;Vanderbilt University Medical Center;US
+Re-examination of Rule-Based Methods in Deidentification of Electronic Health Records: Algorithm Development and Validation.;32352384;No (excluded in title and abstract screening);No medical research (focus on anonymization);2020;;;;;;
+Racial Differences in the Use of Aortic Valve Replacement for Treatment of Symptomatic Severe Aortic Valve Stenosis in the Transcatheter Aortic Valve Replacement Era.;32777969;Yes;n/a;2020;9;No;US;US;Optum;US
+A deep learning system for differential diagnosis of skin diseases.;32424212;Yes;n/a;2020;12;No;US;US;Not precisely specified;US
+A validated natural language processing algorithm for brain imaging phenotypes from radiology reports in UK electronic health records.;31500613;No (excluded in title and abstract screening);No tabular data;2019;;;;;;
+Clinical Application of 3D-CISS MRI Sequences for Diagnosis and Surgical Planning of Spinal Arachnoid Diverticula and Adhesions in Dogs.;29534275;No (excluded in title and abstract screening);No tabular data;2018;;;;;;
+Re-examining physician-scientist training through the prism of the discovery-invention cycle.;32089830;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2019;;;;;;
+Neonatal bacterial meningitis versus ventriculitis: a cohort-based overview of clinical characteristics, microbiology and imaging.;32621136;No (excluded in title and abstract screening);No tabular data;2020;;;;;;
+The Danish Medical Birth Register.;29349587;No (excluded in title and abstract screening);No medical research (focus on data provision);2018;;;;;;
+Analysis of disease comorbidity patterns in a large-scale China population.;31829182;Yes;n/a;2019;;No;CN;CN;China Academy of Chinese Medical Sciences;CN
+Developing data-driven clinical pathways using electronic health records: The cases of total laparoscopic hysterectomy and rotator cuff tears.;31683142;Yes;n/a;2020;;No;KR;KR;Seoul National University Bundang Hospital;KR
+Improving coding and primary care management for patients with chronic kidney disease: an observational controlled study in East London.;31160369;Yes;n/a;2019;14;No;UK;UK;Multiple;UK
+Characteristics and Health Care Utilization of Different Segments of a Multiethnic Asian Population in Singapore.;31490539;Yes;n/a;2019;;No;SG;SG;Ministry of Health Singapore;SG
+Demography and disorders of the French Bulldog population under primary veterinary care in the UK in 2013.;29750111;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2018;;;;;;
+Renin-Angiotensin-Aldosterone System Modulates Blood Pressure Response During Vascular Endothelial Growth Factor Receptor Inhibition.;32984850;Yes;n/a;2019;9;No;US;US;Vanderbilt University Medical Center;US
+The development an artificial intelligence algorithm for early sepsis diagnosis in the intensive care unit.;32485555;Yes;n/a;2020;1;No;TW;TW;Taipei Medical University Hospital;TW
+Chest Pain, Atherosclerotic Cardiovascular Disease Risk, and Cardiology Referral in Primary Care.;29756524;Yes;n/a;2018;9;No;US;US;Not precisely specified;US
+Validation of diagnosis codes to identify side of colon in an electronic health record registry.;31426736;Yes;n/a;2019;2;No;US;US;Flatiron Health;US
+Circumcision registry promotes precise research and fosters informed parental decisions.;30626392;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2019;;;;;;
+Identification of Semantically Similar Sentences in Clinical Notes: Iterative Intermediate Training Using Multi-Task Learning.;33245284;No (excluded in title and abstract screening);No tabular data;2020;;;;;;
+A retrospective analysis of treatment and retention outcomes of pregnant and/or parenting women with opioid use disorder.;30577894;Yes;n/a;2019;5;No;US;US;Not precisely specified;US
+Prevalence of SARS-CoV-2 antibodies in a large nationwide sample of patients on dialysis in the USA: a cross-sectional study.;32987007;Yes;n/a;2020;22;Yes;US;US;Ascend Clinical;US
+Impact of Primary Tracheoesophageal Puncture on Outcomes after Total Laryngectomy.;28809132;Yes;n/a;2018;10;No;US;US;Multiple;US
+An Empirical Test of GRUs and Deep Contextualized Word Representations on De-Identification.;31437917;No (excluded in title and abstract screening);No medical research (focus on anonymization);2019;;;;;;
+Concealment and discovery: The role of information security in biomedical data re-use.;30322372;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2018;;;;;;
+Documenting or Operating: Where Is Time Spent in General Surgery Residency?;30522828;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2018;;;;;;
+First-line immune checkpoint inhibitor use in cisplatin-eligible patients with advanced urothelial carcinoma: a secular trend analysis.;31840537;Yes;n/a;2020;2;No;US;US;Flatiron Health;US
+The impact of the Affordable Care Act on provision of endodontic services within a dental school setting in Oregon.;31020668;Yes;n/a;2019;;No;US;US;Oregon Health and Science University;US
+Impact of the Four-Hour Rule in Western Australian hospitals: Trend analysis of a large record linkage study 2002-2013.;29538401;Yes;n/a;2018;;No;AU;AU;Western Australian Data Linkage System;AU
+RD-RAP: beyond rare disease patient registries, devising a comprehensive data and analytic framework.;31300021;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2019;;;;;;
+Exo-anal imaging of the anal sphincter: a comparison between introital and transperineal image acquisition.;31802159;No (excluded in title and abstract screening);No tabular data;2020;;;;;;
+Development of Phenotyping Algorithms for the Identification of Organ Transplant Recipients: Cohort Study.;33156808;Yes;n/a;2020;;No;US;US;Vanderbilt University Medical Center;US
+Scalable and accurate deep learning with electronic health records.;31304302;Yes;n/a;2018;;No;US;US;University of California San Francisco, University of Chicago Medicine;US
+Rivaroxaban Versus Warfarin for Management of Obese African Americans With Non-Valvular Atrial Fibrillation or Venous Thromboembolism: A Retrospective Cohort Analysis.;33085526;Yes;n/a;2020;9;No;US;US;Optum;US
+Juvenile-onset and adult-onset demodicosis in dogs in the UK: prevalence and breed associations.;31584708;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2020;;;;;;
+The Pediatric Emergency Care Applied Research Network Registry: A Multicenter Electronic Health Record Registry of Pediatric Emergency Care.;29791930;No (excluded in title and abstract screening);No medical research (focus on data provision);2018;;;;;;
+Rivaroxaban versus warfarin for treatment and prevention of recurrence of venous thromboembolism in African American patients: a retrospective cohort analysis.;32292291;Yes;n/a;2020;9;No;US;US;Optum;US
+Predictors of severe relapse in pregnant women with psychotic or bipolar disorders.;30015264;Yes;n/a;2018;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Greyhounds under general veterinary care in the UK during 2016: demography and common disorders.;31179010;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2019;;;;;;
+Prediction of Discharge Destination following Laryngectomy.;30126321;Yes;n/a;2018;;No;US;US;Multiple;US
+Real World Outcomes in Patients With Relapsed/Refractory Diffuse Large B-cell Lymphoma Receiving Palliative Intent Therapies.;32576502;Yes;n/a;2020;2;No;US;US;Flatiron Health;US
+An Exploratory Analysis of Real-World End Points for Assessing Outcomes Among Immunotherapy-Treated Patients With Advanced Non-Small-Cell Lung Cancer.;31335166;Yes;n/a;2019;2;No;US;US;Optum, Flatiron Health;US
+The French glioblastoma biobank (FGB): a national clinicobiological database.;31014363;No (excluded in title and abstract screening);No medical research (focus on data provision);2019;;;;;;
+Frequency and phenotype consequence of APOC3 rare variants in patients with very low triglyceride levels.;30255797;Yes;n/a;2018;9;No;US;US;Vanderbilt University Medical Center;US
+Pembrolizumab Utilization and Outcomes for Advanced Melanoma in US Community Oncology Practices.;29252916;Yes;n/a;2018;2;No;US;US;US Oncology Network ;US
+Validation of an algorithm using inpatient electronic health records to determine the presence and severity of cirrhosis in patients with hepatocellular carcinoma in England: an observational study.;31292182;Yes;n/a;2019;11;No;UK;UK;Leeds Teaching Hospitals NHS Trust;UK
+Accelerating ophthalmic artificial intelligence research: the role of an open access data repository.;32740059;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2020;;;;;;
+Evaluation of repositories for sharing individual-participant data from clinical studies.;30876434;No (excluded in title and abstract screening);No medical research (focus on data provision);2019;;;;;;
+Incidence Rate of Herpes Zoster Ophthalmicus: A Retrospective Cohort Study from 1994 through 2018.;31668889;Yes;n/a;2020;1;No;US;US;Optum;US
+Real-world data suggest antibody positivity to SARS-CoV-2 is associated with a decreased risk of future infection.;33354682;No (excluded before screening);Preprint;2020;;;;;;
+Medical knowledge infused convolutional neural networks for cohort selection in clinical trials.;31390470;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2019;;;;;;
+Lack of a Tricuspid Regurgitation Doppler Signal and Pulmonary Hypertension by Invasive Measurement.;29960993;Yes;n/a;2018;9;No;US;US;Vanderbilt University Medical Center;US
+Local genetic ancestry in CDKN2B-AS1 is associated with primary open-angle glaucoma in an African American cohort extracted from de-identified electronic health records.;30255811;Yes;n/a;2018;7;No;US;US;Vanderbilt University Medical Center;US
+Adolescent Nocturnal Fears: a psychometric evaluation of the fear of sleep inventory (FoSI).;29757000;Yes;n/a;2019;5;No;US;US;Multiple;US
+Variation in Documenting Diagnosable Chronic Kidney Disease in General Medical Practice: Implications for Quality Improvement and Research.;30879383;Yes;n/a;2019;14;No;AU;AU;NPS MedicineWise;AU
+Linking Spinal Cord Injury Data Sets to Describe the Patient Journey Following Injury: A Protocol.;33536728;No (excluded in title and abstract screening);No medical research (focus on data provision);2020;;;;;;
+Assessing stroke severity using electronic health record data: a machine learning approach.;31914991;No (excluded in title and abstract screening);No tabular data;2020;;;;;;
+West Highland White Terriers under primary veterinary care in the UK in 2016: demography, mortality and disorders.;31508236;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2019;;;;;;
+Comparing the International Classification of Functioning, Disability, and Health Core Sets for Hearing Loss and Otorhinolaryngology/Audiology Intake Documentation at Mayo Clinic.;30289788;Yes;n/a;2019;8;No;US;US;Mayo Clinic;US
+HIV/SARS-CoV-2 co-infection: T cell profile, cytokine dynamics and role of exhausted lymphocytes.;33115677;Yes;n/a;2021;1;Yes;RU;;Multiple;RU
+Childhood asthma prevalence: cross-sectional record linkage study comparing parent-reported wheeze with general practitioner-recorded asthma diagnoses from primary care electronic health records in Wales.;29333271;Yes;n/a;2018;10;No;UK;UK;SAIL Databank;UK
+Data highlighting phenotypic diversity of urine-associated Escherichia coli isolates.;32566710;No (excluded in title and abstract screening);No medical research (focus on data provision);2020;;;;;;
+The Genomics Research and Innovation Network: creating an interoperable, federated, genomics learning system.;31481752;No (excluded in title and abstract screening);No medical research (focus on data provision);2020;;;;;;
+Natural language processing and recurrent network models for identifying genomic mutation-associated cancer treatment change from patient progress notes.;30944913;No (excluded in title and abstract screening);No tabular data;2019;;;;;;
+Discovering Associations Among Older Adults' Characteristics and Planned Nursing Interventions Using Electronic Health Record Data.;30796148;Yes;n/a;2019;;No;US;US;University of Minnesota;US
+A Genetic Approach to the Association Between PCSK9 and Sepsis.;31509211;Yes;n/a;2019;1;No;US;US;Vanderbilt University Medical Center;US
+Estimating the prevalence of multiple sclerosis using 56.6 million electronic health records from the United States.;31339444;Yes;n/a;2020;6;No;US;US;IBM;US
+Generalizability of Blood Pressure Lowering Trials to Older Patients: Cross-Sectional Analysis.;32898307;Yes;n/a;2020;9;No;UK;UK;Multiple;UK
+Overlap of Characteristic Serological Antibodies in Rheumatoid Arthritis and Wheat-Related Disorders.;30755781;Yes;n/a;2019;13;No;US;US;Vibrant America Clinical Laboratory;US
+Novel Method of Atrial Fibrillation Case Identification and Burden Estimation Using the MIMIC-III Electronic Health Data Set.;31354020;Yes;n/a;2019;9;No;US;US;Massachusetts Institute of Technology;US
+Depression and Buprenorphine Treatment in Patients with Non-cancer Pain and Prescription Opioid Dependence without Comorbid Substance Use Disorders.;33022442;Yes;n/a;2021;5;No;US;US;Optum;US
+US Integrated Delivery Networks Perspective on Economic Burden of Patients with Treatment-Resistant Depression: A Retrospective Matched-Cohort Study.;31254275;Yes;n/a;2020;5;No;CA;US;Optum;US
+Patch test results with the European baseline series and additions thereof in the ESSCA network, 2015-2018.;32945543;Yes;n/a;2021;12;No;DE;UK;Multiple;DE, AT, CH, DK, PT
+Heterogeneity introduced by EHR system implementation in a de-identified data resource from 100 non-affiliated organizations.;32025653;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2019;;;;;;
+Overall survival analysis in patients with metastatic breast cancer and liver or lung metastases treated with eribulin, gemcitabine, or capecitabine.;32808239;Yes;n/a;2020;2;No;US;US;Cancer Treatment Centers of America;US
+Increased Incidence of Resistant Hypertension in Patients With Systemic Lupus Erythematosus: A Retrospective Cohort Study.;30875459;Yes;n/a;2020;13;No;US;US;Vanderbilt University Medical Center;US
+Disparities in Hypertension Control Across and Within Three Health Systems Participating in a Data-Sharing Collaborative.;30413545;Yes;n/a;2018;9;No;US;US;Multiple;US
+Bacterial Colonization and Tissue Compatibility of Denture Base Resins.;29914101;No (excluded in title and abstract screening);No tabular data;2018;;;;;;
+Harnessing the potential of electronic general practice pathology data in Australia: An examination of the quality use of pathology for type 2 diabetes patients.;32534436;Yes;n/a;2020;4;No;AU;AU;Outcome Health;AU
+Efficient and Accurate Extracting of Unstructured EHRs on Cancer Therapy Responses for the Development of RECIST Natural Language Processing Tools: Part I, the Corpus.;32364754;No (excluded in title and abstract screening);No medical research (focus on data provision);2020;;;;;;
+Is Blockchain Technology Suitable for Managing Personal Health Records? Mixed-Methods Study to Test Feasibility.;30735142;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2019;;;;;;
+CYP2D6 genotype and adverse events to risperidone in children and adolescents.;30661084;Yes;n/a;2019;;No;US;US;Vanderbilt University Medical Center;US
+Learning to detect and understand drug discontinuation events from clinical narratives.;31034028;No (excluded in title and abstract screening);No tabular data;2019;;;;;;
+Cardiovascular risk factors predicting cardiac events are different in patients with rheumatoid arthritis, psoriatic arthritis, and psoriasis.;29656791;Yes;n/a;2018;9;No;UK;UK;SAIL Databank;UK
+Epidemiology of chronic kidney disease in Australian general practice: National Prescribing Service MedicineWise MedicineInsight dataset.;30467996;Yes;n/a;2019;14;No;AU;AU;NPS MedicineWise;AU
+Preliminary Results of the Outpatient Endovascular and Interventional Society National Registry.;32813592;No (excluded in title and abstract screening);No medical research (focus on data provision);2020;;;;;;
+Use of digital periodontal data to compare periodontal treatment outcomes in a practice-based research network (PBRN): a proof of concept.;33115466;Yes;n/a;2020;11;No;DE;DE;Multiple;DE
+Effectiveness of oral rotavirus vaccination in England against rotavirus-confirmed and all-cause acute gastroenteritis.;31384727;Yes;n/a;2019;1;No;UK;UK;Clinical Practice Research Datalink;UK
+Prevalence and correlates of low-grade systemic inflammation in adult psychiatric inpatients: An electronic health record-based study.;29544672;Yes;n/a;2018;5;No;UK;UK;Cambridgeshire and Peterborough NHS Foundation Trust;UK
+Antibiotic prescribing for common infections in UK general practice: variability and drivers.;31038162;Yes;n/a;2019;;No;UK;UK;Clinical Practice Research Datalink;UK
+A two-site survey of medical center personnel's willingness to share clinical data for research: implications for reproducible health NLP research.;30943963;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2019;;;;;;
+Daratumumab-lenalidomide-dexamethasone vs standard-of-care regimens: Efficacy in transplant-ineligible untreated myeloma.;32804408;Yes;n/a;2020;2;No;US;FR;Flatiron Health;US
+Validity of health insurance data to identify people with epilepsy.;29220740;Yes;n/a;2018;6;No;NL;NL;Achmea;NL
+Opioid Prescribing Rates in Nonmetropolitan and Metropolitan Counties Among Primary Care Providers Using an Electronic Health Record System - United States, 2014-2017.;30653483;Yes;n/a;2019;;No;US;US;Athenahealth;US
+National Trends in Daily Ambulatory Electronic Health Record Use by Otolaryngologists.;32876342;No (excluded in title and abstract screening);No tabular data;2021;;;;;;
+Predictive Modeling of 30-Day Emergency Hospital Transport of Patients Using a Personal Emergency Response System: Prognostic Retrospective Study.;30482741;Yes;n/a;2018;;No;NL;US;Philips Lifeline;US
+Diagnostic Algorithms to Study Post-Concussion Syndrome Using Electronic Health Records: Validating a Method to Capture an Important Patient Population.;30773988;Yes;n/a;2019;5;No;US;US;Vanderbilt University Medical Center;US
+Data Integration Innovations to Enhance Analytic Utility of Clinical Trial Content to Inform Health Disparities Research.;30254982;No (excluded in title and abstract screening);No medical research (focus on data provision);2018;;;;;;
+Mendelian Disease Associations Reveal Novel Insights into Inflammatory Bowel Disease.;29462399;Yes;n/a;2018;11;No;US;US;Optum;US
+The International Neuromodulation Registry: An Informatics Framework Supporting Cohort Discovery and Analysis.;33071769;No (excluded in title and abstract screening);No medical research (focus on data provision);2020;;;;;;
+'Real time' monitoring of antipsychotic prescribing in patients with dementia: a study using the Clinical Record Interactive Search (CRIS) platform to enhance safer prescribing.;32229485;Yes;n/a;2020;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Epidemiologic features of a large hepatitis C cohort evaluated in a major health system in the western United States.;31053542;Yes;n/a;2019;1;No;US;US;Providence Health & Services;US
+Adverse Events Associated with Risperidone Use in Pediatric Patients: A Retrospective Biobank Study.;30919267;Yes;n/a;2019;5;No;US;US;Vanderbilt University Medical Center;US
+Early Treatment Innovation for Opioid-Dependent Newborns: A Retrospective Comparison of Outcomes, Utilization, Quality, and Safety, 2006-2014.;29793880;Yes;n/a;2018;5;No;US;US;Not precisely specified;US
+Multi-institutional review of bowel management strategies in children with anorectal malformations.;32616413;Yes;n/a;2020;17;No;US;US;Multiple;US
+J-CKD-DB: a nationwide multicentre electronic health record-based chronic kidney disease database in Japan.;32355258;Yes;n/a;2020;14;No;JP;JP;Multiple;JP
+Reduction in laboratory turnaround time decreases emergency room length of stay.;29719423;Yes;n/a;2018;;No;US;US;Cerner Corporation;US
+Temporal Trends and Patterns in Mortality After Incident Heart Failure: A Longitudinal Analysis of 86 000 Individuals.;31479100;Yes;n/a;2019;9;No;UK;UK;Clinical Practice Research Datalink;UK
+Reversals and limitations on high-intensity, life-sustaining treatments.;29489814;Yes;n/a;2018;;No;US;US;Stanford University Medical Center;US
+Rivaroxaban Versus Warfarin in African American Patients with Nonvalvular Atrial Fibrillation.;32493618;Yes;n/a;2020;9;No;US;US;Optum;US
+An animal health example of managing and analyzing a large volume of data on a PC: Modeling body weight and age of over 13 million cats for explanatory and predictive purposes.;31733427;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2020;;;;;;
+Using de-identified electronic health records to research mental health supported housing services: A feasibility study.;32817624;Yes;n/a;2020;5;No;UK;UK;Camden and Islington NHS Foundation Trust;UK
+Supporting general practice to make timely decisions for better health care: a population health approach.;29898816;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2018;;;;;;
+Characteristics of patients with motor functional neurological disorder in a large UK mental health service: a case-control study.;30773149;Yes;n/a;2020;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Impact of delaying initiation of anaplastic lymphoma kinase inhibitor treatment on survival in patients with advanced non-small-cell lung cancer.;32276206;Yes;n/a;2020;2;No;US;US;Flatiron Health;US
+Impact of matching error on linked mortality outcome in a data linkage of secondary mental health data with Hospital Episode Statistics (HES) and mortality records in South East London: a cross-sectional study.;32641360;Yes;n/a;2020;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Development of predictive risk models for major adverse cardiovascular events among patients with type 2 diabetes mellitus using health insurance claims data.;30143045;Yes;n/a;2018;9;No;US;US;Optum;US
+Health-related welfare prioritisation of canine disorders using electronic health records in primary care practice in the UK.;31118035;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2019;;;;;;
+Enhancing the analytic utility of clinical trial data to inform health disparities research.;33319118;No (excluded in title and abstract screening);No medical research (focus on data provision);2020;;;;;;
+Assessment of a demonstrator repository for individual clinical trial data built upon DSpace.;32528663;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2020;;;;;;
+A Good Practice-Compliant Clinical Trial Imaging Management System for Multicenter Clinical Trials: Development and Validation Study.;31471962;No (excluded in title and abstract screening);No tabular data;2019;;;;;;
+Health timeline: an insight-based study of a timeline visualization of clinical data.;31438942;Yes;n/a;2019;;No;FI;FI;Multiple;AU
+Probabilistic record linkage of de-identified research datasets with discrepancies using diagnosis codes.;30620344;No (excluded in title and abstract screening);No medical research (focus on anonymization);2019;;;;;;
+Is paliperidone palmitate more effective than other long-acting injectable antipsychotics?;29039277;Yes;n/a;2018;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Machine learning to parse breast pathology reports in Chinese.;29380208;No (excluded in title and abstract screening);No tabular data;2018;;;;;;
+Use of Oral Anticoagulation in a Real-World Population With Device Detected Atrial Fibrillation.;33252286;Yes;n/a;2020;9;No;US;US;Optum;US
+Occupational Injury Claims Related to Patient Lifting and Moving in a Safety-Oriented Emergency Medical Services Agency.;33062522;No (excluded in title and abstract screening);No tabular data;2020;;;;;;
+General hospital admission rates in people diagnosed with personality disorder.;30689214;Yes;n/a;2019;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Using electronic health records to characterize prescription patterns: focus on antidepressants in nonpsychiatric outpatient settings.;30474077;Yes;n/a;2018;5;No;US;US;Not precisely specified;US
+CogStack - experiences of deploying integrated information retrieval and extraction services in a large National Health Service Foundation Trust hospital.;29941004;No (excluded in title and abstract screening);No medical research (focus on anonymization);2018;;;;;;
+Comparative-effectiveness of pembrolizumab vs. nivolumab for patients with metastatic melanoma.;31920132;Yes;n/a;2020;2;No;US;US;Flatiron Health;US
+Machine learning for suicide risk prediction in children and adolescents with electronic health records.;33243979;Yes;n/a;2020;5;No;US;US;Connecticut Children’s Medical Center;US
+Screening for Hypogonadism in Primary Healthcare: How to do this Effectively.;29365335;Yes;n/a;2018;4;No;UK;UK;Multiple;UK
+Morbidity and mortality with early pulmonary haemorrhage in preterm neonates.;29374627;Yes;n/a;2019;16;No;US;US;Pediatrix Medical Group;US
+Pediatric Severe Sepsis Prediction Using Machine Learning.;31681711;Yes;n/a;2019;1;No;US;US;University of California San Francisco;US
+Ventilator Boot Camp Improves the Knowledge and Skills Associated With Mechanical Ventilator Use During Interfacility Transport of Intubated Pediatric Patients.;29559539;No (excluded in full-paper screening);No real-world application (findings not based on real-world data);2018;;;;;;
+Using Dispensing Data to Evaluate Adherence Implementation Rates in Community Pharmacy.;30863308;Yes;n/a;2019;;No;AU;AU;The Pharmacy Guild of Australia;AU
+Effectiveness and safety of rivaroxaban versus warfarin in obese nonvalvular atrial fibrillation patients: analysis of electronic health record data.;32347755;Yes;n/a;2020;9;No;US;US;Optum;US
+How Clinical Practice Research Datalink data are used to support pharmacovigilance.;31210923;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2019;;;;;;
+Factors affecting use of unscheduled care for people with advanced cancer: a retrospective cohort study in Scotland.;31740459;Yes;n/a;2019;2;No;UK;UK;Public Health Scotland, NHS Scotland;UK
+Trends and predictors of extreme preterm birth: Western Australian population-based cohort study.;30913277;Yes;n/a;2019;15;No;AU;AU;Western Australian Data Linkage System;AU
+Practical utility of general practice data capture and spatial analysis for understanding COPD and asthma.;30477507;Yes;n/a;2018;10;No;AU;AU;Multiple;AU
+Selenium Deficiency in Lymphedema and Lipedema-A Retrospective Cross-Sectional Study from a Specialized Clinic.;32344864;Yes;n/a;2020;4;No;DE;DE;Lympho-Opt Clinic Pommelsbrunn-Hohenstadt;DE
+Proton pump inhibitors and dementia risk: Evidence from a cohort study using linked routinely collected national health data in Wales, UK.;32946449;Yes;n/a;2020;5;No;UK;UK;SAIL Databank;UK
+The impact of universal access to direct-acting antiviral therapy on the hepatitis C cascade of care among individuals attending primary and community health services.;32603349;Yes;n/a;2020;1;No;AU;AU;Multiple;AU
+Parsing clinical text using the state-of-the-art deep learning based parsers: a systematic comparison.;30943955;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2019;;;;;;
+Real-World Dosing Patterns and Outcomes of Patients With Metastatic Pancreatic Cancer Treated With a Liposomal Irinotecan Regimen in the United States.;32011529;Yes;n/a;2020;2;No;US;US;Flatiron Health;US
+Safety of inadvertent administration of live zoster vaccine to immunosuppressed individuals in a UK-based observational cohort analysis.;32001495;Yes;n/a;2020;1;No;UK;UK;Clinical Practice Research Datalink;UK
+The Safety of the Kahook Dual Blade in the Surgical Treatment of Glaucoma.;31976190;Yes;n/a;2020;7;No;SA;SA;Al-Maghrabi Hospital;SA
+The antinuclear antibody dense fine speckled pattern and possible clinical associations: An indication of a proinflammatory microenvironment.;33121975;Yes;n/a;2021;13;No;US;US;Not precisely specified;US
+Practice patterns and outcomes with the use of regorafenib in metastatic colorectal cancer: Results from the Regorafenib in Metastatic colorectal cancer - An Indian exploratory analysis study.;30766846;Yes;n/a;2019;2;No;IN;IN;Multiple;IN
+Community treatment orders and associations with readmission rates and duration of psychiatric hospital admission: a controlled electronic case register study.;32139493;Yes;n/a;2020;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Natural Language Processing of Clinical Notes on Chronic Diseases: Systematic Review.;31066697;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2019;;;;;;
+Managing Patients in the COVID-19 Pandemic: A Virtual Multidisciplinary Approach.;33521583;Yes;n/a;2021;22;Yes;US;US;Mayo Clinic ;US
+Community Outreach for Navajo People Living with Diabetes: Who Benefits Most?;32701432;Yes;n/a;2020;4;No;US;US;Multiple;US
+Effectiveness of viable cryopreserved placental membranes for management of diabetic foot ulcers in a real world setting.;29683538;Yes;n/a;2018;4;No;US;US;Multiple;US
+Toward a Model for Personal Health Record Interoperability.;29993759;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2019;;;;;;
+Findings from the 2019 International Medical Informatics Association Yearbook Section on Health Information Management.;31419817;No (excluded in title and abstract screening);Anonymous survey;2019;;;;;;
+"Differentiating Usual Interstitial Pneumonia From Nonspecific Interstitial Pneumonia Using High-resolution Computed Tomography: The ""Straight-edge Sign"".";29683868;No (excluded in title and abstract screening);No tabular data;2018;;;;;;
+Phenome-Wide Association Studies Uncover a Novel Association of Increased Atrial Fibrillation in Male Patients With Systemic Lupus Erythematosus.;29481723;Yes;n/a;2018;13;No;US;US;Vanderbilt University Medical Center;US
+Creating synthetic patient data to support the design and evaluation of novel health information technology.;31078659;No (excluded in title and abstract screening);No medical research (focus on anonymization);2019;;;;;;
+Research using electronic health records: not all de-identified datasets are created equal.;31039984;No (excluded in title and abstract screening);No medical research (focus on anonymization);2019;;;;;;
+Deep EHR: A Survey of Recent Advances in Deep Learning Techniques for Electronic Health Record (EHR) Analysis.;29989977;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2018;;;;;;
+Increased blood pressure visit-to-visit variability in patients with systemic lupus erythematosus: association with inflammation and comorbidity burden.;31221051;Yes;n/a;2019;13;No;US;US;Vanderbilt University Medical Center;US
+Retrospective Comparative Analysis of Opioid Use and Intra-Articular Corticosteroid Injections Before and After Initial Treatment of Knee Osteoarthritis with Hylan G-F 20.;32581606;Yes;n/a;2020;13;No;US;FR;Cerner Corporation;US
+Prescribing patterns of opioid analgesics in a dental setting: 2013-2018.;32660860;Yes;n/a;2020;11;No;US;US;University of Kentucky College of Dentistry;US
+Association Between Number of Actionable Pharmacogenetic Variants and Length of Hospital Stay.;32604634;Yes;n/a;2020;;No;US;US;eMERGE;US
+How do cardiovascular risk prediction equations developed among 30-74 year olds perform in older age groups? A validation study in 125 000 people aged 75-89 years.;32144211;Yes;n/a;2020;9;No;NZ;NZ;New Zeeland Ministry of Health;NZ
+Approach to record linkage of primary care data from Clinical Practice Research Datalink to other health-related patient data: overview and implications.;30219957;No (excluded in title and abstract screening);No medical research (focus on anonymization);2019;;;;;;
+Clinical features of early-stage possible Behçet's disease patients with a variant-type major organ involvement in Japan.;29954241;Yes;n/a;2019;13;No;JP;JP;Japanese Ministry of Health;JP
+Incorporating a location-based socioeconomic index into a de-identified i2b2 clinical data warehouse.;30715327;No (excluded in title and abstract screening);No medical research (focus on anonymization);2019;;;;;;
+Allogeneic hematopoietic cell transplantation for multiple myeloma: A retrospective analysis of the Polish Myeloma Group.;32919120;No (not retrieved);Not retrieved;2020;;;;;;
+Descriptive analysis of real-world medication use pattern of statins and antiplatelet agents among patients with acute coronary syndrome in Hong Kong and the USA.;31315855;Yes;n/a;2019;9;No;AU;HK;Optum, Hong Kong Hospital Authority;US, CN
+Performance of Atrial Fibrillation Risk Prediction Models in Over 4 Million Individuals.;33295794;Yes;n/a;2021;9;No;US;US;IBM;US
+Evaluating risk factors for differences in fibroid size and number using a large electronic health record population.;29907250;Yes;n/a;2018;2;No;US;US;Vanderbilt University Medical Center;US
+Acute Post-Tracheostomy Clinical Decompensations in Infants-Are There Predictive Markers?;29702711;Yes;n/a;2018;17;No;US;US;Children's Mercy Hospital Kansas City;US
+Guideline-concordant-phenotyping: Identifying patient indications for implantable cardioverter defibrillators from electronic health records.;32298971;Yes;n/a;2020;9;No;US;US;Optum;US
+Epidemiology of dementia: prevalence and incidence estimates using validated electronic health records from primary care.;30881138;Yes;n/a;2019;5;No;ES;ES;SIDIAP;ES
+Development and validation of a multivariable prediction model for infection-related complications in patients with common infections in UK primary care and the extent of risk-based prescribing of antibiotics.;32434588;Yes;n/a;2020;1;No;UK;UK;SAIL Databank, Clinical Practice Research Datalink;UK
+Adherence to hepatitis A and hepatitis B multi-dose vaccination schedules among adults in the United Kingdom: a retrospective cohort study.;30987613;Yes;n/a;2019;1;No;US;US;Clinical Practice Research Datalink;UK
+An enhanced prognostic score for overall survival of patients with cancer derived from a large real-world cohort.;32739409;Yes;n/a;2020;2;No;DE;DE;Flatiron Health;US
+The research data management platform (RDMP): A novel, process driven, open-source tool for the management of longitudinal cohorts of clinical data.;29790950;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2018;;;;;;
+Using Public Health Data for Soil Pb Hazard Management in Ohio.;28079647;Yes;n/a;2018;19;No;US;US;Ohio Department of Health;US
+Mode of birth after caesarean section: individual prediction scores using Scottish population data.;30819140;Yes;n/a;2019;15;No;UK;UK;Aberdeen Maternity and Neonatal databank;UK
+Use of Machine Learning and Artificial Intelligence to predict SARS-CoV-2 infection from Full Blood Counts in a population.;32652499;Yes;n/a;2020;22;Yes;UK;UK;Hospital Israelita Albert Einstein;BR
+Trends in Positive BRCA Test Results Among Older Women in the United States, 2008-2018.;33151316;Yes;n/a;2020;2;No;US;US;Optum;US
+Patient characteristics and outcome measurement in a low secure forensic hospital.;29218747;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2018;;;;;;
+Real-World Outcomes for Advanced Non-Small Cell Lung Cancer Patients Treated With a PD-L1 Inhibitor Beyond Progression.;32409266;Yes;n/a;2020;2;No;US;US;Flatiron Health;US
+Prevalence of Established Cardiovascular Disease in Patients with Type 2 Diabetes Mellitus in the UK.;31583647;Yes;n/a;2019;4;No;US;US;Clinical Practice Research Datalink;UK
+De-identifying free text of Japanese electronic health records.;32958039;No (excluded in title and abstract screening);No medical research (focus on anonymization);2020;;;;;;
+Relationships between public health nurse-delivered physical activity interventions and client physical activity behavior.;29579488;Yes;n/a;2018;;No;US;US;Not precisely specified;US
+Maternal and neonatal outcomes among incarcerated women who gave birth in custody.;33368480;Yes;n/a;2021;15;No;US;US;Multiple;US
+Utilization Trends and Factors Associated With ROS1 Testing Among Patients With Advanced Non-small-cell Lung Cancer in US Community Practices.;32763067;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+Learning relevance models for patient cohort retrieval.;30474078;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2018;;;;;;
+Prior Treatment Time Affects Survival Outcomes in Metastatic Breast Cancer.;32479187;Yes;n/a;2020;2;No;US;US;Flatiron Health;US
+PRISM: A Platform for Imaging in Precision Medicine.;32479186;No (excluded in title and abstract screening);No tabular data;2020;;;;;;
+Assessment of Potentially Inappropriate Prescribing of Opioid Analgesics Requiring Prior Opioid Tolerance.;32293684;Yes;n/a;2020;;No;US;US;Optum;US
+Impact of initial COVID-19 restrictions on psychiatry presentations to the emergency department of a large academic teaching hospital.;32996441;Yes;n/a;2021;5;Yes;IE;IE;Beaumont Hospital;IE
+EPIDEMIOLOGY of NECK INJURIES ACCOMPANYING SPORT CONCUSSIONS in YOUTH OVER a 13-YEAR PERIOD IN a COMMUNITY-BASED HEALTHCARE SYSTEM.;31681492;Yes;n/a;2019;19;No;US;US;University of Colorado Health, Childrens Hospital Colorado;US
+Individuals with spinal cord injury have greater odds of substance use disorders than non-sci comparisons.;31606588;Yes;n/a;2019;5;No;US;US;Penn State Hershey Medical Center;US
+Demographic, Clinical, and Immunologic Correlates among a Cohort of 50 Cocaine Users Demonstrating Antineutrophil Cytoplasmic Antibodies.;31092720;Yes;n/a;2019;13;No;US;US;University of Washington;US
+Suitability of administrative claims databases for bariatric surgery research - is the glass half-full or half-empty?;32894060;Yes;n/a;2020;4;No;US;US;Optum;US
+Irish School Entry Screening referral trends and cohort comparison with preschool specialist referrals.;29504414;Yes;n/a;2018;;No;IE;;Multiple;IE
+An evaluation of recurrent hypoglycemia across Chicago, Illinois.;32732137;Yes;n/a;2020;4;No;US;US;Multiple;US
+Stroke Risk as a Function of Atrial Fibrillation Duration and CHA(2)DS(2)-VASc Score.;31564126;Yes;n/a;2019;9;No;US;US;Optum;US
+Disorders of Bulldogs under primary veterinary care in the UK in 2013.;31188857;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2019;;;;;;
+Early Identification of Delirium in Intensive Care Unit Patients: Improving the Quality of Care.;32236428;Yes;n/a;2020;5;No;US;US;Not precisely specified;US
+Disease Progression Modeling Analysis of the Change of Bone Mineral Density by Postoperative Hormone Therapies in Postmenopausal Patients With Early Breast Cancer.;31172521;Yes;n/a;2019;13;No;KR;KR;Asan Medical Center;KR
+Predictors of objectively measured physical activity in 12-month-old infants: A study of linked birth cohort data with electronic health records.;30729733;Yes;n/a;2019;;No;UK;UK;SAIL Databank;UK
+Using applied machine learning to predict healthcare utilization based on socioeconomic determinants of care.;31951356;Yes;n/a;2020;;No;US;US;Multiple;US
+The Needs and Benefits of Continuous Model Updates on the Accuracy of RT-Induced Toxicity Prediction Models Within a Learning Health System.;30300689;Yes;n/a;2019;;No;JP;US;Not precisely specified;US
+Analyzing the performance of a blockchain-based personal health record implementation.;30844481;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2019;;;;;;
+Trends in Hospital Admissions for Intimate Partner Violence in Australian Mothers With Children Born From 1990 to 2009.;30813820;Yes;n/a;2021;;No;AU;AU;Western Australian Data Linkage System;AU
+Estimating Uterine Fibroid SNP-Based Heritability in European American Women with Imaging-Confirmed Fibroids.;31480066;Yes;n/a;2019;2;No;US;US;Vanderbilt University Medical Center;US
+Population-Based Linkage of Big Data in Dental Research.;30366416;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2018;;;;;;
+Age-appropriate cancer screening: A cohort study of adults with psoriasis prescribed biologics, adults in the general population, and adults with hypertension.;33470207;Yes;n/a;2021;2;No;US;US;Optum;US
+"Ten-year patient journey of stage III non-small cell lung cancer patients: A single-center, observational, retrospective study in Korea (Realtime autOmatically updated data warehOuse in healTh care; UNIVERSE-ROOT study).";32526601;Yes;n/a;2020;2;No;KR;KR;Not precisely specified;KR
+Advancing In-Hospital Clinical Deterioration Prediction Models.;30173171;Yes;n/a;2018;;No;US;US;Not precisely specified;US
+A Novel Patient Recruitment Strategy: Patient Selection Directly from the Community through Linkage to Clinical Data.;29444537;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2018;;;;;;
+Monitoring Rates of Malnutrition Risk in Outpatient Cancer Centers Utilizing the Malnutrition Screening Tool Embedded into the Electronic Health Record.;33309592;Yes;n/a;2021;4;No;US;US;Multiple;US
+Application of Machine Learning Methods to Ambulatory Circadian Monitoring (ACM) for Discriminating Sleep and Circadian Disorders.;31920488;Yes;n/a;2019;5;No;ES;ES;University of Murcia;ES
+Imaging and clinical data archive for head and neck squamous cell carcinoma patients treated with radiotherapy.;30179230;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2018;;;;;;
+Linking 'data silos' to investigate anaemia among Aboriginal and Torres Strait Islander mothers and children in Far North Queensland.;30151954;No (excluded in title and abstract screening);No medical research (focus on data provision);2018;;;;;;
+Neonatal sepsis registry: Time to antibiotic dataset.;31799346;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2019;;;;;;
+At-risk registers integrated into primary care to stop asthma crises in the UK (ARRISA-UK): study protocol for a pragmatic, cluster randomised trial with nested health economic and process evaluations.;30157917;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2018;;;;;;
+Zoster vaccination inequalities: A population based cohort study using linked data from the UK Clinical Practice Research Datalink.;30439975;Yes;n/a;2018;1;No;UK;UK;Clinical Practice Research Datalink;UK
+Psychiatric comorbidity as a risk factor for the mortality of people with bulimia nervosa.;30756148;Yes;n/a;2019;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Hospitalization for mental health related ambulatory care sensitive conditions: what are the trends for First Nations in British Columbia?;30285775;Yes;n/a;2018;5;No;CA;CA;Ministry of Health Services, University of British Columbia;CA
+Immunotherapy Treatment Patterns and Outcomes Among ALK-Positive Patients With Non-Small-Cell Lung Cancer.;33250347;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+Implementing a college mental health program - an overview of the first twelve months.;29601286;Yes;n/a;2019;5;No;US;US;University of California San Diego;US
+Association Between Low-Density Lipoprotein Cholesterol Levels and Risk for Sepsis Among Patients Admitted to the Hospital With Infection.;30657536;Yes;n/a;2019;1;No;US;US;Vanderbilt University Medical Center;US
+Detection of HIV transmission hotspots in British Columbia, Canada: A novel framework for the prioritization and allocation of treatment and prevention resources.;31628022;Yes;n/a;2019;1;No;CA;CA;British Columbia Centre for Excellence in HIV/AIDS;CA
+Body Perception Disturbance and Pain Reduction in Longstanding Complex Regional Pain Syndrome Following a Multidisciplinary Rehabilitation Program.;31373373;Yes;n/a;2019;6;No;UK;UK;Royal National Hospital for Rheumatic Diseases;UK
+The Veterans Affairs Precision Oncology Data Repository, a Clinical, Genomic, and Imaging Research Database.;33205130;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2020;;;;;;
+Cascade Monitoring in Multidisciplinary Adolescent HIV Care Settings: Protocol for Utilizing Electronic Health Records.;31148543;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2019;;;;;;
+Identifying patients with asthma-chronic obstructive pulmonary disease overlap syndrome using latent class analysis of electronic health record data: a study protocol.;29925836;No (excluded in full-paper screening);No real-world application (findings not based on real-world data);2018;;;;;;
+Maternal health, pregnancy and birth outcomes for women involved in care proceedings in Wales: a linked data study.;33198668;Yes;n/a;2020;15;No;UK;UK;SAIL Databank;UK
+Longitudinal Risk Prediction of Chronic Kidney Disease in Diabetic Patients Using a Temporal-Enhanced Gradient Boosting Machine: Retrospective Cohort Study.;32012067;Yes;n/a;2020;14;No;US;US;University of Kansas Medical Center;US
+Metformin Use in Diabetes Prior to Hospitalization: Effects on Mortality in Covid-19.;33471718;Yes;n/a;2020;4;No;US;US;Wuhan Red Cross Hospital;CN
+Adverse Childhood Experiences and Physical and Mental Health of Adults: Assessing the Mediating Role of Cumulative Life Course Poverty.;33356410;Yes;n/a;2021;5;No;US;US;University of Michigan;US
+Attitudes of health professionals to using routinely collected clinical data for performance feedback and personalised professional development.;30927464;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2019;;;;;;
+Polysubstance abuse associated with more frequent opioid use among patients in rural primary care settings.;32885836;No (not retrieved);Not retrieved;2020;;;;;;
+Accuracy of High-Speed Video Analysis to Diagnose Primary Ciliary Dyskinesia.;30826306;No (excluded in title and abstract screening);No tabular data;2019;;;;;;
+In-Hospital Therapy for Heart Failure With Reduced Ejection Fraction in the United States.;32800512;Yes;n/a;2020;9;No;US;US;Optum;US
+Implementation and early adaptation of patient-reported outcome measures into an electronic health record: A technical report.;30516095;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2020;;;;;;
+Rule-based and machine learning algorithms identify patients with systemic sclerosis accurately in the electronic health record.;31888720;Yes;n/a;2019;13;No;US;US;Vanderbilt University Medical Center;US
+Clinical Decision Support for Hyperbilirubinemia Risk Assessment in the Electronic Health Record.;32058105;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2020;;;;;;
+Late-life depression in people from ethnic minority backgrounds: Differences in presentation and management.;32056770;Yes;n/a;2020;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Circannual variation in relative weight of children 5 to 16 years of age.;29665291;Yes;n/a;2018;4;No;US;US;University of Wisconsin;US
+Association of baseline systemic corticosteroid use with overall survival and time to next treatment in patients receiving immune checkpoint inhibitor therapy in real-world US oncology practice for advanced non-small cell lung cancer, melanoma, or urothelial carcinoma.;33101774;Yes;n/a;2020;2;No;US;DE;Flatiron Health;US
+An early warning system for emerging drugs of concern in the emergency department: Protocol for the Western Australian Illicit Substance Evaluation (WISE) study.;30318770;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2019;;;;;;
+Psoriatic arthritis treatment regimens, therapy duration and reasons for cessation in the biologics era: a multi-centre Australian study.;28730757;Yes;n/a;2018;13;No;AU;AU;Optimising Patient Outcomes in Australian Rheumatology ;AU
+Can diffusion- and perfusion-weighted imaging alone accurately triage anterior circulation acute ischemic stroke patients to endovascular therapy?;29555872;No (excluded in title and abstract screening);No tabular data;2018;;;;;;
+Influence of the residential environment on undergraduate students' health.;31796873;Yes;n/a;2020;;No;US;US;Not precisely specified;US
+Generating Real-World Tumor Burden Endpoints from Electronic Health Record Data: Comparison of RECIST, Radiology-Anchored, and Clinician-Anchored Approaches for Abstracting Real-World Progression in Non-Small Cell Lung Cancer.;31140124;Yes;n/a;2019;2;No;US;US;Flatiron Health;US
+Place of death in a small island state: a death certificate population study.;30659046;Yes;n/a;2020;;No;BE;BE;Central Statistical Office of Trinidad and Tobago;TT
+HLA-A*32:01 is strongly associated with vancomycin-induced drug reaction with eosinophilia and systemic symptoms.;30776417;Yes;n/a;2019;3;No;US;US;Vanderbilt University Medical Center;US
+Association of Nonsteroidal Anti-inflammatory Drug Prescriptions With Kidney Disease Among Active Young and Middle-aged Adults.;30768191;Yes;n/a;2019;14;No;US;US;U.S. Department of Defense;US
+The side effect profile of Clozapine in real world data of three large mental health hospitals.;33290433;Yes;n/a;2020;5;No;UK;UK;Camden and Islington NHS Foundation Trust, Oxford Health NHS Foundation Trust, South London and Maudsley NHS Foundation Trust;UK
+SemEHR: A general-purpose semantic search system to surface semantic data from clinical notes for tailored care, trial recruitment, and clinical research.;29361077;No (excluded in title and abstract screening);No medical research (focus on data provision);2018;;;;;;
+Patterning in Patient Referral to and Uptake of a National Exercise Referral Scheme (NERS) in Wales From 2008 to 2017: A Data Linkage Study.;32498367;Yes;n/a;2020;;No;UK;UK;SAIL Databank;UK
+Trazodone use and risk of dementia: A population-based cohort study.;30721226;Yes;n/a;2019;5;No;UK;UK;The Health Improvement Network;UK
+The electronic frailty index as an indicator of community healthcare service utilisation in the older population.;30590413;Yes;n/a;2019;18;No;UK;UK;Multiple;UK
+Ensemble-based Methods to Improve De-identification of Electronic Health Record Narratives.;30815108;No (excluded in title and abstract screening);No medical research (focus on anonymization);2018;;;;;;
+Neuropathy and Other Risk Factors for Lower Extremity Amputation in People with Diabetes Using a Clinical Data Repository System.;30194829;No (not retrieved);Not retrieved;2018;;;;;;
+De-identification of Clinical Text via Bi-LSTM-CRF with Neural Language Models.;32308882;No (excluded in title and abstract screening);No medical research (focus on anonymization);2019;;;;;;
+deidentify.;29854113;No (excluded before screening);Outside the search period;2017;;;;;;
+Challenges in the Analysis of Outcomes for Surgical Compared to Radiotherapy Treatment of Prostate Cancer.;29275307;Yes;n/a;2018;2;No;US;US;University of Pittsburgh Medical Center;US
+Using big data from real-world Australian rheumatology encounters to enhance clinical care and research.;31820719;No (excluded in title and abstract screening);No medical research (focus on data provision);2020;;;;;;
+Impact of Air Pollution and Trans-Boundary Haze on Nation-Wide Emergency Department Visits and Hospital Admissions in Singapore.;32246709;Yes;n/a;2020;;No;SG;SG;Multiple healthcare facilities, Ministry of Health Singapore;SG
+Exploring Older Adults' Strengths, Problems, and Wellbeing Using De-identified Electronic Health Record Data.;30815168;Yes;n/a;2018;;No;US;US;Not precisely specified;US
+Enhancing medical data quality through data curation: a case study in primary Sjögren's syndrome.;31287405;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2019;;;;;;
+The Effects of Ultraviolet C Irradiation in the Treatment of Chronic Wounds: A Retrospective, Descriptive Study.;31373559;Yes;n/a;2019;12;No;US;US;Northern Hospital of Surry County;US
+Bleeding Entity Recognition in Electronic Health Records: A Comprehensive Analysis of End-to-End Systems.;33936461;No (excluded in title and abstract screening);No tabular data;2020;;;;;;
+A Computable Phenotype Model for Classification of Men Who Have Sex With Men Within a Large Linked Database of Laboratory, Surveillance, and Administrative Healthcare Records.;34713035;Yes;n/a;2020;;No;CA;CA;University of British Columbia;CA
+Data Resource: population level family justice administrative data with opportunities for data linkage.;34233348;Yes;n/a;2020;;No;UK;UK;SAIL Databank;UK
+How effective are population health surveys for estimating prevalence of chronic conditions compared to anonymised clinical data?;34232969;Yes;n/a;2020;;No;UK;UK;SAIL Databank;UK
+A cloud-based bioinformatic analytic infrastructure and Data Management Core for the Expanded Program on Immunization Consortium.;33948273;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2020;;;;;;
+Interrogating an ICD-coded electronic health records database to characterize the epidemiology of prosopagnosia.;33948237;Yes;n/a;2020;18;No;US;US;Multiple;US
+Identifying children with Cystic Fibrosis in population-scale routinely collected data in Wales: A Retrospective Review.;33644411;Yes;n/a;2020;4;No;UK;UK;SAIL Databank;UK
+A Simulation Paradigm for Evaluation of Subtle Liver Lesions at Pediatric CT: Performance and Confidence.;33778672;No (excluded in title and abstract screening);No tabular data;2019;;;;;;
+Data Resource: Vascular Risk in Adult New Zealanders (VARIANZ) datasets.;34095534;No (excluded in title and abstract screening);No medical research (focus on data provision);2019;;;;;;
+Prognostic value of plasma circulating tumor DNA fraction across four common cancer types: a real-world outcomes study.;36208697;No (excluded before screening);Outside the search period;2023;;;;;;
+Real-world effectiveness of CPX-351 vs venetoclax and azacitidine in acute myeloid leukemia.;35507945;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Evaluating real-world treatment patterns and outcomes of mantle cell lymphoma.;35561314;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+The Effects of HER2 Alterations in EGFR Mutant Non-small Cell Lung Cancer.;34801409;Yes;n/a;2022;2;No;US;US;Caris Life Sciences;US
+Systemic Therapies Following Progression on First-line CDK4/6-inhibitor Treatment: Analysis of Real-world Data.;35552450;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Dermatologic Research Potential of the Observational Health Data Sciences and Informatics (OHDSI) Network.;33735862;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2022;;;;;;
+Data Ingestion for AI in Prostate Cancer.;35612065;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2022;;;;;;
+Venetoclax and Hypomethylating Agents as First-line Treatment in Newly Diagnosed Patients with AML in a Predominately Community Setting in the US.;35925602;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Data Pseudonymization in a Range That Does Not Affect Data Quality: Correlation with the Degree of Participation of Clinicians.;34783216;No (excluded in title and abstract screening);No medical research (focus on anonymization);2021;;;;;;
+Improving Data Quality in Clinical Research Informatics Tools.;35574572;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2022;;;;;;
+Benchmarking Modern Named Entity Recognition Techniques for Free-text Health Record Deidentification.;34457124;No (excluded in title and abstract screening);No medical research (focus on anonymization);2021;;;;;;
+Achalasia Quality Indicator Adherence.;36459295;No (excluded before screening);Outside the search period;2023;;;;;;
+Risk of Myocarditis from COVID-19 Infection in People Under Age 20: A Population-Based Analysis.;34341797;No (excluded before screening);Preprint;2022;;;;;;
+Cerner real-world data (CRWD) - A de-identified multicenter electronic health records database.;35434225;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+Research Goal-Driven Data Model and Harmonization for De-Identifying Patient Data in Radiomics.;34241789;No (excluded in title and abstract screening);No medical research (focus on anonymization);2021;;;;;;
+Improving domain adaptation in de-identification of electronic health records through self-training.;34363664;No (excluded in title and abstract screening);No medical research (focus on anonymization);2021;;;;;;
+Building trust in real-world data: lessons from INSIGHT, the UK's health data research hub for eye health and oculomics.;35916569;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2022;;;;;;
+E-Infrastructures and the divergent assetization of public health data: Expectations, uncertainties, and asymmetries.;33499771;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2021;;;;;;
+Integrating real world data and clinical trial results using survival data reconstruction and marginal moment-balancing weights.;34756156;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+The Serious Illness Population: Ascertainment via Electronic Health Record or Claims Data.;33933617;Yes;n/a;2021;;No;US;US;Optum;US
+Deriving household composition using population-scale electronic health record data-A reproducible methodology.;33780469;Yes;n/a;2021;;No;UK;UK;SAIL Databank;UK
+Data resource: Children receiving care and support and children in need, administrative records in Wales.;35719716;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+Standardized Health data and Research Exchange (SHaRE): promoting a learning health system.;35047761;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+Clozapine treatment and risk of COVID-19.;35815763;Yes;n/a;2022;5;Yes;UK;UK;Cambridgeshire and Peterborough NHS Foundation Trust, Cambridge University Hospitals NHS Foundation Trust;UK
+Computerized cardiotocography analysis during labor - A state-of-the-art review.;36541016;No (excluded before screening);Outside the search period;2023;;;;;;
+[Artificial intelligence in neurocritical care].;33491152;No (excluded before screening);Non-English;2021;;;;;;
+Building a best-in-class automated de-identification tool for electronic health records through ensemble learning.;34179842;No (excluded in title and abstract screening);No medical research (focus on anonymization);2021;;;;;;
+Quantitating and assessing interoperability between electronic health records.;35015861;Yes;n/a;2022;;No;US;US;CancerLinQ;US
+Public opinion on sharing data from health services for clinical and research purposes without explicit consent: an anonymous online survey in the UK.;35477868;No (excluded in title and abstract screening);Anonymous survey;2022;;;;;;
+A large language model for electronic health records.;36572766;No (excluded in title and abstract screening);No tabular data;2022;;;;;;
+Algorithms to anonymize structured medical and healthcare data: A systematic review.;36619476;No (excluded in title and abstract screening);No medical research (focus on anonymization);2022;;;;;;
+Using Large Aggregated De-Identified Electronic Health Record Data to Determine the Prevalence of Common Chronic Diseases in Pediatric Patients Who Visited Primary Care Clinics.;34022428;Yes;n/a;2021;;No;US;US;IBM;US
+Comparing Electronic Health Record Domains' Utility to Identify Transgender Patients.;36644028;Yes;n/a;2022;;No;US;US;Not precisely specified;US
+STAR sleep recording export software for automatic export and anonymization of sleep studies.;36151239;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2022;;;;;;
+Preconception health service provision among women with and without substance use disorders.;34871977;No (not retrieved);Not retrieved;2022;;;;;;
+Careful: An administrative child welfare and electronic health records linked dataset.;35966947;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+Development of an Open-Source Annotated Glaucoma Medication Dataset From Clinical Notes in the Electronic Health Record.;36441131;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+Protected Health Information Recognition of Unstructured Code-Mixed Electronic Health Records in Taiwan.;35673092;No (excluded in title and abstract screening);No medical research (focus on anonymization);2022;;;;;;
+Design and Development of a Medical Image Databank for Assisting Studies in Radiomics.;35166968;No (excluded in title and abstract screening);No tabular data;2022;;;;;;
+Use of Dental Related ICD Coding to Determine Comorbidities in Mississippi.;35440920;Yes;n/a;2022;11;No;US;US;Multiple;US
+Treatment patterns and clinical outcomes for patients with melanoma and central nervous system metastases: A real-world study.;34874127;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+How to Optimize Connection Between PACS and Clinical Data Warehouse: A Web Service Approach Based on Full Metadata Integration.;35672964;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2022;;;;;;
+Updating Urinary Microbiome Analyses to Enhance Biologic Interpretation.;35899056;No (excluded in title and abstract screening);No tabular data;2022;;;;;;
+Validation pipeline for machine learning algorithm assessment for multiple vendors.;35486572;No (excluded in title and abstract screening);No tabular data;2022;;;;;;
+Gender disparity in telehealth usage in Bangladesh during COVID-19.;35036972;Yes;n/a;2022;;Yes;BD;BD;Institute for Health Metrics and Evaluation;BD
+Ensemble Approaches to Recognize Protected Health Information in Radiology Reports.;35715655;No (excluded in title and abstract screening);No tabular data;2022;;;;;;
+Systemic Lupus Erythematosus Delivery Outcomes Are Unchanged Across Three Decades.;35670028;Yes;n/a;2022;13;No;US;US;Vanderbilt University Medical Center;US
+Predictive modeling of morbidity and mortality in COVID-19 hospitalized patients and its clinical implications.;33300013;No (excluded before screening);Preprint;2021;;;;;;
+Cost Analysis of Routine Vitrectomy Surgery.;33588067;No (not retrieved);Not retrieved;2021;;;;;;
+Sexual Orientation Demographic Data in a Clinical Cohort of Transgender Patients.;33730758;Yes;n/a;2021;;No;US;US;New York University Langone Health;US
+Student perceptions of a teaching electronic medical record in Health Administration education.;36474597;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2022;;;;;;
+Emulating Control Arms for Cancer Clinical Trials Using External Cohorts Created From Electronic Health Record-Derived Real-World Data.;34197637;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+The SHOnet learning health system: Infrastructure for continuous learning in pediatric rehabilitation.;35860324;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+Identifying Determinants of Disparities in Lung Cancer Survival Rates from Electronic Health Record Data.;35612188;Yes;n/a;2022;2;No;US;US;Mount Sinai Health System;US
+Compilation of longitudinal gut microbiome, serum metabolome, and clinical data in acute myeloid leukemia.;35918343;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+I2b2-etl: Python application for importing electronic health data into the informatics for integrating biology and the bedside platform.;36053173;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2022;;;;;;
+Data Quality Check in Cancer Imaging Research: Deploying and Evaluating the DIQCT Tool.;36085798;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2022;;;;;;
+Combinatorial Analysis of Phenotypic and Clinical Risk Factors Associated With Hospitalized COVID-19 Patients.;34713134;Yes;n/a;2021;22;Yes;UK;UK;UnitedHealth Group;US
+Aligning EHR Data for Pediatric Leukemia With Standard Protocol Therapy.;33656914;Yes;n/a;2021;2;No;US;US;Cerner Corporation;US
+Identifying developmental stuttering and associated comorbidities in electronic health records and creating a phenome risk classifier.;33894541;Yes;n/a;2021;5;No;US;US;Vanderbilt University Medical Center;US
+Factors Associated with Thoughts of Self-Harm or Suicide among Aboriginal and Torres Strait Islander People Presenting to Urban Primary Care: An Analysis of De-Identified Clinical Data.;35010413;Yes;n/a;2021;5;No;AU;AU;Southern Queensland Centre of Excellence in Aboriginal and Torres Strait Islander Primary Health Care;AU
+Recurrent neural network models (CovRNN) for predicting outcomes of patients with COVID-19 on admission to hospital: model development and validation using electronic health record data.;35466079;Yes;n/a;2022;22;Yes;US;US;Cerner Corporation, Optum;US
+The US Department of Veterans Affairs Science and Health Initiative to Combat Infectious and Emerging Life-Threatening Diseases (VA SHIELD): A Biorepository Addressing National Health Threats.;36601554;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+Development and Implementation of a Multisite Registry Using Structured Templates for Actionable Findings in the Kidney.;35346619;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+Increased healthcare costs by later stage cancer diagnosis.;36096813;Yes;n/a;2022;2;No;US;US;Optum;US
+Weather variables as important clinical predictors of bacterial diarrhoea among international travellers.;35134202;Yes;n/a;2022;1;No;US;US;Bumrungrad International Hospital, CIWEC Travel Medicine Center;TH, NP
+De-identifying Socioeconomic Data at the Census Tract Level for Medical Research Through Constraint-based Clustering.;35309009;No (excluded in title and abstract screening);No medical research (focus on anonymization);2021;;;;;;
+Physician variation in the de-adoption of ineffective statin and fibrate therapy.;33569804;Yes;n/a;2021;4;No;US;US;Optum;US
+The diagnostic certainty levels of junior clinicians: A retrospective cohort study.;34112021;Yes;n/a;2022;;No;UK;UK;Royal London Hospital;UK
+Leveraging genomic diversity for discovery in an electronic health record linked biobank: the UCLA ATLAS Community Health Initiative.;36085083;Yes;n/a;2022;;No;US;US;University of California Los Angeles;US
+Mining the Data: Exploring Rural Patients' Attitudes about the Use of Their Personal Information in Research.;35271430;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2022;;;;;;
+Investigation of the Utility of Features in a Clinical De-identification Model: A Demonstration Using EHR Pathology Reports for Advanced NSCLC Patients.;35252956;No (excluded in title and abstract screening);No medical research (focus on anonymization);2022;;;;;;
+Concept and Proof of the Lifelog Bigdata Platform for Digital Healthcare and Precision Medicine on the Cloud.;35040609;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+Mortality and readmission in the year following hospitalization for pneumonia among US adults.;34087608;Yes;n/a;2021;10;No;US;US;Optum;US
+Takotsubo cardiomyopathy in orthotopic liver transplant recipients: A cohort study using multi-center pooled electronic health record data.;35317180;Yes;n/a;2022;9;No;US;US;IBM;US
+Trust and Trade-Offs in Sharing Data for Precision Medicine: A National Survey of Singapore.;34575698;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2021;;;;;;
+Text mining occupations from the mental health electronic health record: a natural language processing approach using records from the Clinical Record Interactive Search (CRIS) platform in south London, UK.;33766838;Yes;n/a;2021;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+The quest for better clinical word vectors: Ontology based and lexical vector augmentation versus clinical contextual embeddings.;34004575;No (not retrieved);Not retrieved;2021;;;;;;
+Barriers and facilitators to qualitative data sharing in the United States: A survey of qualitative researchers.;34972126;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2021;;;;;;
+A Novel Imputation Approach for Sharing Protected Public Health Data.;34529494;No (not retrieved);Not retrieved;2021;;;;;;
+Clinical Impact of Adherence to NCCN Guidelines for Biomarker Testing and First-Line Treatment in Advanced Non-Small Cell Lung Cancer (aNSCLC) Using Real-World Electronic Health Record Data.;33537872;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+Clinical Burden of Concomitant Joint Disease in Psoriasis: A US-Linked Claims and Electronic Health Records Database Analysis.;33818686;Yes;n/a;2021;12;No;US;US;Optum;US
+Real-world treatment patterns and clinical outcomes among patients with advanced urothelial carcinoma in the United States.;34906410;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Rates of Pneumocystis jirovecii pneumonia and prophylaxis prescribing patterns in a large electronic health record cohort of patients with systemic lupus erythematosus.;36279805;Yes;n/a;2022;10;No;US;US;Vanderbilt University Medical Center;US
+Advancing data science in drug development through an innovative computational framework for data sharing and statistical analysis.;34773974;No (excluded in title and abstract screening);No medical research (focus on data provision);2021;;;;;;
+Understanding Women's Cardiovascular Health Using MyStrengths+MyHealth: A Patient-Generated Data Visualization Study of Strengths, Challenges, and Needs Differences.;33998130;Yes;n/a;2021;9;No;US;US;University of Minnesota;US
+Validation of rule-based algorithms to determine colorectal, breast, and cervical cancer screening status using electronic health record data from an urban healthcare system in New York City.;34976656;Yes;n/a;2021;2;No;US;US;New York University Langone Health;US
+Pediatric CYP2D6 metabolizer status and post-tonsillectomy nausea and vomiting after ondansetron.;36350309;No (excluded before screening);Outside the search period;2023;;;;;;
+CYP2D6 genotype and reduced codeine analgesic effect in real-world clinical practice.;33750887;Yes;n/a;2021;;No;US;US;Vanderbilt University Medical Center;US
+History of Endometriosis Is Independently Associated with an Increased Risk of Ovarian Cancer.;36013285;Yes;n/a;2022;14;No;KZ;ES;Spanish National Health System;ES
+Real-World Analysis of Thromboembolic Events and Mortality of COVID-19 Outpatients in the United States.;35996822;Yes;n/a;2022;9;Yes;US;US;Optum;US
+Predicting Discharge Destination of Critically Ill Patients Using Machine Learning.;32750906;No (not retrieved);Not retrieved;2021;;;;;;
+Early-onset eating disorders in Australian children: A national surveillance study showing increased incidence.;35979631;Yes;n/a;2022;5;No;AU;AU;Australian Paediatric Surveillance Unit;AU
+The ReIMAGINE Multimodal Warehouse: Using Artificial Intelligence for Accurate Risk Stratification of Prostate Cancer.;34870187;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2021;;;;;;
+COVID Symptoms, Symptom Clusters, and Predictors for Becoming a Long-Hauler Looking for Clarity in the Haze of the Pandemic.;36154716;Yes;n/a;2022;22;Yes;US;US;University of California;US
+Real-world treatment patterns of maintenance therapy in platinum-sensitive recurrent ovarian cancer.;34301411;No (not retrieved);Not retrieved;2021;;;;;;
+Characterizing cancer and COVID-19 outcomes using electronic health records.;35507598;Yes;n/a;2022;22;Yes;US;US;Optum;US
+Estimating the prevalence of neurosurgical interventions in adults with spina bifida using the Health Facts data set: implications for transition planning and the development of adult clinics.;34952525;Yes;n/a;2022;17;No;US;US;Cerner Corporation;US
+A deep attention model to forecast the Length Of Stay and the in-hospital mortality right on admission from ICD codes and demographic data.;33872817;Yes;n/a;2021;;No;KR;KR;Massachusetts Institute of Technology;US
+Physician decision support system for idiopathic sudden sensorineural hearing loss patients.;33177402;Yes;n/a;2021;8;No;TW;TW;Taipei Veterans General Hospital;TW
+Kidney, limb and ophthalmic complications, and death in patients with nonvalvular atrial fibrillation and type 2 diabetes prescribed rivaroxaban or warfarin: an electronic health record analysis.;34166150;Yes;n/a;2021;9;No;US;US;Optum;US
+Assessing Real-World Racial Differences Among Patients With Metastatic Triple-Negative Breast Cancer in US Community Practices.;35685754;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Describing characteristics and treatment patterns of patients hospitalized with COVID-19 by race and ethnicity in a national RWD during the early months of the pandemic.;36155644;Yes;n/a;2022;22;Yes;US;US;Optum;US
+Efficacy of immune checkpoint inhibitor therapy in patients with RET fusion-positive non-small-cell lung cancer.;34139897;Yes;n/a;2021;2;No;US;US;Flatiron Health, Guardant Health;US
+Early Prediction of Cardiogenic Shock Using Machine Learning.;35911549;Yes;n/a;2022;18;No;US;US;Banner Health;US
+QTc Prolongation with the Use of Hydroxychloroquine and Concomitant Arrhythmogenic Medications: A Retrospective Study Using Electronic Health Records Data.;35665910;Yes;n/a;2022;9;No;US;US;Cerner Corporation;US
+Development of a novel machine learning model to predict presence of nonalcoholic steatohepatitis.;33684933;Yes;n/a;2021;11;No;US;DE;Optum, National Institute of Diabetes and Digestive and Kidney Diseases;US
+Predicting the immediate impact of national lockdown on neovascular age-related macular degeneration and associated visual morbidity: an INSIGHT Health Data Research Hub for Eye Health report.;34518162;No (excluded before screening);Outside the search period;2023;;;;;;
+Complement-mediated hemolysis persists year round in patients with cold agglutinin disease.;34813663;Yes;n/a;2022;3;No;DE;US;Optum;US
+Using business intelligence and data visualization to understand the characteristics of failed appointments in dental school clinics.;33508149;Yes;n/a;2021;;No;US;US;University of Michigan;US
+Sociodemographic and clinical factors associated with receipt of biomarker testing in patients with metastatic colorectal cancer.;35837788;No (excluded before screening);Outside the search period;2023;;;;;;
+Upper Gastrointestinal Bleeding Due to a Left Gastric Artery Pseudoaneurysm: A Case Series.;36478315;No (excluded before screening);Outside the search period;2023;;;;;;
+Identifying community chronic kidney disease risk profile utilising general practice clinical records and spatial analysis: approach to inform policy and practice.;32449982;Yes;n/a;2021;14;No;AU;AU;Multiple;AU
+Women with Rheumatoid Arthritis have similar rates of postpartum maternal outcomes compared to women without autoimmune disease.;35152084;Yes;n/a;2022;13;No;US;US;Vanderbilt University Medical Center;US
+Real-World Data of Palbociclib in Combination With Endocrine Therapy for the Treatment of Metastatic Breast Cancer in Men.;34668577;Yes;n/a;2022;2;No;US;IT;Flatiron Health, Pfizer;US
+Validity of algorithms for identifying five chronic conditions in MedicineInsight, an Australian national general practice database.;34090424;Yes;n/a;2021;;No;AU;AU;NPS MedicineWise;AU
+Exploring public concerns for sharing and governance of personal health information: a focus group study.;34926998;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2021;;;;;;
+Real World Long-term Assessment of The Efficacy of Tocilizumab in Patients with COVID-19: Results From A Large De-identified Multicenter Electronic Health Record Dataset in the United States.;34597766;Yes;n/a;2021;22;Yes;US;US;Cerner Corporation;US
+Are adults with autism receiving regular preventive dental services?;35636432;No (excluded before screening);Outside the search period;2023;;;;;;
+Phenotypic prevalence of obesity and metabolic syndrome among an underdiagnosed and underscreened population of over 50 million children and adults.;36147487;Yes;n/a;2022;4;No;US;US;Epic Systems Corporation;US
+Comparative All-Cause Mortality Among a Large Population of Patients with Spinal Muscular Atrophy Versus Matched Controls.;34936050;Yes;n/a;2022;6;No;US;US;Optum;US
+Metabolic Acidosis and Cardiovascular Disease in CKD.;34746740;Yes;n/a;2021;14;No;CA;CA;Optum;US
+Hydrops fetalis-trends in associated diagnoses and mortality from 1997-2018.;34385586;Yes;n/a;2021;16;No;US;US;Pediatrix Medical Group;US
+Factors associated with COVID-19 viral and antibody test positivity and assessment of test concordance: a retrospective cohort study using electronic health records from the USA.;34598988;Yes;n/a;2021;22;Yes;US;US;Optum;US
+Impact of communication modality on caregiver ratings for deaf and hard of hearing children.;34024209;Yes;n/a;2022;8;No;US;US;Not precisely specified;US
+"Artificial Intelligence for Inflammatory Bowel Diseases (IBD); Accurately Predicting Adverse Outcomes Using Machine Learning.";35476181;Yes;n/a;2022;11;No;US;US;Optum;US
+Clinical efficacy, timing, and outcomes of ERCP for management of bile duct leaks: a nationwide cohort study.;33553588;Yes;n/a;2021;11;No;US;US;IBM;US
+A practical approach to identifying autistic adults within the electronic health record.;36377765;No (excluded before screening);Outside the search period;2023;;;;;;
+Hospital admissions for dental disorders in patients with severe mental illness in Southeast London: A register-based cohort study.;33538014;Yes;n/a;2021;11;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Building External Control Arms From Patient-Level Electronic Health Record Data to Replicate the Randomized IMblaze370 Control Arm in Metastatic Colorectal Cancer.;33891473;Yes;n/a;2021;2;No;CH;CH;Flatiron Health, Foundation Medicine;US
+Artificial Intelligence for Prognostic Scores in Oncology: a Benchmarking Study.;33937744;Yes;n/a;2021;2;No;DE;DE;Flatiron Health;US
+Mortality Prediction Analysis among COVID-19 Inpatients Using Clinical Variables and Deep Learning Chest Radiography Imaging Features.;35894016;Yes;n/a;2022;22;Yes;US;US;Stony Brook University;US
+Clinico-Genomic Characterization of Patients with Metastatic Urothelial Carcinoma in Real-World Practice Identifies a Novel Bladder Immune Performance Index (BIPI).;35877091;Yes;n/a;2022;2;No;UK;CH;Flatiron Health;US
+Predicting In-hospital Mortality Using D-Dimer in COVID-19 Patients With Acute Ischemic Stroke.;34335456;Yes;n/a;2021;9;Yes;US;US;Optum;US
+Left truncation in linked data: A practical guide to understanding left truncation and applying it using SAS and R.;35843723;No (excluded before screening);Outside the search period;2023;;;;;;
+Does real-time artificial intelligence-based visual pathology enhancement of three-dimensional optical coherence tomography scans optimise treatment decision in patients with nAMD? Rationale and design of the RAZORBILL study.;34362776;No (excluded before screening);Outside the search period;2023;;;;;;
+Real-world treatment patterns and outcomes of abemaciclib for the treatment of HR+, HER2- metastatic breast cancer.;33970738;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+Development and external validation of prediction models for adverse health outcomes in rheumatoid arthritis: A multinational real-world cohort analysis.;35728447;Yes;n/a;2022;13;No;NL;NL;Optum, Multiple;US, ES, EE, NL, DE, FR, UK, AU, JP
+Development of a screening algorithm for borderline personality disorder using electronic health records.;35831356;Yes;n/a;2022;5;No;US;US;Cerner Corporation;US
+Can natural language processing models extract and classify instances of interpersonal violence in mental healthcare electronic records: an applied evaluative study.;35172999;No (excluded in title and abstract screening);No tabular data;2022;;;;;;
+Community-acquired pneumonia in infants: Not simply an acute event with complete recovery.;34864372;Yes;n/a;2022;10;No;US;US;Optum;US
+Prevalence of non-communicable diseases and associated medication use among Syrian refugees in Lebanon: an analysis of country-wide data from the Sijilli electronic health records database.;34663406;Yes;n/a;2021;;No;LB;LB;American University of Beirut;LB
+Accuracy of emergency physicians' self-estimates of CT scan utilization and its potential effect on an audit and feedback intervention: a randomized trial.;34315533;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2021;;;;;;
+Real-World Trends in Characteristics of Patients with Migraine Newly Initiated on Erenumab in the USA: A Retrospective Analysis.;33763828;Yes;n/a;2021;6;No;US;CH;Optum;US
+Targeted Program in an Academic Rheumatology Practice to Improve Compliance With Opioid Prescribing Guidelines for the Treatment of Chronic Pain.;32558375;No (excluded in full-paper screening);No real-world application (findings not based on real-world data);2021;;;;;;
+Identifying vulnerable populations at a university during the COVID-19 pandemic.;33577412;No (excluded before screening);Outside the search period;2023;;;;;;
+Association Between Parental Type 1 and Type 2 Diabetes Diagnosis and Major Osteoporotic Fracture Risk in Adult Offspring: A Population-Based Cohort Study.;34053878;No (not retrieved);Not retrieved;2022;;;;;;
+Adverse childhood experiences and adult self-harm in a female forensic population.;33958018;Yes;n/a;2022;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Validation analysis of a composite real-world mortality endpoint for patients with cancer in the United States.;33998685;Yes;n/a;2021;5;No;US;US;Flatiron Health;US
+Word embeddings trained on published case reports are lightweight, effective for clinical tasks, and free of protected health information.;34920127;No (excluded in title and abstract screening);No tabular data;2022;;;;;;
+Influence of sex on survival rates of HPV-positive oropharyngeal cancers.;36119465;Yes;n/a;2022;2;No;DE;DE;TriNetX;various
+Use of large scale EHR data to evaluate A1c utilization among sickle cell disease patients.;34537047;Yes;n/a;2021;3;No;US;US;Cerner Corporation;US
+Timely orchiopexy by 18 months of age: Are we meeting the standards defined by the 2014 AUA guidelines?;35981940;Yes;n/a;2022;17;No;US;US;Cerner Corporation;US
+Variability in 30-day major amputation rates following endovascular peripheral vascular intervention for critical limb ischemia.;35603755;Yes;n/a;2022;9;No;US;US;Cerner Corporation;US
+Psychiatric healthcare resource utilization following initiation of aripiprazole once-monthly: a retrospective real-world study.;36380678;No (excluded before screening);Outside the search period;2023;;;;;;
+Development and validation of an automated basal cell carcinoma histopathology information extraction system using natural language processing.;36439548;No (excluded in title and abstract screening);No tabular data;2022;;;;;;
+A new approach to identifying patients with elevated risk for Fabry disease using a machine learning algorithm.;34930374;Yes;n/a;2021;4;No;US;US;OM1;US
+Emergency Department Drug Surveillance (EDDS) hospital's urinalysis results compared with expanded re-testing by an independent laboratory, a pilot study.;34871979;No (not retrieved);Not retrieved;2022;;;;;;
+The impact of COVID-19 on adjusted mortality risk in care homes for older adults in Wales, UK: a retrospective population-based cohort study for mortality in 2016-2020.;32951042;Yes;n/a;2021;22;Yes;UK;UK;SAIL Databank;UK
+Development and Validation of Algorithms to Identify COVID-19 Patients Using a US Electronic Health Records Database: A Retrospective Cohort Study.;35633659;Yes;n/a;2022;22;Yes;US;US;Optum;US
+Academic-industry partnership advancing cannabis science: A Complementary Care Practice-Based Research Network.;35247600;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+Evaluation for clinical benefit of metformin in patients with idiopathic pulmonary fibrosis and type 2 diabetes mellitus: a national claims-based cohort analysis.;35410255;Yes;n/a;2022;10;No;US;US;Optum;US
+Epidemiology of Eustachian tube dysfunction and related otologic diagnoses among children with achondroplasia.;36257169;No (not retrieved);Not retrieved;2022;;;;;;
+Ranking Methodology to Evaluate the Severity of a Quality Gap Using a National EHR Database.;34457172;Yes;n/a;2021;3;No;US;US;Cerner Corporation;US
+Antidepressant treatment and blood pressure control in patients with comorbid depression and treatment resistant hypertension.;34906849;No (not retrieved);Not retrieved;2022;;;;;;
+Irritable bowel syndrome is strongly associated with the primary and idiopathic mast cell disorders.;34535952;Yes;n/a;2022;11;No;US;US;IBM;US
+Middle ear cholesteatoma prevalence in over 3,600 children with Turner Syndrome.;35987131;No (not retrieved);Not retrieved;2022;;;;;;
+Provider specialty and odds of a new codeine, hydrocodone, oxycodone and tramadol prescription before and after the CDC opioid prescribing guideline publication.;33636196;No (not retrieved);Not retrieved;2021;;;;;;
+Performance of Multiple Imputation Using Modern Machine Learning Methods in Electronic Health Records Data.;36722803;No (excluded before screening);Outside the search period;2023;;;;;;
+Underutilization of prophylactic rectal indomethacin and pancreatic duct stent for prevention of post-ERCP Pancreatitis.;34222616;Yes;n/a;2021;11;No;US;US;IBM;US
+Impact of diabetes status and related factors on COVID-19-associated hospitalization: A nationwide retrospective cohort study of 116,370 adults with SARS-CoV-2 infection.;36400172;Yes;n/a;2022;4;Yes;US;US;Cerner Corporation;US
+Differential frequency in imaging-based outcome measurement: Bias in real-world oncology comparative-effectiveness studies.;34227170;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Early Albumin Infusion Is Associated With Greater Survival to Discharge Among Patients With Sepsis/Septic Shock Who Develop Severe Acute Kidney Injury Among Patients With Sepsis/Septic Shock Who Develop Severe Acute Kidney Injury.;36583206;Yes;n/a;2022;18;No;US;US;Cerner Corporation;US
+Achievement of glycemic control and antidepressant medication use in comorbid depression and type 2 diabetes.;36566931;No (excluded before screening);Outside the search period;2023;;;;;;
+Incidence of COVID-19 Vaccination-Related Uveitis and Effects of Booster Dose in a Tertiary Uveitis Referral Center.;35814745;Yes;n/a;2022;22;Yes;SG;SG;Singapore National Eye Center;SG
+Associations with baseline visual acuity in 12,414 eyes starting treatment for neovascular AMD.;36028762;No (excluded before screening);Outside the search period;2023;;;;;;
+De-identifying Spanish medical texts - named entity recognition applied to radiology reports.;33781334;No (excluded in title and abstract screening);No medical research (focus on anonymization);2021;;;;;;
+Using machine learning to model older adult inpatient trajectories from electronic health records data.;36691609;No (excluded before screening);Outside the search period;2023;;;;;;
+Measuring continuity of care in general practice: a comparison of two methods using routinely collected data.;35995578;Yes;n/a;2022;;No;UK;UK;Multiple;UK
+Assessing Oncologists' Adoption of Biomarker Testing in Metastatic Colorectal Cancer Using Real-World Data.;36149298;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Racial inequities in second-line treatment and overall survival among patients with metastatic breast cancer.;36028783;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Long-term benzodiazepines and z-drug prescribing in Australian general practice between 2011 and 2018: A national study.;34918876;Yes;n/a;2022;;No;AU;AU;NPS MedicineWise;AU
+Evaluation of Electronic Health Records to Monitor Illness From Harmful Algal Bloom Exposure in the United States.;36060209;Yes;n/a;2021;20;No;US;US;IBM;US
+The incidence of hydrocephalus among patients with and without spinal muscular atrophy (SMA): Results from a US electronic health records study.;33962637;Yes;n/a;2021;6;No;US;US;Optum;US
+A machine learning approach to identifying patients with pulmonary hypertension using real-world electronic health records.;36528138;No (excluded before screening);Outside the search period;2023;;;;;;
+A Hybrid System of Braden Scale and Machine Learning to Predict Hospital-Acquired Pressure Injuries (Bedsores): A Retrospective Observational Cohort Study.;36611323;Yes;n/a;2022;12;No;US;US;ChristianaCare hospital;US
+Pancreatic adenocarcinoma in liver transplant recipients: a case series.;34825179;Yes;n/a;2021;2;No;US;US;Vanderbilt University Medical Center;US
+Preoperative vitamin D deficiency is associated with increased risk of postoperative hypocalcemia after total thyroidectomy.;33789986;Yes;n/a;2021;4;No;US;US;Cerner Corporation;US
+Characterizing Thrombotic Complication Risk Factors Associated With COVID-19 via Heterogeneous Patient Data: Retrospective Observational Study.;36044652;Yes;n/a;2022;22;Yes;US;US;IBM, Mass General Brigham;US
+Characterizing sleep disorders in an autism-specific collection of electronic health records.;35367909;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2022;;;;;;
+Real world evidence of the use of metamizole (dipyrone) by the Brazilian population. A retrospective cohort with over 380,000 patients.;35584441;Yes;n/a;2022;;No;BR;BR;Amil;BR
+Characterization of a Real-World Response Variable and Comparison with RECIST-Based Response Rates from Clinical Trials in Advanced NSCLC.;33674928;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+Are Social Determinants of Health Associated With Onset of Rehabilitation Services in Patients Hospitalized for Traumatic Brain Injury?;36730956;No (excluded before screening);Outside the search period;2023;;;;;;
+COVID-19 severity and outcome in multiple sclerosis: Results of a national, registry-based, matched cohort study.;34418735;Yes;n/a;2021;6;Yes;US;US;Optum;US
+Performance of diagnostic coding and laboratory testing results to measure COVID-19 during pregnancy and associations with pregnancy outcomes.;35077581;Yes;n/a;2022;15;Yes;US;US;Optum;US
+Transporting observational study results to a target population of interest using inverse odds of participation weighting.;36520950;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Beyond Frontline Therapy with Abiraterone and Enzalutamide in Metastatic Castration-Resistant Prostate Cancer: A Real-World US Study.;34373223;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+Measuring text similarity and its associated factors in electronic nursing progress notes: A retrospective review.;35581712;No (excluded before screening);Outside the search period;2023;;;;;;
+Disorder predispositions and protections of Labrador Retrievers in the UK.;34262062;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2021;;;;;;
+CHA(2)DS(2)VASc score as a predictor of ablation success defined by continuous long-term monitoring.;35917047;Yes;n/a;2022;9;No;US;US;Optum;US
+Thromboembolism, bleeding and vascular death in nonvalvular atrial fibrillation patients with type 2 diabetes receiving rivaroxaban or warfarin.;33637082;Yes;n/a;2021;9;No;US;US;Optum;US
+The correlations among racial/ethnic groups, hypertriglyceridemia, thrombosis, and mortality in hospitalized patients with COVID-19.;36494155;Yes;n/a;2022;22;Yes;US;US;Not precisely specified;US
+Genomic testing among patients with newly diagnosed advanced non-small cell lung cancer in the United States: A contemporary clinical practice patterns study.;35397297;Yes;n/a;2022;2;No;ES;FR;Flatiron Health;US
+Front-line treatment patterns in multiple myeloma: An analysis of U.S.-based electronic health records from 2011 to 2019.;34402201;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+A Case Report of Secondary Syphilis Co-Infected with Measles: A Diagnostic Dilemma with Fever and Rash.;35622697;Yes;n/a;2022;1;No;TH;JP;Hospital for Tropical Diseases;TH
+Use of the PROMIS-10 global health in patients with chronic low back pain in outpatient physical therapy: a retrospective cohort study.;34487270;Yes;n/a;2021;13;No;US;US;University of California;US
+Collection of cancer Patient Reported Outcome Measures (PROMS) to link with primary and secondary electronic care records to understand and improve long term cancer outcomes: A protocol paper.;35427401;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2022;;;;;;
+Inequity in access to continuous glucose monitoring and health outcomes in paediatric diabetes, a case for national continuous glucose monitoring funding: A cross-sectional population study of children with type 1 diabetes in New Zealand.;36419466;No (excluded before screening);Outside the search period;2023;;;;;;
+Breed and conformational predispositions for prolapsed nictitating membrane gland (PNMG) in dogs in the UK: A VetCompass study.;35081121;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2022;;;;;;
+Long-term prescription opioid users' risk for new-onset depression increases with frequency of use.;34855645;Yes;n/a;2022;5;No;US;US;Optum;US
+Trends and patterns of benzodiazepines and Z-drugs prescriptions in Australian general practice: A national study (2011-2018).;36217261;No (excluded before screening);Outside the search period;2023;;;;;;
+Effectiveness of the Recombinant Zoster Vaccine for Herpes Zoster Ophthalmicus in the United States.;33892049;Yes;n/a;2021;1;No;US;US;Optum;US
+Performance assessment of different machine learning approaches in predicting diabetic ketoacidosis in adults with type 1 diabetes using electronic health records data.;33480091;Yes;n/a;2021;4;No;US;US;Optum;US
+Loss of function of lysosomal acid lipase (LAL) profoundly impacts osteoblastogenesis and increases fracture risk in humans.;33838322;Yes;n/a;2021;4;No;US;US;Optum;US
+Treatment Patterns in US Patients Receiving First-Line and Second-Line Therapy for Metastatic Pancreatic Ductal Adenocarcinoma in the Real World.;36197644;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Investigation of dual antiplatelet therapy after coronary stenting in patients with chronic kidney disease.;34347826;Yes;n/a;2021;14;No;TW;TW;Taipei Medical University Hospital;TW
+Prevalence of New-Onset Tinnitus after COVID-19 Vaccination with Comparison to Other Vaccinations.;36098476;No (excluded before screening);Outside the search period;2023;;;;;;
+Opioid dosing among patients with 3 or more years of continuous prescription opioid use before and after the CDC opioid prescribing guideline.;34098282;No (not retrieved);Not retrieved;2021;;;;;;
+The Role of Cytoreductive Nephrectomy in Metastatic Renal Cell Carcinoma: A Real-World Multi-Institutional Analysis.;35212574;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Demographic factors, psychiatric and physical comorbidities associated with starting preexposure prophylaxis in a nationally distributed cohort.;36368340;No (not retrieved);Not retrieved;2022;;;;;;
+Impact of COVID-19 Pandemic on Use of Telemedicine Services in an Academic Medical Center.;34042775;Yes;n/a;2021;22;Yes;US;US;Mount Sinai Health System;US
+Cardiovascular outcomes with sodium-glucose cotransporter-2 inhibitors vs other glucose-lowering drugs in 13 countries across three continents: analysis of CVD-REAL data.;34332558;Yes;n/a;2021;9;No;UK;UK;Multiple;AU, CA, DK, FI, DE, IL, JP, NO, SG, KR, ES, SE, TW, US
+Leveraging Large-Scale Genetics of PTSD and Cardiovascular Disease to Demonstrate Robust Shared Risk and Improve Risk Prediction Accuracy.;36069022;Yes;n/a;2022;5;No;US;US;Mass General Brigham;US
+Real-World Treatment Patterns and Outcomes Among Multiple Myeloma Patients with Asthma and COPD in the United States.;33728584;Yes;n/a;2021;2;No;US;US;Optum;US
+Prognostic model to identify and quantify risk factors for mortality among hospitalised patients with COVID-19 in the USA.;33827848;Yes;n/a;2021;22;Yes;US;US;Optum;US
+COVID-19 Outcomes in Myasthenia Gravis Patients: Analysis From Electronic Health Records in the United States.;35418937;Yes;n/a;2022;6;Yes;US;US;Optum;US
+Outcomes for continuous subcutaneous insulin infusion users in young adults from lower socioeconomic backgrounds.;34277976;Yes;n/a;2021;4;No;US;US;Optum;US
+Life expectancy and risk of death in 6791 communities in England from 2002 to 2019: high-resolution spatiotemporal analysis of civil registration data.;34653419;Yes;n/a;2021;;No;UK;UK;Imperial Colllege London;UK
+Real-world retrospective analysis of outcomes in patients undergoing bariatric surgery with class 1 obesity.;35241377;No (not retrieved);Not retrieved;2022;;;;;;
+Accuracy of Cone-Beam Computed Tomography Versus Periapical Radiography Measurements When Planning Placement of Implants in the Posterior Maxilla: A Retrospective Study.;34270273;No (not retrieved);Not retrieved;2021;;;;;;
+Biologic use in psoriatic arthritis and ankylosing spondylitis patients: a descriptive epidemiological study using linked, routine data in Wales, UK.;34632260;Yes;n/a;2021;13;No;UK;UK;SAIL Databank;UK
+Real-World Treatment Patterns and Overall Survival of Patients with Metastatic Castration-Resistant Prostate Cancer in the US Prior to PARP Inhibitors.;34282527;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+Each patient is a research biorepository: informatics-enabled research on surplus clinical specimens via the living BioBank.;33166379;No (excluded in title and abstract screening);No medical research (focus on data provision);2021;;;;;;
+The Association of Real-World CA 19-9 Level Monitoring Patterns and Clinical Outcomes Among Patients With Metastatic Pancreatic Ductal Adenocarcinoma.;34671563;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+Real-world Use of Radiation for Newly Diagnosed Brain Metastases in Patients With ALK-positive Lung Cancer Receiving First-line ALK Inhibitor.;35870711;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Multisystem Inflammatory Syndrome Associated with SARS-CoV-2 Infection in an Adult: A Case Report from the Maldives.;34698279;Yes;n/a;2021;22;Yes;MV;JP;Indira Gandhi Memorial Hospital;MV
+Medication prescribing in face-to-face versus telehealth consultations during the COVID-19 pandemic in Australian general practice: a retrospective observational study.;34819296;Yes;n/a;2022;;Yes;AU;AU;Outcome Health;AU
+Unmasking Fracture Risk in Type 2 Diabetes: The Association of Longitudinal Glycemic Hemoglobin Level and Medications.;34888676;Yes;n/a;2022;4;No;US;US;Optum;US
+Study of patient characteristics, treatment patterns, EGFR testing patterns and outcomes in real-world patients with EGFRm(+) non-small cell lung cancer.;34544302;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Identifying the Risk of Sepsis in Patients With Cancer Using Digital Health Care Records: Machine Learning-Based Approach.;35704364;Yes;n/a;2022;1;No;KR;KR;Samsung Medical Center;KR
+Predictors of Sudden Cardiac Arrest Among Patients With Post-Myocardial Infarction Ejection Fraction Greater Than 35.;34259015;Yes;n/a;2021;9;No;US;US;Optum;US
+Cost-minimization analysis of biweekly dosing of cetuximab and FOLFIRI compared with panitumumab and FOLFOX for first-line treatment of patients with KRAS wild-type metastatic colorectal cancer in the United States.;34529522;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+Obstetric near misses among women with serious mental illness: data linkage cohort study.;33427147;Yes;n/a;2021;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Understanding Factors Associated With Anaplastic Lymphoma Kinase Testing Delays in Patients With Non-Small Cell Lung Cancer in a Large Real-World Oncology Database.;34752598;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+PerFECT 2.0: A Web-Based Platform Designed to Facilitate and Support the Diagnosis of Patients with Idiopathic Pulmonary Fibrosis in Italy.;33974238;No (excluded in title and abstract screening);No medical research (focus on data provision);2021;;;;;;
+Comorbidity clusters associated with newly treated type 2 diabetes mellitus: a Bayesian nonparametric analysis.;36450743;Yes;n/a;2022;4;No;CH;CH;The Health Improvement Network;UK
+Prolonged PR interval and incidence of atrial fibrillation, heart failure admissions, and mortality in patients with implanted cardiac devices: A real-world survey.;36993911;No (excluded before screening);Outside the search period;2023;;;;;;
+[The first data challenge of the french society of pathology: An international competition in 2020, a research tool in A.I. for the future?].;35012784;No (excluded in title and abstract screening);No tabular data;2022;;;;;;
+Effectiveness of the recombinant zoster vaccine among Kaiser Permanente Hawaii enrollees aged 50 and older: A retrospective cohort study.;34116874;Yes;n/a;2021;1;No;US;US;Kaiser Permanente Hawaii;US
+Outcomes for Patients With Chronic Lymphocytic Leukemia (CLL) Previously Treated With Both a Covalent BTK and BCL2 Inhibitor in the United States: A Real-World Database Study.;36335022;No (excluded before screening);Outside the search period;2023;;;;;;
+Adherence to guidelines-recommended diagnostic testing was associated with overall survival in patients with diffuse large B-cell lymphoma after rituximab-based treatment: an observational cohort study.;35974175;No (excluded before screening);Outside the search period;2023;;;;;;
+Spatial N-glycomics of the human aortic valve in development and pediatric endstage congenital aortic valve stenosis.;33516683;Yes;n/a;2021;9;No;US;US;Vanderbilt University Medical Center;US
+Temporal trends in primary care-recorded self-harm during and beyond the first year of the COVID-19 pandemic: Time series analysis of electronic healthcare records for 2.8 million patients in the Greater Manchester Care Record.;34746726;Yes;n/a;2021;5;Yes;UK;UK;NHS Greater Manchester;UK
+Metabolic acidosis is associated with increased risk of adverse kidney outcomes and mortality in patients with non-dialysis dependent chronic kidney disease: an observational cohort study.;34011303;Yes;n/a;2021;14;No;CA;US;Optum;US
+Effect of prior treatments on post-CDK 4/6 inhibitor survival in hormone receptor-positive breast cancer.;36539670;No (excluded before screening);Outside the search period;2023;;;;;;
+Association of metabolic acidosis with fractures, falls, protein-calorie malnutrition and failure to thrive in patients with chronic kidney disease.;35756750;Yes;n/a;2022;14;No;US;CA;Optum;US
+Hospitalization Rates in Patients with Heart Failure and Reduced Ejection Fraction Initiating Sacubitril/Valsartan or Angiotensin-Converting Enzyme Inhibitors/Angiotensin Receptor Blockers: A Retrospective Cohort Study.;35094306;Yes;n/a;2022;9;No;IE;CH;Optum;US
+Association of depression symptom severity with short-term risk of an initial hospital encounter in adults with major depressive disorder.;34001045;Yes;n/a;2021;5;No;US;US;Optum;US
+Effectiveness and safety of rivaroxaban versus warfarin in obese patients with acute venous thromboembolism: analysis of electronic health record data.;32588288;Yes;n/a;2021;9;No;US;US;Optum;US
+Why Test study protocol: a UK-wide audit using the Primary Care Academic CollaboraTive (PACT) to explore the reasons for primary care testing.;35508322;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2022;;;;;;
+A Retrospective Study of COVID-19-Related Urgent Medical Visits and Hospitalizations After Outpatient COVID-19 Diagnosis in the US.;33961213;Yes;n/a;2021;22;Yes;US;US;Optum;US
+Temperature and place associations with Inuit mental health in the context of climate change.;33857460;Yes;n/a;2021;5;No;CA;CA;Multiple;CA
+Disparities in Prehospital Non-Traumatic Pain Management.;35939557;No (excluded before screening);Outside the search period;2023;;;;;;
+Indirect acute effects of the COVID-19 pandemic on physical and mental health in the UK: a population-based study.;33612430;Yes;n/a;2021;5;Yes;UK;UK;Clinical Practice Research Datalink;UK
+Machine Learning Based Prediction of Gamma Passing Rate for VMAT Radiotherapy Plans.;36556291;Yes;n/a;2022;2;No;PL;PL;Maria Sklodowska-Curie National Research Institute of Oncology;PL
+Early detection of COVID-19 outbreaks using human mobility data.;34283839;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2021;;;;;;
+Development and Evaluation of a Point-of-Care Test in a Low-Resource Setting with High Rates of Chlamydia trachomatis Urogenital Infections in Fiji.;33910964;Yes;n/a;2021;1;No;US;US;Fijian Ministry of Health and Medical Services health centers and outreach locations;FJ
+Opioid use disorder and health service utilization among COVID-19 patients in the US: A nationwide cohort from the Cerner Real-World Data.;34109308;Yes;n/a;2021;5;Yes;US;US;Cerner Corporation;US
+FIMED: Flexible management of biomedical data.;34740063;No (excluded in title and abstract screening);No medical research (focus on data provision);2021;;;;;;
+Real-World Outcomes and Prognostic Factors Among Patients with Advanced Non-Small Cell Lung Cancer and High PD-L1 Expression Treated with Immune Checkpoint Inhibitors as First-Line Therapy.;36415537;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Defining clinical subtypes of adult asthma using electronic health records: Analysis of a large UK primary care database with external validation.;36529028;No (excluded before screening);Outside the search period;2023;;;;;;
+Quantifying Variation in Treatment Utilization for Type 2 Diabetes Across Five Major University of California Health Systems.;33531419;Yes;n/a;2021;4;No;US;US;University of California;US
+Immunolab: Combining targeted real-world data with advanced analytics to generate evidence at scale in immunology.;36407087;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+A reporting and analysis framework for structured evaluation of COVID-19 clinical and imaging data.;33846548;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2021;;;;;;
+Feasibility and accuracy of linking a heart failure registry to the national claims database using indirect identifiers.;36549971;No (excluded before screening);Outside the search period;2023;;;;;;
+Ethnic inequalities in mental and physical multimorbidity in women of reproductive age: a data linkage cohort study.;35840295;Yes;n/a;2022;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Quantifying the Value of Multigene Testing in Resected Early Stage Lung Adenocarcinoma.;36494074;No (excluded before screening);Outside the search period;2023;;;;;;
+Adoption and Deadoption of Medications to Treat Hospitalized Patients With COVID-19.;35923589;Yes;n/a;2022;22;Yes;US;US;Optum;US
+Increased risk for COVID-19 breakthrough infection in fully vaccinated patients with substance use disorders in the United States between December 2020 and August 2021.;34612005;Yes;n/a;2022;22;Yes;US;US;TriNetX;US
+Provider Teams Outperform Solo Providers In Managing Chronic Diseases And Could Improve The Value Of Care.;33646870;Yes;n/a;2021;;No;US;US;Athenahealth;US
+Creating an e-cohort of individuals with lived experience of homelessness and subsequent mortality in Wales, UK.;34121112;Yes;n/a;2022;;Yes;UK;UK;SAIL Databank;UK
+Impact of the temporary suspension of the Bowel Screening Wales programme on inequalities during the COVID-19 pandemic: a retrospective register-based study.;36929968;No (excluded in full-paper screening);Abstract only;2022;;;;;;
+Artificial Intelligence in Dermatology: A Threat or an Opportunity?;35249709;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2022;;;;;;
+Can AI predict epithelial lesion categories via automated analysis of cervical biopsies: The TissueNet challenge?;36605109;No (excluded in title and abstract screening);No tabular data;2022;;;;;;
+CHAIMELEON Project: Creation of a Pan-European Repository of Health Imaging Data for the Development of AI-Powered Cancer Management Tools.;35280732;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2022;;;;;;
+Economic burden of joint analysis in psoriasis: US claims analysis.;34889582;Yes;n/a;2021;12;No;US;US;Optum;US
+Clinical Data Prediction Model to Identify Patients With Early-Stage Pancreatic Cancer.;33739856;Yes;n/a;2021;2;No;US;US;Optum;US
+The Effect of Nonsteroidal Anti-inflammatory Drugs and Selective COX-2 Inhibitors on Bone Healing.;34421436;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2021;;;;;;
+Classification of clinically relevant intravascular volume status using point of care ultrasound and machine learning.;36186002;No (excluded in title and abstract screening);No tabular data;2022;;;;;;
+Relation Classification for Bleeding Events From Electronic Health Records Using Deep Learning Systems: An Empirical Study.;34255697;No (excluded in title and abstract screening);No tabular data;2021;;;;;;
+Herpes zoster vaccine effectiveness against herpes zoster and postherpetic neuralgia in New Zealand: a retrospective cohort study.;36879782;No (excluded before screening);Outside the search period;2023;;;;;;
+Evaluation of COVID-19 Mortality and Adverse Outcomes in US Patients With or Without Cancer.;34709356;Yes;n/a;2022;22;Yes;US;US;Optum;US
+Listening to Mental Health Crisis Needs at Scale: Using Natural Language Processing to Understand and Evaluate a Mental Health Crisis Text Messaging Service.;34939068;No (excluded in title and abstract screening);No tabular data;2021;;;;;;
+A Visualization and Benchmarking Simulator for Clinical Data.;36325867;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2022;;;;;;
+Discovery of Knowledge in the Incidence of a Type of Lung Cancer for Patients through Data Mining Models.;35685154;Yes;n/a;2022;2;No;IQ;ET;Not precisely specified;IQ
+Training a machine learning classifier to identify ADHD based on real-world clinical data from medical records.;35902654;Yes;n/a;2022;5;No;DE;DE;Technical University Dresden;DE
+An Unsupervised Cluster Analysis of Post-COVID-19 Mental Health Outcomes and Associated Comorbidities.;37128434;Yes;n/a;2022;5;Yes;US;US;Rhode Island Quality Institute;US
+Factors Associated With COVID-19 Death in the United States: Cohort Study.;35377319;Yes;n/a;2022;22;Yes;US;US;Optum;US
+Studying patterns and predictors of HIV viral suppression using A Big Data approach: a research protocol.;35120435;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2022;;;;;;
+Ethnic inequalities in COVID-19 vaccine uptake and comparison to seasonal influenza vaccine uptake in Greater Manchester, UK: A cohort study.;35239661;Yes;n/a;2022;22;Yes;UK;UK;NHS Greater Manchester;UK
+Characteristics of available studies and dissemination of research using major clinical data sharing platforms.;34407656;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2021;;;;;;
+Cartilage debris and osteoarthritis risk factors influence gene expression in the synovium in end stage osteoarthritis.;35679783;No (not retrieved);Not retrieved;2022;;;;;;
+Cardiovascular disease preventive medication dispensing for almost every New Zealander 65 years and over: a preventive treatment paradox?;35077560;Yes;n/a;2022;9;No;NZ;NZ;New Zeeland Ministry of Health;NZ
+Approaches for Enhanced Extrapolation of Long-Term Survival Outcomes Using Electronic Health Records of Patients With Cancer.;35094796;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+ERBB2 Copy Number as a Quantitative Biomarker for Real-World Outcomes to Anti-Human Epidermal Growth Factor Receptor 2 Therapy in Advanced Gastroesophageal Adenocarcinoma.;35050711;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Death from cancer: frequent unscheduled care.;35351803;Yes;n/a;2022;2;No;UK;UK;Multiple;UK
+Antidepressant and antipsychotic treatment of Psychotic Major Depression in a British mental healthcare setting.;33961752;No (excluded before screening);Outside the search period;2023;;;;;;
+Shielding reduced incidence of COVID-19 in patients with inflammatory arthritis but vulnerability is associated with increased mortality.;35567479;Yes;n/a;2022;13;Yes;UK;UK;SAIL Databank;UK
+Societal Cost of Ischemic Stroke in Romania: Results from a Retrospective County-Level Study.;34073732;Yes;n/a;2021;9;No;RO;RO;Iuliu Hatieganu University of Medicine and Pharmacy;RO
+An open repository of real-time COVID-19 indicators.;34903654;No (excluded in title and abstract screening);No medical research (focus on data provision);2021;;;;;;
+Missing diagnoses of congenital cytomegalovirus infection in electronic health records for infants with laboratory-confirmed infection.;34775876;Yes;n/a;2022;16;No;US;US;Cerner Corporation;US
+Characterizing patients with rare mucormycosis infections using real-world data.;35164701;Yes;n/a;2022;1;No;CN;US;Optum;US
+Artificial intelligence system for training diagnosis and differentiation with molar incisor hypomineralization (MIH) and similar pathologies.;36065023;No (excluded in title and abstract screening);No tabular data;2022;;;;;;
+Computational Approaches for Supporting Combination Therapy in the Post-Aducanumab Era in Alzheimer's Disease.;34966890;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2021;;;;;;
+Elevation of C-reactive protein in adolescent bipolar disorder vs. anxiety disorders.;36306709;No (not retrieved);Not retrieved;2022;;;;;;
+DDIWAS: High-throughput electronic health record-based screening of drug-drug interactions.;33712848;Yes;n/a;2021;;No;US;US;Vanderbilt University Medical Center;US
+Quantifying the Risk of Drug-Induced Pancreatitis With Angiotensin-Converting Enzyme Inhibitors and Statins Using a Large Electronic Medical Record Database.;34714286;No (not retrieved);Not retrieved;2021;;;;;;
+One year of psychiatric presentations to a hospital emergency department during COVID-19.;35285434;Yes;n/a;2022;5;Yes;IE;IE;Beaumont Hospital ;IE
+Disparities in Utilization and Outcomes With Continuous Subcutaneous Insulin Infusion in Young Adults With Type 1 Diabetes.;33991655;No (not retrieved);Not retrieved;2021;;;;;;
+Obesity Pharmacotherapy is Effective in the Veterans Affairs Patient Population: A Local and Virtual Cohort Study.;33491308;Yes;n/a;2021;4;No;US;US;VA New York Harbor Health Care;US
+Comparing antibiotic prescribing between clinicians in UK primary care: an analysis in a cohort study of eight different measures of antibiotic prescribing.;35241573;Yes;n/a;2022;1;No;UK;UK;Clinical Practice Research Datalink;UK
+A comparison of routine and case-managed pathways for recovery from musculoskeletal disorders in people in employment.;33896322;Yes;n/a;2022;13;No;UK;UK;NHS Scotland;UK
+A comparison of two national frailty scoring systems.;33252680;Yes;n/a;2021;18;No;UK;UK;SAIL Databank;UK
+Real-world use of an etanercept biosimilar including selective versus automatic substitution in inflammatory arthritis patients: a UK-based electronic health records study.;35910710;Yes;n/a;2022;13;No;UK;UK;SAIL Databank;UK
+Using set visualisation to find and explain patterns of missing values: a case study with NHS hospital episode statistics data.;36410820;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2022;;;;;;
+Antipsychotic polypharmacy and adverse drug reactions among adults in a London mental health service, 2008-2018.;35485715;Yes;n/a;2022;5;No;UK;UK;Camden and Islington NHS Foundation Trust;UK
+Using topic modelling for unsupervised annotation of electronic health records to identify an outbreak of disease in UK dogs.;34882714;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2021;;;;;;
+Assessment of Electronic Health Record Use Between US and Non-US Health Systems.;33315048;No (excluded in full-paper screening);No medical research (no new insights with direct relevance to health);2021;;;;;;
+Prevalence and risk factors for delirium in critically ill patients with COVID-19 (COVID-D): a multicentre cohort study.;33428871;Yes;n/a;2021;5;Yes;US;US;Multiple;various
+Differences in Temporal Relapse Characteristics Between Affective and Non-affective Psychotic Disorders: Longitudinal Analysis.;33692704;Yes;n/a;2021;5;No;AU;AU;Multiple;AU
+Risk Factors Associated With Pressure Injuries in Surgical Patients: A Retrospective Case-Control Study.;36417372;Yes;n/a;2022;12;No;KR;KR;Bundang Hospital;KR
+Comparison of Titer and Signal to Noise (S/N) for Determination of Anti-drug Antibody Magnitude Using Clinical Data from an Industry Consortium.;35821280;Yes;n/a;2022;;No;US;US;Multiple;US
+Integrated digital pathology at scale: A solution for clinical diagnostics and cancer research at a large academic medical center.;34260720;No (excluded in title and abstract screening);No tabular data;2021;;;;;;
+Using data visualization to detect patterns in whole-person health data.;35717597;Yes;n/a;2022;;No;US;US;University of Minnesota;US
+Budget constrained machine learning for early prediction of adverse outcomes for COVID-19 patients.;34599200;Yes;n/a;2021;22;Yes;US;US;ProMedica;US
+Implementation of a Mandatory Influenza Vaccine Policy: A 10-Year Experience.;33372217;Yes;n/a;2021;1;No;US;US;Children’s Hospital of Philadelphia;US
+Neurological and psychiatric disorders among autistic adults: a population healthcare record study.;36189783;Yes;n/a;2022;5;No;UK;UK;SAIL Databank;UK
+Childhood Factors and Dental Caries in the Permanent Dentition: Findings of an 8-Year Study Under a Nationwide School Dental Service.;33743991;Yes;n/a;2021;11;No;SG;SG;Health Promotion Board (Singapore);SG
+Associations with visual acuity outcomes after 12 months of treatment in 9401 eyes with neovascular AMD.;36161843;Yes;n/a;2022;7;No;UK;UK;Multiple;UK
+A population level study into health vulnerabilities of mothers and fathers involved in public law care proceedings in Wales, UK between 2011 and 2019.;35520100;Yes;n/a;2022;;No;UK;UK;SAIL Databank;UK
+Prevalence of commonly diagnosed disorders in UK dogs under primary veterinary care: results and applications.;33593363;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2021;;;;;;
+New EHR certification requirements and their association with duplicate tests and images.;35640013;Yes;n/a;2022;;No;US;US;FAIR Health;US
+Embedding electronic health records onto a knowledge network recognizes prodromal features of multiple sclerosis and predicts diagnosis.;34915552;Yes;n/a;2022;6;No;US;US;University of California San Francisco;US
+Comparing Clinical Characteristics of Influenza and Common Coronavirus Infections Using Electronic Health Records.;33011809;Yes;n/a;2021;10;Yes;US;US;Geisinger Health System;US
+The burden associated with, and management of, difficult-to-treat depression in patients under specialist psychiatric care in the United Kingdom.;35506640;Yes;n/a;2022;5;No;UK;UK;Oxford Health NHS Foundation Trust, Cumbria Northumberland Tyne and Wear NHS Foundation Trust, Southern Health NHS Foundation Trust, South West London & St George’s Mental Health NHS Trust, West London NHS Trust;UK
+Accounting for Delayed Entry in Analyses of Overall Survival in Clinico-Genomic Databases.;35027431;Yes;n/a;2022;;No;US;US;Flatiron Health;US
+Multi-institutional Experience with Patient Image Access Through Electronic Health Record Patient Portals.;35022926;No (excluded in title and abstract screening);Anonymous survey;2022;;;;;;
+CardioNet: a manually curated database for artificial intelligence-based research on cardiovascular diseases.;33509180;No (excluded in title and abstract screening);No medical research (focus on data provision);2021;;;;;;
+Defining renal remission in an international cohort of 248 children and adolescents with lupus nephritis.;34626102;Yes;n/a;2022;13;No;IT;UK;Multiple;US, IN, TH, SG, JP, BR, FR, IT, TR, UK
+Pediatric sepsis phenotypes for enhanced therapeutics: An application of clustering to electronic health records.;35112102;Yes;n/a;2022;16;No;US;US;MedStar Washington Hospital Center;US
+Predicting healthcare-seeking behavior based on stated readiness to act: development and validation of a prediction model.;34283889;No (excluded in title and abstract screening);No tabular data;2022;;;;;;
+The Challenges of Predicting Drug-Induced QTc Prolongation in Humans.;35148401;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2022;;;;;;
+Accessing HIV care may lead to earlier ascertainment of comorbidities in health care clients in Khayelitsha, Cape Town.;36962101;Yes;n/a;2021;1;No;ZA;ZA;Provincial Health Data Centre;ZA
+Quality improvement in juvenile idiopathic arthritis: a mixed-methods implementation pilot of the CAPTURE-JIA dataset.;35717328;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+Susceptibility to COVID-19 Diagnosis in People with Down Syndrome Compared to the General Population: Matched-Cohort Study Using Primary Care Electronic Records in the UK.;35386043;Yes;n/a;2022;17;Yes;UK;UK;Clinical Practice Research Datalink;UK
+Early experience with an opt-in research register - Scottish Health Research Register (SHARE): a multi-method evaluation of participant recruitment performance.;34930144;No (excluded in title and abstract screening);No medical research (focus on data provision);2021;;;;;;
+Generating real-world data from health records: design of a patient-centric study in multiple sclerosis using a commercial health records platform.;35155999;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+Genome-Wide Association Study Identifies Genetic Risk Factors for Spastic Cerebral Palsy.;34098570;Yes;n/a;2021;6;No;US;US;Vanderbilt University Medical Center;US
+Modeling the Ex Post Real Option Value in Metastatic Melanoma Using Real-World Data.;34838272;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+A likelihood-based convolution approach to estimate major health events in longitudinal health records data: an external validation study.;34151985;Yes;n/a;2021;;No;US;US;Optum;US
+Association between mirtazapine use and serious self-harm in people with depression: an active comparator cohort study using UK electronic health records.;35246454;Yes;n/a;2022;5;No;UK;UK;Clinical Practice Research Datalink;UK
+Inequalities in coverage of COVID-19 vaccination: A population register based cross-sectional study in Wales, UK.;34544601;Yes;n/a;2021;22;Yes;UK;UK;SAIL Databank;UK
+Is it possible to implement a rare disease case-finding tool in primary care? A UK-based pilot study.;35172857;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+COVID-19 infection risk amongst 14,104 vaccinated care home residents: a national observational longitudinal cohort study in Wales, UK, December 2020-March 2021.;34850818;Yes;n/a;2022;22;Yes;UK;UK;SAIL Databank;UK
+Identifying Dysphagia and Demographic Associations in Older Adults Using Electronic Health Records: A National Longitudinal Observational Study in Wales (United Kingdom) 2008-2018.;35212847;Yes;n/a;2022;18;No;UK;UK;SAIL Databank;UK
+Epilepsy mortality in Wales during COVID-19.;34864250;Yes;n/a;2022;6;Yes;UK;UK;SAIL Databank;UK
+Social determinants of pertussis and influenza vaccine uptake in pregnancy: a national cohort study in England using electronic health records.;34155074;Yes;n/a;2021;10;No;UK;UK;Clinical Practice Research Datalink;UK
+Health condition at first fit note and number of fit notes: a longitudinal study of primary care records in south London.;33771823;Yes;n/a;2021;;No;UK;UK;Lambeth Together;UK
+Associations of weight loss with obesity-related comorbidities in a large integrated health system.;34472680;Yes;n/a;2021;4;No;US;US;Cleveland Clinic;US
+Treatment Sequencing Patterns and Associated Direct Medical Costs of Metastatic Breast Cancer Care in the United States, 2011 to 2021.;36445704;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+An observational study of international normalized ratio control according to NICE criteria in patients with non-valvular atrial fibrillation: the SAIL Warfarin Out of Range Descriptors Study (SWORDS).;31774502;Yes;n/a;2021;9;No;UK;UK;SAIL Databank;UK
+Diabetic retinopathy as a predictor of cardiovascular morbidity and mortality in subjects with type 2 diabetes.;36052329;Yes;n/a;2022;9;No;ES;ES;SIDIAP;ES
+Preoperative Computed Tomography Morphological Features Indicative of Incisional Hernia Formation After Abdominal Surgery.;35837959;No (excluded in title and abstract screening);No tabular data;2022;;;;;;
+[University emergency departments in the corona pandemic-Results from the ReCovER registry].;34468772;No (excluded before screening);Non-English;2022;;;;;;
+Avoidable hospitalizations and access to primary care: comparisons among Italians, resident immigrants and undocumented immigrants in administrative hospital discharge records.;35295899;Yes;n/a;2022;;No;IT;IT;Ministry of Health (Italy);IT
+Intra-database validation of case-identifying algorithms using reconstituted electronic health records from healthcare claims data.;33933001;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2021;;;;;;
+The Safety of Delayed Versus Immediate Antibiotic Prescribing for Upper Respiratory Tract Infections.;32594104;Yes;n/a;2021;10;No;UK;UK;SAIL Databank, Clinical Practice Research Datalink;UK
+Adaptation of colorectal cancer screening tailored navigation content for American Indian communities and early results using the intervention.;35090575;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2022;;;;;;
+Molecular medicine tumor board: whole-genome sequencing to inform on personalized medicine for a man with advanced prostate cancer.;33568750;Yes;n/a;2021;2;No;US;US;Not precisely specified;US
+Biomarker Testing for Patients With Advanced/Metastatic Nonsquamous NSCLC in the United States of America, 2015 to 2021.;35677681;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+"The effects of patient out-of-pocket costs for insulin on medication adherence and health care utilization in patients with commercial insurance; 2007-2018.";35392659;Yes;n/a;2022;4;No;US;US;Optum;US
+Evaluation of Preanalytical Point-of-Care Testing Errors and Their Impact on Productivity in the Emergency Department in the United States.;35015866;Yes;n/a;2022;;No;US;US;Oregon Health and Science University;US
+Associations Between Diabetic Retinopathy and Parkinson's Disease: Results From the Catalonian Primary Care Cohort Study.;35118094;Yes;n/a;2021;4;No;ES;ES;SIDIAP;ES
+Evaluating a Novel Hemodialysis Central Venous Catheter Cap in Reducing Bloodstream Infections: A Quality Improvement Initiative.;33953599;Yes;n/a;2021;19;No;US;US;Multiple;US
+How do cancer clinicians perceive real-world data and the evidence derived therefrom? Findings from an international survey of the European Organisation for Research and Treatment of Cancer.;36091761;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2022;;;;;;
+Retrospective Analysis of Treatment Pathways in Patients With BRAF(V600E)-mutant Metastatic Colorectal Carcinoma - MORSE(CRC).;36191968;Yes;n/a;2022;2;No;AT;CH;Multiple;DE, AT, CH
+Ramucirumab in Indian Patients with Advanced Gastric Cancer-Does Borderline Performance Status and Heavy Burden of Disease in Real World Practice Impact Clinical Benefit?;35833042;Yes;n/a;2022;2;No;IN;IN;Multiple;IN
+Cardiovascular preventive pharmacotherapy stratified by predicted cardiovascular risk: a national data linkage study.;33580793;Yes;n/a;2022;9;No;NZ;NZ;Statistics New Zealand;NZ
+Clinical Relevance of Drug-Drug Interactions With Antibiotics as Listed in a National Medication Formulary: Results From Two Large Population-Based Case-Control Studies in Patients Aged 65-100 Years Using Linked English Primary Care and Hospital Data.;36448824;No (excluded before screening);Outside the search period;2023;;;;;;
+Epidemiology, healthcare resource utilization and healthcare costs for spinal muscular atrophy in Alberta, Canada.;34906030;Yes;n/a;2021;6;No;CA;CA;Alberta Health Services;CA
+Are competing-risk models superior to standard Cox models for predicting cardiovascular risk in older adults? Analysis of a whole-of-country primary prevention cohort aged ≥65 years.;34109395;Yes;n/a;2022;9;No;NZ;NZ;New Zeeland Ministry of Health;NZ
+Predicting asthma-related crisis events using routine electronic healthcare data: a quantitative database analysis study.;34133316;Yes;n/a;2021;10;No;UK;UK;SAIL Databank, Clinical Practice Research Datalink;UK
+The weekend effect on the provision of Emergency Surgery before and during the COVID-19 pandemic: case-control analysis of a retrospective multicentre database.;35488247;Yes;n/a;2022;22;Yes;UK;IT;Multiple;FR, IT, PT, ES, UK
+Effectiveness of the BNT162b2 (Pfizer-BioNTech) and the ChAdOx1 nCoV-19 (Oxford-AstraZeneca) vaccines for reducing susceptibility to infection with the Delta variant (B.1.617.2) of SARS-CoV-2.;35307024;Yes;n/a;2022;22;Yes;UK;UK;Multiple;UK
+Cohort profile: the South African National Health Laboratory Service (NHLS) National HIV Cohort.;36261238;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+Friedreich's ataxia-associated childhood hypertrophic cardiomyopathy: a national cohort study.;34610949;Yes;n/a;2022;9;No;UK;UK;Multiple;UK
+Quantified electronic health record (EHR) use by academic surgeons.;33483138;No (not retrieved);Not retrieved;2021;;;;;;
+English Bulldogs in the UK: a VetCompass study of their disorder predispositions and protections.;35701824;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2022;;;;;;
+Trastuzumab-based regimens beyond progression: A crucial treatment option for HER2+ advanced/metastatic breast cancer.;36375387;Yes;n/a;2022;2;No;CH;PT;Flatiron Health;US
+Predicting Clinical Remission of Chronic Urticaria Using Random Survival Forests: Machine Learning Applied to Real-World Data.;36301485;Yes;n/a;2022;12;No;CA;UK;Optum;US
+Promoting Children's Health Equity With Medical-Dental Integration.;35133726;Yes;n/a;2022;11;No;US;US;Not precisely specified;US
+The contribution of early adverse stress to complex and severe depression in depressed outpatients.;33621410;Yes;n/a;2021;5;No;CL;CL;Not precisely specified;CL
+Prevalence of young-onset dementia: nationwide analysis of routinely collected data.;35995550;Yes;n/a;2022;5;No;NZ;NZ;Statistics New Zealand;NZ
+Root Canal Treatment Survival Analysis in National Dental PBRN Practices.;35549468;Yes;n/a;2022;11;No;US;US;Multiple;US
+Exploration of an alternative to body mass index to characterize the relationship between height and weight for prediction of metabolic phenotypes and cardiovascular outcomes.;35127128;Yes;n/a;2022;4;No;US;US;Vanderbilt University Medical Center;US
+ACA Medicaid expansion association with racial disparity reductions in timely cancer treatment.;34314116;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+Association Between Medicare's National Coverage Determination and Utilization of Next-Generation Sequencing.;34043456;Yes;n/a;2021;;No;US;US;Flatiron Health;US
+Real-world comparative effectiveness of triplets containing bortezomib (B), carfilzomib (C), daratumumab (D), or ixazomib (I) in relapsed/refractory multiple myeloma (RRMM) in the US.;33970288;Yes;n/a;2021;2;No;US;US;Optum;US
+Accuracy of an Artificial Intelligence System for Cancer Clinical Trial Eligibility Screening: Retrospective Pilot Study.;33769304;Yes;n/a;2021;2;No;US;US;Mayo Clinic;US
+Occurrence of Thromboembolic Events and Mortality Among Hospitalized Coronavirus 2019 Patients: Large Observational Cohort Study of Electronic Health Records.;36452205;Yes;n/a;2022;9;Yes;US;US;Optum;US
+Leveraging electronic health records to inform genetic counseling practice surrounding psychiatric disorders.;35191121;Yes;n/a;2022;5;No;US;US;Vanderbilt University Medical Center;US
+Detection of Atrial Fibrillation After Central Retinal Artery Occlusion.;34092124;Yes;n/a;2021;9;No;US;US;Vanderbilt University Medical Center;US
+Electronic Health Records-Based Cardio-Oncology Registry for Care Gap Identification and Pragmatic Research: Procedure and Observational Study.;33797396;Yes;n/a;2021;2;No;US;US;University of Texas Southwestern Medical Center;US
+Comparison of Medication Alerts from Two Commercial Applications in the USA.;33616888;Yes;n/a;2021;;No;US;US;Brigham and Women’s Hospital;US
+Real-world ALK Testing Trends in Patients With Advanced Non-Small-Cell Lung Cancer in the United States.;36376172;No (excluded before screening);Outside the search period;2023;;;;;;
+Disparities in Tumor Mutational Burden, Immunotherapy Use, and Outcomes Based on Genomic Ancestry in Non-Small-Cell Lung Cancer.;34752134;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+Investigating the relationship between thought interference, somatic passivity and outcomes in patients with psychosis: a natural language processing approach using a clinical records search platform in south London.;35918110;Yes;n/a;2022;5;No;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+Association of Rosuvastatin Use with Risk of Hematuria and Proteinuria.;35853713;Yes;n/a;2022;18;No;US;US;Optum;US
+Utilisation of pre-exposure prophylaxis (PrEP) for HIV prevention in the Australian general practice setting: a longitudinal observational study.;35469591;Yes;n/a;2022;1;No;AU;AU;NPS MedicineWise;AU
+Association between timely targeted treatment and outcomes in patients with metastatic HER2-overexpressing gastroesophageal adenocarcinoma.;35119688;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Impact of the COVID-19 pandemic on remote mental healthcare and prescribing in psychiatry: an electronic health record study.;33785494;Yes;n/a;2021;5;Yes;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+EGFR Testing Patterns and Detection of EGFR Exon 20 Insertions in the United States.;35199057;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Clozapine-Associated Leukopenia and Agranulocytosis in Western Cape, South Africa: A 3-Year Retrospective Cohort Study.;33843819;No (not retrieved);Not retrieved;2021;;;;;;
+Performance of an electronic health record-based predictive model to identify patients with atrial fibrillation across countries.;35802569;Yes;n/a;2022;9;No;UK;US;IQVIA;DE, UK, FR, AU, BE
+Dental Extractions under General Anesthesia: New Insights from Process Mining.;35403470;No (excluded before screening);Outside the search period;2023;;;;;;
+Epidemiology, Comorbidities, and Prescription Patterns of Korean Prurigo Nodularis Patients: A Multi-Institution Study.;35011837;Yes;n/a;2021;12;No;KR;KR;The Catholic University of Korea;KR
+Impact of coronavirus disease 2019 epidemics on prevention and care for HIV and other sexually transmitted infections.;35013084;Yes;n/a;2022;1;Yes;ES;ES;Not precisely specified;ES
+The impact of the first UK COVID-19 lockdown on presentations with psychosis to mental health services for older adults: An electronic health records study in South London.;36333839;Yes;n/a;2022;5;Yes;UK;UK;South London and Maudsley NHS Foundation Trust;UK
+A retrospective epidemiological study of type 1 diabetes mellitus in wales, UK between 2008 and 2018.;34007896;Yes;n/a;2021;4;No;UK;UK;SAIL Databank;UK
+Using routinely recorded data in a UK RCT: a comparison to standard prospective data collection methods.;34225782;Yes;n/a;2021;6;No;UK;UK;SAIL Databank;UK
+Long term miscarriage-related hypertension and diabetes mellitus. Evidence from a United Kingdom population-based cohort study.;35061706;Yes;n/a;2022;15;No;UK;UK;IQVIA;UK
+Neurological and psychiatric risk trajectories after SARS-CoV-2 infection: an analysis of 2-year retrospective cohort studies including 1 284 437 patients.;35987197;Yes;n/a;2022;22;Yes;UK;UK;TriNetX;US, AU, UK, ES, IN, MY, TW, BG
+Disparities Exist in Physical Therapy Utilization and Time to Utilization Between Black and White Patients With Musculoskeletal Pain.;35871435;Yes;n/a;2022;13;No;US;US;Optum;US
+Trends in characteristics and outcomes among US adults hospitalised with COVID-19 throughout 2020: an observational cohort study.;35228287;Yes;n/a;2022;22;Yes;US;US;Optum;US
+Annual Costs Incurred in Managing Adverse Drug Reactions Attributable to Fixed-Dose Combination Highly Active Antiretroviral Therapy in an Outpatient Antiretroviral Clinic in Gauteng: A Budget Impact Analysis.;34130039;Yes;n/a;2021;1;No;ZA;ZA;Not precisely specified;ZA
+Exploring Large Community- and Clinically-Generated Datasets to Understand Resilience Before and During the COVID-19 Pandemic.;33811723;Yes;n/a;2021;22;Yes;US;US;University of Minnesota;US
+Submaximal Angiotensin-Converting Enzyme Inhibitor and Angiotensin Receptor Blocker Dosing Among Persons With Proteinuria.;36210196;Yes;n/a;2022;18;No;US;US;Optum;US
+Treatment Trends and Clinical Outcomes of Left-Sided RAS/RAF Wild-Type Metastatic Colorectal Cancer in the United States.;35120306;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Application of machine learning and natural language processing for predicting stroke-associated pneumonia.;36249261;Yes;n/a;2022;10;No;TW;TW;Ditmanson Medical Foundation Chia-Yi Christian Hospital, Not precisely specified healthcare facility;TW
+Natural History of Human Epidermal Growth Factor Receptor 2-Amplified and Human Epidermal Growth Factor Receptor 2 Wild-Type Refractory Metastatic Colorectal Cancer in US Clinical Practice.;35297649;Yes;n/a;2022;2;No;CH;CA;Flatiron Health;US
+Evaluation and management of COVID-19-related severity in people with type 2 diabetes.;34493495;Yes;n/a;2021;4;Yes;US;US;Optum;US
+Characterization of Non-Small-Cell Lung Cancers With MET Exon 14 Skipping Alterations Detected in Tissue or Liquid: Clinicogenomics and Real-World Treatment Patterns.;34476332;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+Real-world evidence for option value in metastatic melanoma.;34431715;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+CYP2C19 Loss-of-Function Associated with First-Time Ischemic Stroke in Non-surgical Asymptomatic Carotid Artery Stenosis During Clopidogrel Therapy.;33611730;Yes;n/a;2022;9;No;US;US;Vanderbilt University Medical Center;US
+The challenges facing deep learning-based catheter localization for ultrasound guided high-dose-rate prostate brachytherapy.;35118676;No (excluded in title and abstract screening);No tabular data;2022;;;;;;
+GERD-A Burning Problem after Sleeve Gastrectomy?;34682573;Yes;n/a;2021;11;No;PL;PL;Provincial Hospital in Kielce;PL
+Relationship Between Maximal Left Ventricular Wall Thickness and Sudden Cardiac Death in Childhood Onset Hypertrophic Cardiomyopathy.;35491873;Yes;n/a;2022;9;No;UK;UK;Multiple;various
+Post-Combat-Injury Opioid Prescription and Alcohol Use Disorder in the Military.;36127194;No (not retrieved);Not retrieved;2022;;;;;;
+Automated risk assessment of newly detected atrial fibrillation poststroke from electronic health record data using machine learning and natural language processing.;35966534;Yes;n/a;2022;9;No;TW;TW;Ditmanson Medical Foundation Chia-Yi Christian Hospital;TW
+Cardiac Comorbidity Risk Score: Zero-Burden Machine Learning to Improve Prediction of Postoperative Major Adverse Cardiac Events in Hip and Knee Arthroplasty.;35904198;Yes;n/a;2022;9;No;US;US;Truven Health Analytics;US
+Use of ICD-10 Codes for Human Trafficking: Analysis of Data From a Large, Multisite Clinical Database in the United States.;35775908;Yes;n/a;2022;;No;US;US;TriNetX;US
+Pertuzumab Plus Trastuzumab for Treatment-Refractory HER2-Amplified Metastatic Colorectal Cancer: Comparison of the MyPathway Trial With a Real-World External Control Arm.;35649212;Yes;n/a;2022;2;No;JP;JP;Flatiron Health;US
+Impact of COVID-19 on telepsychiatry at the service and individual patient level across two UK NHS mental health Trusts.;34583940;Yes;n/a;2021;5;Yes;UK;UK;Oxford Health NHS Foundation Trust, Southern Health NHS Foundation Trust;UK
+Monitoring New Symptoms After COVID-19 Infection Among Primary Care Patients in New York City.;34535527;Yes;n/a;2021;22;Yes;US;US;New York University Langone Health;US
+Predictive Modeling of Morbidity and Mortality in Patients Hospitalized With COVID-19 and its Clinical Implications: Algorithm Development and Interpretation.;34081611;Yes;n/a;2021;22;Yes;US;US;New York University Langone Health;US
+Acute Ischemic Stroke and COVID-19: An Analysis of 27 676 Patients.;33535779;Yes;n/a;2021;9;Yes;US;US;Cerner Corporation;US
+[The role of interdisciplinary communication in the proper diagnostics of jaw cyst].;33764023;No (excluded before screening);Non-English;2021;;;;;;
+A checklist-based method for improving COPD care for the elderly in general practice: study protocol for a cluster randomized controlled trial using electronic health records.;33632282;No (excluded in title and abstract screening);No medical research (no new insights with direct relevance to health);2021;;;;;;
+UK prevalence of underlying conditions which increase the risk of severe COVID-19 disease: a point prevalence study using electronic health records.;33706738;Yes;n/a;2021;22;Yes;UK;UK;Clinical Practice Research Datalink;UK
+Early risk assessment for COVID-19 patients from emergency department data using machine learning.;33603086;Yes;n/a;2021;22;Yes;UK;UK;Chelsea and Westminster NHS Foundation Trust;UK
+Characteristics and general practice resource use of people with comorbid cancer and dementia in England: a retrospective cross-sectional study.;36371194;Yes;n/a;2022;2;No;UK;UK;Multiple;UK
+Association Between Survival and Very High Versus High PD-L1 Expression in Patients Receiving Pembrolizumab as First-line Treatment for Advanced Non-Small Cell Lung Cancer.;35945127;No (not retrieved);Not retrieved;2022;;;;;;
+Outpatient Antibiotic Resistance Patterns of Escherichia coli Urinary Isolates Differ by Specialty Type.;35727039;Yes;n/a;2022;1;No;US;US;Not precisely specified;US
+Real-World Outcomes of Patients With BRAF-Mutated Metastatic Colorectal Cancer Treated in the United States.;35130499;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Clinical characteristics and risk factors of in-hospital gastrointestinal bleeding in patients with acute myocardial infarction.;36237901;Yes;n/a;2022;9;No;CN;CN;Xi'an Jiaotong University;CN
+Understanding Flares in Patients With Generalized Pustular Psoriasis Documented in US Electronic Health Records.;35947363;Yes;n/a;2022;12;No;US;US;Optum;US
+NeuroBlu, an electronic health record (EHR) trusted research environment (TRE) to support mental healthcare analytics with real-world data.;35459671;No (excluded in title and abstract screening);No medical research (focus on data provision);2022;;;;;;
+Characteristics, Comorbidities, and Outcomes of SARS-CoV-2 Infection in Patients With Autoimmune Conditions Treated With Systemic Therapies: A Population-based Study.;34782447;Yes;n/a;2022;22;Yes;US;US;Optum;US
+Programmed Death-Ligand 1 Tumor Proportion Score and Overall Survival From First-Line Pembrolizumab in Patients With Nonsquamous Versus Squamous NSCLC.;34455068;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+Voucher-Based Kidney Donation and Redemption for Future Transplant.;34160572;Yes;n/a;2021;14;No;US;US;National Kidney Register Database;US
+Real-world outcomes of first-line pembrolizumab plus pemetrexed-carboplatin for metastatic nonsquamous NSCLC at US oncology practices.;33911121;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+Contraceptive exposure associates with urinary tract infection risk in a cohort of reproductive-age women: a case control study.;36537554;No (excluded before screening);Outside the search period;2023;;;;;;
+Severity of COVID-19 and adverse long-term outcomes: a retrospective cohort study based on a US electronic health record database.;34893488;Yes;n/a;2021;22;Yes;US;US;Optum;US
+Risks of Multiple Skin Cancers in Organ Transplant Recipients: A Cohort Study in 2 Administrative Data Sets.;34668933;Yes;n/a;2021;2;No;US;US;Optum;US
+Concordance of Clinician-Documented and Imaging Response in Patients With Stage IV Non-Small Cell Lung Cancer Treated With First-Line Therapy.;35552726;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+The effects of an evidence- and theory-informed feedback intervention on opioid prescribing for non-cancer pain in primary care: A controlled interrupted time series analysis.;34606504;Yes;n/a;2021;;No;UK;UK;Multiple;UK
+COVID-19 vaccination in pregnancy: views and vaccination uptake rates in pregnancy, a mixed methods analysis from SAIL and the Born-In-Wales Birth Cohort.;36503414;Yes;n/a;2022;22;Yes;UK;UK;SAIL Databank;UK
+Achievement of European Society of Cardiology/European Atherosclerosis Society lipid targets in very high-risk patients: Influence of depression and sex.;35213664;Yes;n/a;2022;9;No;UK;UK;SAIL Databank;UK
+The impact of the COVID-19 lockdown on HIV care in 65 South African primary care clinics: an interrupted time series analysis.;33549166;Yes;n/a;2021;1;Yes;ZA;ZA;Multiple;ZA
+Dosage Frequency Effects on Treatment Outcomes Following Self-managed Digital Therapy: Retrospective Cohort Study.;35857353;Yes;n/a;2022;9;No;US;US;Constant Therapy Health;US
+Clinical-Genetic Features Influencing Disability in Spastic Paraplegia Type 4: A Cross-sectional Study by the Italian DAISY Network.;35372684;Yes;n/a;2022;6;No;IT;IT;Multiple;IT
+Safety and preliminary efficacy of the Gam-COVID-Vac vaccine and outcomes of SARS-CoV-2 infection in Russian patients with genitourinary malignancies.;34774086;Yes;n/a;2021;2;Yes;RU;US;Multiple;RU
+Association of COVID-19 With Major Arterial and Venous Thrombotic Diseases: A Population-Wide Cohort Study of 48 Million Adults in England and Wales.;36121907;Yes;n/a;2022;22;Yes;UK;UK;NHS Digital, SAIL Databank;UK
+Adverse events and clinical outcomes in patients treated with PD-(L)1 blockade for advanced non-small-cell lung cancer.;36942686;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2022;;;;;;
+eARDS: A multi-center validation of an interpretable machine learning algorithm of early onset Acute Respiratory Distress Syndrome (ARDS) among critically ill adults with COVID-19.;34559819;Yes;n/a;2021;10;Yes;US;US;Cerner Corporation;US
+Strabismus Surgery Decreases the Risk of Injuries in Pediatric Patients in the OptumLabs Data Warehouse.;34283972;No (not retrieved);Not retrieved;2022;;;;;;
+Association of Adherence to Endocrine Therapy Among Patients With Breast Cancer and Potential Drug-Drug Interactions.;36459136;Yes;n/a;2022;2;No;FR;FR;The Health Improvement Network;FR
+Using electronic medical record data to assess chronic kidney disease, type 2 diabetes and cardiovascular disease testing, recognition and management as documented in Australian general practice: a cross-sectional analysis.;35177470;Yes;n/a;2022;9;No;AU;AU;Multiple;AU
+Association of mental health diagnosis with race and all-cause mortality after a cancer diagnosis: Large-scale analysis of electronic health record data.;34550601;Yes;n/a;2022;2;No;US;US;University of California San Francisco;US
+Real-World Assessment of Weight Change in African American Females and Hispanics with HIV-1 After Initiating Integrase Strand-Transfer Inhibitors or Protease Inhibitors.;35083364;Yes;n/a;2022;1;No;US;US;Optum;US
+Adherence to National Comprehensive Cancer Network ALK Testing Guidelines for Patients with Advanced Non-Small Cell Lung Cancer in U.S. Community Medical Centers.;33823082;Yes;n/a;2021;2;No;US;US;Flatiron Health;US
+Association of SARS-CoV-2 Seropositive Antibody Test With Risk of Future Infection.;33625463;Yes;n/a;2021;22;Yes;US;US;HealthVerity;US
+Characteristics and Treatment Rate of Patients With Hepatitis C Virus Infection in the Direct-Acting Antiviral Era and During the COVID-19 Pandemic in the United States.;36477481;Yes;n/a;2022;1;Yes;US;US;Optum;US
+Proposing a Sex-Adjusted Sodium-Adjusted MELD Score for Liver Transplant Allocation.;35583884;Yes;n/a;2022;21;No;US;US;Vanderbilt University Medical Center;US
+Differential antibody response to COVID-19 vaccines across immunomodulatory therapies for multiple sclerosis.;35533419;Yes;n/a;2022;6;Yes;US;US;Corinne Dickinson Goldsmith Center for Multiple Sclerosis;US
+Personalized Analytics and a Wearable Biosensor Platform for Early Detection of COVID-19 Decompensation (DeCODe): Protocol for the Development of the COVID-19 Decompensation Index.;33949966;No (excluded in title and abstract screening);No real-world application (findings not based on real-world data);2021;;;;;;
+Incidence of fractures in people with intellectual disabilities over the life course: a retrospective matched cohort study.;36313144;Yes;n/a;2022;5;No;UK;UK;Clinical Practice Research Datalink;UK
+The Development and Validation of Simplified Machine Learning Algorithms to Predict Prognosis of Hospitalized Patients With COVID-19: Multicenter, Retrospective Study.;34951865;Yes;n/a;2022;22;Yes;US;US;Optum;US
+Epidemiological and Clinical Features of Kawasaki Disease During the COVID-19 Pandemic in the United States.;35713905;Yes;n/a;2022;13;Yes;US;US;Rady Children’s Hospital San Diego, Multiple not precisely specified healthcare facilities;US
+Postnatal treatment for children with fetal and neonatal alloimmune thrombocytopenia: a multicentre, retrospective, cohort study.;36108655;No (not retrieved);Not retrieved;2022;;;;;;
+Pembrolizumab-combination therapy for previously untreated metastatic nonsquamous NSCLC: Real-world outcomes at US oncology practices.;36324586;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Long-Term Real-World Outcomes of First-Line Pembrolizumab Monotherapy for Metastatic Non-Small Cell Lung Cancer With ≥50% Expression of Programmed Cell Death-Ligand 1.;35402266;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Outcomes Among African American and Non-Hispanic White Men With Metastatic Castration-Resistant Prostate Cancer With First-Line Abiraterone.;34985518;Yes;n/a;2022;2;No;US;US;Flatiron Health;US
+Embryologist agreement when assessing blastocyst implantation probability: is data-driven prediction the solution to embryo assessment subjectivity?;35944167;No (excluded in title and abstract screening);No tabular data;2022;;;;;;
+Long-term impact of pre-incision antibiotics on children born by caesarean section: a longitudinal study based on UK electronic health records.;35781133;Yes;n/a;2022;15;No;UK;UK;Clinical Practice Research Datalink, The Health Improvement Network;UK
