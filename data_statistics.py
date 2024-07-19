@@ -42,6 +42,9 @@ def additional_statistics_figure_2():
     model = smReg.OLS(df["Normalized (Non-COVID-19-related)"]+ df["Normalized (COVID-19-related)"], X).fit()
     print("Normalized all [2018-2022] | Slope: %.3f, p-value: %.5f" % (model.params[1], model.pvalues[1]))
 
+    model = smReg.OLS(df["Normalized (Non-COVID-19-related)"], X).fit()
+    print("Normalized non COVID [2018-2022] | Slope: %.3f, p-value: %.5f" % (model.params[1], model.pvalues[1]))
+
 #additional_statistics_figure_2()
 
 def additional_statistics_figure_3():

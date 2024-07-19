@@ -40,6 +40,7 @@ def plot_figure_2(df):
 
     # Draw regression
     sns.regplot(x=years_index, y=df["Normalized (COVID-19-related)"] + df["Normalized (Non-COVID-19-related)"], scatter=False, line_kws={"color": "gray"})
+    sns.regplot(x=years_index, y=df["Normalized (Non-COVID-19-related)"], scatter=False, line_kws={"color": "green"})
 
     # Grid
     ax.grid(axis='x')
@@ -52,7 +53,7 @@ def plot_figure_2(df):
     ax.set_yticks(np.arange(0, 14.1, 2), np.arange(0, 14.1, 2).astype(int), fontsize=font_size_ticks)
 
     # Legend
-    plt.legend(handles=[bars_non_covid, bars_covid], labels=['Other focus', 'Focus on COVID-19'], bbox_to_anchor=(0.5, 1.25), loc='upper center', ncol=2, fontsize=font_size_legend)
+    plt.legend(handles=[bars_non_covid, bars_covid], labels=['Other focus', 'COVID-19 related'], bbox_to_anchor=(0.5, 1.25), loc='upper center', ncol=2, fontsize=font_size_legend)
 
     plt.savefig("figure_output/figure_2.svg", bbox_inches='tight')
     plt.savefig("figure_output/figure_2.png", bbox_inches='tight')
