@@ -24,14 +24,14 @@ def load_and_preprocess_charting():
 
 df_charting = load_and_preprocess_charting()
 
-def additional_statistics_figure_2():
+def additional_statistics_figure_1():
     """
     Calculates the slope and p-value
     for the regressions shown in Figure 2
     """
 
     # load figure 2 data
-    df = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_2", engine="openpyxl")
+    df = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_1", engine="openpyxl")
 
     # Example years corresponding to your data
     years = list(range(len(df["Year"])))
@@ -47,11 +47,51 @@ def additional_statistics_figure_2():
 
 #additional_statistics_figure_2()
 
-def additional_statistics_figure_3():
+def calculate_EU_contribution(df):
     """
-    Calculates the EUs contribution
+    Calculates contributions per country and the EUs contribution
     """
-    df = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_3", engine="openpyxl")
+    def filter_only_single_data_origin(row):
+        origin_list = row['Data origin_list']
+        origin = origin_list[0]
+        return len(origin_list) == 1 and origin != "various"
+
+    # Remove records with more than one data origin
+    df = df[df.apply(filter_only_single_data_origin, axis=1)]
+
+    # Count occurrences in each specific column
+    first_author_counts = df['First author'].value_counts().reset_index()
+    first_author_counts.columns = ['Country', 'Count (First author)']
+    data_origin_counts = df['Data origin'].value_counts().reset_index()
+    data_origin_counts.columns = ['Country', 'Count (Data origin)']
+
+    # Merge the DataFrames on 'Country'
+    df = pd.merge(first_author_counts, data_origin_counts, on='Country', how='outer')
+
+    # Read external CSV with total number of articles published
+    auxiliary_data = \
+    pd.read_excel("auxiliary_data/Country_information.xlsx", sheet_name='Country_information', skiprows=0)[
+        ["Country", "Name (Country)", "Region (Country)"]]
+    df = pd.merge(df, auxiliary_data, on='Country', how='outer')
+
+    # Fill missing values with 0
+    df.fillna(0, inplace=True)
+
+    # Convert float counts to integers
+    df['Count (First author)'] = df['Count (First author)'].astype(int)
+    df['Count (Data origin)'] = df['Count (Data origin)'].astype(int)
+
+    # Calculate distribution
+    df["Distribution (First author)"] = df["Count (First author)"] * 100 / df["Count (First author)"].sum()
+    df["Distribution (Data origin)"] = df["Count (Data origin)"] * 100 / df["Count (Data origin)"].sum()
+
+    print(tabulate(df, headers='keys', tablefmt='psql'))
+
+    """ 
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    EU contribution
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    """
 
     df = df[df["Region (Country)"] == 'European Union']
     count_first_author = df["Count (First author)"].sum()
@@ -62,14 +102,14 @@ def additional_statistics_figure_3():
 
     print("EU First author: %.2f (n=%d), EU Data origin: %.2f (n=%d)" % (relative_first_author, count_first_author,  relative_data_origin, count_data_origin))
 
-#additional_statistics_figure_3()
+#calculate_EU_contribution(df_charting)
 
-def additional_statistics_figure_4():
+def additional_statistics_figure_2():
     """
     Prints values to calculate the Data origin
     per 1000 citable documents for entire regions
     """
-    df = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_4", engine="openpyxl")
+    df = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_2", engine="openpyxl")
 
     print(f"Global: Mean Score: {df['Data origin per 1000 citable documents'].mean():.3f}, Standard Deviation: {df['Data origin per 1000 citable documents'].std():.3f}")
 

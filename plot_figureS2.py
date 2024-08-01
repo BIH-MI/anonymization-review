@@ -10,9 +10,9 @@ mpl.rcParams['axes.labelcolor'] = COLOR
 mpl.rcParams['xtick.color'] = COLOR
 mpl.rcParams['ytick.color'] = COLOR
 
-df = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_6", engine="openpyxl")
+df = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_S2", engine="openpyxl")
 
-def plot_figure_6(df):
+def plot_figure_S2(df):
 
     # Introduce line breaks for cleaner formatting
     df = df.rename(columns={'Distribution (ICD-10 chapter)': 'ICD-10\nchapter'})
@@ -47,9 +47,9 @@ def plot_figure_6(df):
         ax.bar_label(c, labels=labels_big, label_type='center')
 
     plt.legend(loc='lower center', ncols = 2, bbox_to_anchor=(0.5, 1))
-    plt.savefig("figure_output/figure_6.svg", bbox_inches='tight')
-    plt.savefig("figure_output/figure_6.png", bbox_inches='tight')
+    plt.savefig("figure_output/figure_S2.svg", bbox_inches='tight')
+    plt.savefig("figure_output/figure_S2.png", bbox_inches='tight')
     plt.show()
     plt.close()
 
-plot_figure_6(df)
+plot_figure_S2(df)

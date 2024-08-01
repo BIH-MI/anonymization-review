@@ -39,7 +39,7 @@ def preprocess_scimagojr():
 
     df.to_excel("auxiliary_data/Citable_documents_per_country.xlsx", sheet_name='Citable_documents_per_country', engine="openpyxl", index=False)
 
-def preprocess_figure_2(df):
+def preprocess_figure_1(df):
 
     # Group by year and COVID-19 research status, and then count the entries
     df = df.groupby(['Publishing year', 'COVID-19 research']).size().unstack(fill_value=0)
@@ -67,63 +67,10 @@ def preprocess_figure_2(df):
 
     # Save to xlsx
     with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl",  mode="a", if_sheet_exists='replace') as writer:
-        df.to_excel(writer, sheet_name='data_figure_2', index=False)
-
-def preprocess_figure_3(df, other_threshold = 10):
-
-    def filter_only_single_data_origin(row):
-        origin_list = row['Data origin_list']
-        origin = origin_list[0]
-        return len(origin_list) == 1 and origin != "various"
-
-    # Remove records with more than one data origin
-    df = df[df.apply(filter_only_single_data_origin, axis=1)]
-
-    # Count occurrences in each specific column
-    first_author_counts = df['First author'].value_counts().reset_index()
-    first_author_counts.columns = ['Country', 'Count (First author)']
-    data_origin_counts = df['Data origin'].value_counts().reset_index()
-    data_origin_counts.columns = ['Country', 'Count (Data origin)']
-
-    # Merge the DataFrames on 'Country'
-    df = pd.merge(first_author_counts, data_origin_counts, on='Country', how='outer')
-
-    # Read external CSV with total number of articles published
-    auxiliary_data = pd.read_excel("auxiliary_data/Country_information.xlsx", sheet_name='Country_information', skiprows=0)[["Country", "Name (Country)", "Region (Country)"]]
-    df = pd.merge(df, auxiliary_data, on='Country', how='outer')
-
-    # Fill missing values with 0
-    df.fillna(0, inplace=True)
-
-    # Convert float counts to integers
-    df['Count (First author)'] =df['Count (First author)'].astype(int)
-    df['Count (Data origin)'] = df['Count (Data origin)'].astype(int)
-
-    # Calculate distribution
-    df["Distribution (First author)"] = df["Count (First author)"] * 100 / df["Count (First author)"].sum()
-    df["Distribution (Data origin)"] = df["Count (Data origin)"] * 100 / df["Count (Data origin)"].sum()
-
-    # Split country into countries commonly mentioned and "other" by given threshold
-    df_countries_other = df[df["Count (First author)"] < other_threshold]
-    df = df[df["Count (First author)"] >= other_threshold]
-
-    # Sort
-    df = df.sort_values("Count (First author)", ascending=False)
-
-    # Create and append "other" row
-    row_other = {"Country": "other", "Name (Country)": "other", "Region (Country)":"other",
-                 "Count (First author)": df_countries_other["Count (First author)"].sum(),
-                 "Count (Data origin)": df_countries_other["Count (Data origin)"].sum(),
-                 "Distribution (First author)": df_countries_other["Distribution (First author)"].sum(),
-                 "Distribution (Data origin)": df_countries_other["Distribution (Data origin)"].sum()}
-    df = df._append(row_other, ignore_index=True)
-
-    # Save to xlsx
-    with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl",  mode="a", if_sheet_exists='replace') as writer:
-        df.to_excel(writer, sheet_name='data_figure_3', index=False)
+        df.to_excel(writer, sheet_name='data_figure_1', index=False)
 
 
-def preprocess_figure_4(df):
+def preprocess_figure_2(df):
 
     def filter_only_single_data_origin(row):
         origin_list = row['Data origin_list']
@@ -174,9 +121,9 @@ def preprocess_figure_4(df):
 
     # Save to xlsx
     with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl",  mode="a", if_sheet_exists='replace') as writer:
-        df.to_excel(writer, sheet_name='data_figure_4', index=False)
+        df.to_excel(writer, sheet_name='data_figure_2', index=False)
 
-def preprocess_figure_5(df, other_threshold_5a=10, other_threshold_5b=2):
+def preprocess_figure_3(df, other_threshold_3a=10, other_threshold_3b=2):
 
     def filter_crossborder_origin(row):
         return row['Data origin_list'] != row["First author"]
@@ -191,7 +138,7 @@ def preprocess_figure_5(df, other_threshold_5a=10, other_threshold_5b=2):
 
     """ 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Calculate data for figure 5a
+    Calculate data for figure 3a
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     """
 
@@ -223,8 +170,8 @@ def preprocess_figure_5(df, other_threshold_5a=10, other_threshold_5b=2):
     df_counts['Distribution (Data origin domestic)'] = df_counts['Count (Data origin domestic)'] * 100 / df_counts['Count (Data origin domestic)'].sum()
 
     # split country files into countries commonly mentioned and "other" by given threshold
-    df_counts_other = df_counts[df_counts['Count (Data origin)'] < other_threshold_5a]
-    df_counts = df_counts[df_counts['Count (Data origin)'] >= other_threshold_5a]
+    df_counts_other = df_counts[df_counts['Count (Data origin)'] < other_threshold_3a]
+    df_counts = df_counts[df_counts['Count (Data origin)'] >= other_threshold_3a]
 
     # Introduce line breaks for cleaner formatting
     df_counts.loc[df_counts['Name (Country)'] == 'United States', 'Name (Country)'] = 'United\nStates'
@@ -243,12 +190,12 @@ def preprocess_figure_5(df, other_threshold_5a=10, other_threshold_5b=2):
 
     """ 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Calculate data for figure 5b
+    Calculate data for figure 3b
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     """
 
     # Filter combinations that do occure less than "other_threshold_5b" times
-    df_combinations = df_crossborder.groupby(['First author', 'Data origin_list']).filter(lambda x: len(x) >= other_threshold_5b)[['First author', 'Data origin_list']]
+    df_combinations = df_crossborder.groupby(['First author', 'Data origin_list']).filter(lambda x: len(x) >= other_threshold_3b)[['First author', 'Data origin_list']]
     # Append full country name
     df_combinations = pd.merge(df_combinations, auxiliary_data, left_on='First author', right_on='Country', how='left')
     df_combinations = df_combinations.rename(columns={"Name (Country)": "Name (Country first author)"})
@@ -257,10 +204,10 @@ def preprocess_figure_5(df, other_threshold_5a=10, other_threshold_5b=2):
     df_combinations = df_combinations[["First author", "Data origin_list",	"Name (Country first author)", "Name (Country data origin)"]]
 
     with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl", mode="a", if_sheet_exists='replace') as writer:
-        df_counts.to_excel(writer, sheet_name='data_figure_5a', index=False)
-        df_combinations.to_excel(writer, sheet_name='data_figure_5b', index=False)
+        df_counts.to_excel(writer, sheet_name='data_figure_3a', index=False)
+        df_combinations.to_excel(writer, sheet_name='data_figure_3b', index=False)
 
-def preprocess_figure_6(df, other_threshold = 5):
+def preprocess_figure_S2(df, other_threshold = 5):
     def filter_only_assigned_ICD_chapter(row):
         return row['ICD-10 chapter'] != ""
 
@@ -297,9 +244,9 @@ def preprocess_figure_6(df, other_threshold = 5):
 
     # Save to xlsx
     with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl",  mode="a", if_sheet_exists='replace') as writer:
-        df.to_excel(writer, sheet_name='data_figure_6', index=False)
+        df.to_excel(writer, sheet_name='data_figure_S2', index=False)
 
-def preprocess_figure_7(df, other_threshold = 5):
+def preprocess_figure_4(df, other_threshold = 5):
 
     def filter_only_specific_source(row):
         return row['Data source_list'] != "Multiple" and row['Data source_list'] != "Not precisely specified"
@@ -325,9 +272,9 @@ def preprocess_figure_7(df, other_threshold = 5):
 
     # Save to xlsx
     with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl",  mode="a", if_sheet_exists='replace') as writer:
-        df.to_excel(writer, sheet_name='data_figure_7', index=False)
+        df.to_excel(writer, sheet_name='data_figure_4', index=False)
 
-def preprocess_figure_8(df, other_threshold_source=5, other_threshold_icd=15):
+def preprocess_figure_5(df, other_threshold_source=5, other_threshold_icd=15):
 
     def filter_only_specific_custodian(row):
         return row['Data source_list'] != "Multiple" and row['Data source_list'] != "Not precisely specified"
@@ -365,14 +312,13 @@ def preprocess_figure_8(df, other_threshold_source=5, other_threshold_icd=15):
 
     # Save to xlsx
     with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl",  mode="a", if_sheet_exists='replace') as writer:
-        df.to_excel(writer, sheet_name='data_figure_8', index=False)
+        df.to_excel(writer, sheet_name='data_figure_5', index=False)
 
 df_raw = load_and_preprocess_charting()
 #preprocess_scimagojr()
-#preprocess_figure_2(df_raw)
+preprocess_figure_1(df_raw)
+preprocess_figure_2(df_raw)
 preprocess_figure_3(df_raw)
-#preprocess_figure_4(df_raw)
-#preprocess_figure_5(df_raw)
-#preprocess_figure_6(df_raw)
-#preprocess_figure_7(df_raw)
-#preprocess_figure_8(df_raw)
+preprocess_figure_S2(df_raw)
+preprocess_figure_4(df_raw)
+preprocess_figure_5(df_raw)
