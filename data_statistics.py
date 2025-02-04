@@ -2,11 +2,13 @@ import pandas as pd
 from tabulate import tabulate
 import statsmodels.api as smApi
 import statsmodels.regression.linear_model as smReg
+import numpy as np
+from collections import Counter
 
 def load_and_preprocess_charting():
 
     # load data
-    chart_file = "charting_results/charting_results_20240620.csv"
+    chart_file = "charting_results/results_20250203_for_release.csv"
     df = pd.read_csv(chart_file, dtype=str, sep=";")
 
     # Fill empty cells with empty string
@@ -18,6 +20,8 @@ def load_and_preprocess_charting():
     # split 1:n fields
     df["Data source_list"] = df.apply(lambda row: [label.lstrip() for label in row["Data source"].split(",")], axis=1)
     df["Data origin_list"] = df.apply(lambda row: row["Data origin"].replace(" ", "").strip().split(","), axis=1)
+    # Create a new column 'Authors_list' by splitting the "Authors" string by " and "
+    df['Authors_list'] = df['Authors'].apply(lambda x: [a.strip() for a in x.split(" and ")] if isinstance(x, str) else [])
 
     print("Loaded %d articles" % (len(df.index)))
     return df
@@ -319,3 +323,127 @@ def source_usage_for_specific_disease(df, disease, source):
 #source_usage_for_specific_disease(df_charting, "2", "Flatiron Health")
 #source_usage_for_specific_disease(df_charting, "4", "Optum")
 #source_usage_for_specific_disease(df_charting, "5", "South London and Maudsley NHS Foundation Trust")
+
+def unique_author_fraction_per_source2(df, other_threshold=5):
+    def filter_only_specific_source(row):
+        return row['Data source_list'] != "Multiple" and row['Data source_list'] != "Not precisely specified"
+
+    df = df.explode('Data source_list')
+
+    # Remove records not assigned to a specific source
+    df = df[df.apply(filter_only_specific_source, axis=1)]
+
+    # Count occurrences of sources
+    df['Data source'] = df['Data source_list']
+    source_counts = df['Data source'].value_counts().reset_index()
+    source_counts.columns = ['Data source', 'Count (Data source)']
+
+    # Read external CSV with total number of articles published
+    auxiliary_data = pd.read_excel("auxiliary_data/Data_source_information.xlsx", sheet_name='Data_source_information', dtype=str)
+    df = pd.merge(source_counts, auxiliary_data, on='Data source', how='left')
+
+    # Convert float counts to integers
+    df['Count (Data source)'] = df['Count (Data source)'].astype(int)
+
+    # Remove uncommon sources
+    df = df[df["Count (Data source)"] >= other_threshold]
+
+    # Split authors into list, count total and unique authors per source
+    df['Authors list'] = df['Authors'].str.split(' and ')
+    authors_df = df.explode('Authors list')
+    authors_df = authors_df.groupby('Data source')['Authors list'].agg(Total_Authors=('Authors list', 'size'),
+                                                                       Unique_Authors=(
+                                                                       'Authors list', 'nunique')).reset_index()
+
+    # Merge the authors data back with the source counts
+    final_df = pd.merge(df, authors_df, on='Data source', how='left')
+    final_df = final_df[['Data source', 'Total_Authors', 'Unique_Authors']]
+
+    # Save to xlsx
+    with pd.ExcelWriter('stats_unique_authors.xlsx', engine="openpyxl", mode="a", if_sheet_exists='replace') as writer:
+        final_df.to_excel(writer, sheet_name='stats_unique_authors', index=False)
+
+    return final_df
+
+
+def compute_gini(authors_lists):
+    """
+    Compute the Gini index for a given series of authors lists.
+
+    Parameters:
+        authors_lists (iterable): An iterable (e.g., a pandas Series) where each element is a list of authors.
+
+    Returns:
+        float: The computed Gini index.
+    """
+    # Flatten the lists into one list of all authors for the data source
+    all_authors = [author for authors in authors_lists for author in authors]
+
+    if not all_authors:
+        return 0.0
+
+    # Count the frequency of each author in this data source
+    counts = list(Counter(all_authors).values())
+    arr = np.array(counts, dtype=float)
+
+    if np.sum(arr) == 0:
+        return 0.0
+
+    # Sort the frequency counts in ascending order
+    sorted_arr = np.sort(arr)
+    n = len(arr)
+    # Create an index array starting at 1
+    index = np.arange(1, n + 1)
+
+    # Compute the Gini index using the formula
+    gini_value = (2 * np.sum(index * sorted_arr)) / (n * np.sum(sorted_arr)) - (n + 1) / n
+    return gini_value
+
+def unique_author_fraction_per_source(df, other_threshold=5):
+    def filter_only_specific_source(row):
+        return row['Data source_list'] != "Multiple" and row['Data source_list'] != "Not precisely specified"
+
+
+    # Explode the Data source_list column so that each row represents a single data source
+    df = df.explode('Data source_list')
+
+    # Remove records not assigned to a specific source
+    df = df[df.apply(filter_only_specific_source, axis=1)]
+
+    # Group by data source and compute:
+    # - count: number of rows (papers) referencing the source
+    # - Authors: total number of author mentions (summing the lengths of the authors list per row)
+    # - Unique authors: count of unique author names across all rows for that source
+    grouped = df.groupby('Data source_list').agg(
+        count=('Data source_list', 'size'),
+        Authors=('Authors_list', lambda series: sum(len(authors) for authors in series)),
+        Unique_authors=('Authors_list', lambda series: len({author for authors in series for author in authors})),
+        Gini_index=('Authors_list', lambda series: compute_gini(series))
+    ).reset_index()
+    grouped['Unique_author_fraction'] = grouped["Unique_authors"] / grouped["Authors"]
+
+    # Filter out sources with fewer than other_threshold records
+    grouped = grouped[grouped['count'] >= other_threshold]
+
+    # Rename the grouping column to "Data source" for the final output
+    grouped.rename(columns={'Data source_list': 'Data source'}, inplace=True)
+
+    # Optionally, merge with external auxiliary data if needed.
+    # The auxiliary file might contain additional info (e.g. total articles published).
+    # If you only want the three columns ("Data source", "Authors", "Unique authors"),
+    # the merge is optional.
+    auxiliary_data = pd.read_excel(
+        "auxiliary_data/Data_source_information.xlsx",
+        sheet_name='Data_source_information',
+        skiprows=0,
+        dtype=str
+    )
+    grouped = pd.merge(grouped, auxiliary_data, on='Data source', how='left')
+
+    # Select only the columns for output: "Data source", "Authors", and "Unique authors"
+    output_columns = ['Data source', 'Unique_authors', 'Authors', 'Unique_author_fraction', 'Gini_index']
+    # Save to xlsx
+    with pd.ExcelWriter('stats_unique_authors.xlsx', engine="openpyxl", mode="a", if_sheet_exists='replace') as writer:
+        grouped[output_columns].to_excel(writer, sheet_name='stats_unique_authors', index=False)
+
+unique_author_fraction_per_source(df_charting, 5)
