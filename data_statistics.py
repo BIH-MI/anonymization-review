@@ -8,7 +8,7 @@ from collections import Counter
 def load_and_preprocess_charting():
 
     # load data
-    chart_file = "charting_results/results_20250203_for_release.csv"
+    chart_file = "charting_results/results_20250214.csv"
     df = pd.read_csv(chart_file, dtype=str, sep=";")
 
     # Fill empty cells with empty string
@@ -28,14 +28,14 @@ def load_and_preprocess_charting():
 
 df_charting = load_and_preprocess_charting()
 
-def additional_statistics_figure_1():
+def additional_statistics_figure_2():
     """
     Calculates the slope and p-value
     for the regressions shown in Figure 2
     """
 
     # load figure 2 data
-    df = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_1", engine="openpyxl")
+    df = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_2", engine="openpyxl")
 
     # Example years corresponding to your data
     years = list(range(len(df["Year"])))
@@ -49,7 +49,7 @@ def additional_statistics_figure_1():
     model = smReg.OLS(df["Normalized (Non-COVID-19-related)"], X).fit()
     print("Normalized non COVID [2018-2022] | Slope: %.3f, p-value: %.5f" % (model.params[1], model.pvalues[1]))
 
-#additional_statistics_figure_2()
+additional_statistics_figure_2()
 
 def calculate_EU_contribution(df):
     """
@@ -446,4 +446,53 @@ def unique_author_fraction_per_source(df, other_threshold=5):
     with pd.ExcelWriter('stats_unique_authors.xlsx', engine="openpyxl", mode="a", if_sheet_exists='replace') as writer:
         grouped[output_columns].to_excel(writer, sheet_name='stats_unique_authors', index=False)
 
-unique_author_fraction_per_source(df_charting, 5)
+#unique_author_fraction_per_source(df_charting, 5)
+
+def calculate_average_delay(df):
+
+    def filter_has_complete_date_info(row):
+        required_keys = [
+            "Submission year",
+            "Submission month",
+            "Publishing year",
+            "Publishing month",
+        ]
+        return all(str(row[key]).lower() not in ("na", "") for key in required_keys)
+
+        # Apply the filter to keep only rows with complete date information.
+    df = df[df.apply(filter_has_complete_date_info, axis=1)]
+    print(f"Complete date information available for {len(df.index)} articles")
+
+    def calculate_average_delay(sub_df):
+        """
+        Given a dataframe with the following columns:
+            Submission_year, Submission_month, Publication_year, Publication_month,
+        this function computes the delay in months for each row and returns the average delay.
+        """
+        # Convert the date columns to integers.
+        sub_year = sub_df["Submission year"].astype(int)
+        sub_month = sub_df["Submission month"].astype(int)
+        pub_year = sub_df["Publishing year"].astype(int)
+        pub_month = sub_df["Publishing month"].astype(int)
+
+        # Calculate the delay in months:
+        # (publication_year - submission_year) * 12 + (publication_month - submission_month)
+        delays = (pub_year - sub_year) * 12 + (pub_month - sub_month)
+        return delays.mean()
+
+    # --- 5. Calculate and print the overall average delay ---
+    overall_avg = calculate_average_delay(df)
+    print(f"Overall average delay (months): {overall_avg:.2f}")
+
+    # --- 6. Calculate and print the delay for COVID-19 research = "y" ---
+    covid_y = df[df["COVID-19 research"].astype(str).str.lower() == "yes"]
+    covid_y_avg = calculate_average_delay(covid_y)
+    print(f"Average delay (months) for COVID-19 research (y): {covid_y_avg:.2f}")
+
+    # --- 7. Calculate and print the delay for COVID-19 research = "n" ---
+    covid_n = df[df["COVID-19 research"].astype(str).str.lower() == "no"]
+    covid_n_avg = calculate_average_delay(covid_n)
+    print(f"Average delay (months) for COVID-19 research (n): {covid_n_avg:.2f}")
+
+calculate_average_delay(df_charting)
+
