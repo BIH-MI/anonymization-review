@@ -3,8 +3,8 @@ import pandas as pd
 def load_and_preprocess_charting():
 
     # load data
-    chart_file = "charting_results/results_20250214.csv"
-    df = pd.read_csv(chart_file, dtype=str, sep=";")
+    chart_file = "charting_results/results_20250219.csv"
+    df = pd.read_csv(chart_file, dtype=str, sep=";", encoding='unicode_escape')
 
     # Fill empty cells with empty string
     df = df.fillna('')
@@ -69,7 +69,7 @@ def preprocess_figure_2(df):
     with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl",  mode="a", if_sheet_exists='replace') as writer:
         df.to_excel(writer, sheet_name='data_figure_2', index=False)
 
-def preprocess_figure_3(df, other_threshold = 20):
+def preprocess_figure_3(df, other_threshold = 23):
     def filter_only_single_data_origin(row):
         origin_list = row['Data origin_list']
         origin = origin_list[0]
@@ -168,7 +168,7 @@ def preprocess_figure_4(df):
     with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl",  mode="a", if_sheet_exists='replace') as writer:
         df.to_excel(writer, sheet_name='data_figure_4', index=False)
 
-def preprocess_figure_5(df, other_threshold_5a=20, other_threshold_5b=3):
+def preprocess_figure_5(df, other_threshold_5a=20, other_threshold_5b=4):
 
     def filter_crossborder_origin(row):
         return row['Data origin_list'] != row["First author"]
@@ -294,10 +294,10 @@ def preprocess_figure_S2(df, other_threshold = 5):
     with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl",  mode="a", if_sheet_exists='replace') as writer:
         df.to_excel(writer, sheet_name='data_figure_S2', index=False)
 
-def preprocess_figure_6(df, other_threshold = 5):
+def preprocess_figure_6(df, other_threshold = 10):
 
     def filter_only_specific_source(row):
-        return row['Data source_list'] != "Multiple" and row['Data source_list'] != "Not precisely specified"
+        return row['Data source_list'] != "Multiple" and row['Data source_list'] != "Multiple (IPD Meta)" and row['Data source_list'] != "Not precisely specified"
 
     df = df.explode('Data source_list')
 
@@ -322,7 +322,7 @@ def preprocess_figure_6(df, other_threshold = 5):
     with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl",  mode="a", if_sheet_exists='replace') as writer:
         df.to_excel(writer, sheet_name='data_figure_6', index=False)
 
-def preprocess_figure_7(df, other_threshold_source=5, other_threshold_icd=15):
+def preprocess_figure_7(df, other_threshold_source=10, other_threshold_icd=25):
 
     def filter_only_specific_custodian(row):
         return row['Data source_list'] != "Multiple" and row['Data source_list'] != "Not precisely specified"

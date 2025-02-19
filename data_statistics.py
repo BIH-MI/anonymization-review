@@ -494,5 +494,43 @@ def calculate_average_delay(df):
     covid_n_avg = calculate_average_delay(covid_n)
     print(f"Average delay (months) for COVID-19 research (n): {covid_n_avg:.2f}")
 
-calculate_average_delay(df_charting)
+#calculate_average_delay(df_charting)
 
+# DELETE ME - temporary!
+def add_time_to_publication():
+    # Define a helper function to filter rows with complete date information.
+    def calc_delay(row):
+        required_keys = [
+            "Submission year",
+            "Submission month",
+            "Publishing year",
+            "Publishing month",
+        ]
+        # Check if any required field is missing, empty, or marked as "na".
+        for key in required_keys:
+            if pd.isnull(row[key]) or str(row[key]).strip().lower() in ("na", ""):
+                return np.nan  # Return NaN if incomplete info.
+
+        try:
+            # Convert date fields to integers.
+            sub_year = int(row["Submission year"])
+            sub_month = int(row["Submission month"])
+            pub_year = int(row["Publishing year"])
+            pub_month = int(row["Publishing month"])
+
+            # Calculate delay in months.
+            delay = (pub_year - sub_year) * 12 + (pub_month - sub_month)
+            return delay
+        except Exception as e:
+            # In case of any conversion errors, leave the value as NaN.
+            return np.nan
+
+    # load data
+    chart_file = "charting_results/results_20250214.csv"
+    df = pd.read_csv(chart_file, dtype=str, sep=";")
+
+    df["Time-to-Publication"] = df.apply(calc_delay, axis=1)
+
+    df.to_csv("charting_results/results_20250214_with_TtP.csv", sep =";", index=False)
+
+add_time_to_publication()

@@ -43,19 +43,20 @@ def plot_figure_7(df):
                   }
 
     # Costum order
-    layer_labels = {'layer1': ['Flatiron', 'TriNetX', 'Cerner', 'Optum', 'SAIL', 'WADLS', 'VUMC', 'IBM',  'NPS', 'CPRD', 'SLaM NHS'],
+    layer_labels = {'layer1': ['Flatiron', 'TriNetX', 'Cerner', 'Optum', 'SAIL', 'InGef', 'IQVIA', 'VUMC', 'IBM',  'NPS', 'CPRD', 'SLaM NHS'],
                     'layer2':['II) Neoplasms', 'XXII) Codes for special purposes (COVID-19)', 'IV) Endocrine, nutritional and metabolic diseases',
                               'IX) Diseases of the circulatory system', 'other',
                               'I) Certain infectious and parasitic diseases',
                                'V) Mental and behavioural disorders']}
 
     # Plot sankey
-    sky = Sankey(df, layerLabels = layer_labels,  colorDict=color_dict, colorMode="layer", stripColor='left', )
+    #sky = Sankey(df, layerLabels = layer_labels,  colorDict=color_dict, colorMode="layer", stripColor='left', )
+    sky = Sankey(df,  layerLabels = layer_labels, colorMode="layer", stripColor='left', )
     fig, ax = sky.plot(figSize=(7, 4), fontSize=10, boxInterv=0.05, boxWidth=0.5, stripLen=8)
 
     # Add label for "axes"
-    ax.text(0, 490, 'Data source', weight='bold', fontsize=10, ha="left", va="bottom")
-    ax.text(9, 490, 'ICD-10 chapter', weight='bold', fontsize=10, ha="right", va="bottom")
+    #ax.text(0, 490, 'Data source', weight='bold', fontsize=10, ha="left", va="bottom")
+    #ax.text(9, 490, 'ICD-10 chapter', weight='bold', fontsize=10, ha="right", va="bottom")
 
     # Plot and save
     fig.tight_layout()

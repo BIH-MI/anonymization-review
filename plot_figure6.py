@@ -16,7 +16,7 @@ df = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_6", engine="open
 def plot_figure_6(df):
 
     # Setting colors for each country with the specified colors
-    colors = df["Origin (Data source)"].map({"United States": "#ADDBC7", "United Kingdom": "#FDCDAC", "Australia": "#CBD5E8"})
+    colors = df["Origin (Data source)"].map({"United States": "#ADDBC7", "United Kingdom": "#FDCDAC", "Australia": "#CBD5E8", "Germany": "#f4cae4"})
 
     # Set font sizes
     font_size_label = 10
@@ -31,7 +31,7 @@ def plot_figure_6(df):
     ax.set_xlabel('Data source', fontsize=font_size_label)
     ax.set_ylabel('Number of articles', fontsize=font_size_label)
     ax.set_xticks(X, df["Abbreviation (Data source)"], rotation=45, ha="right", fontsize=font_size_ticks)
-    ax.set_ylim(0, 100)
+    ax.set_ylim(0, 125)
 
     # Grid
     ax.grid(axis='x')
@@ -40,9 +40,10 @@ def plot_figure_6(df):
     legend_elements = [
         Patch(facecolor='#ADDBC7', label='United States', edgecolor="black", linewidth=1),
         Patch(facecolor='#FDCDAC', label='United Kingdom', edgecolor="black", linewidth=1),
-        Patch(facecolor='#CBD5E8', label='Australia', edgecolor="black", linewidth=1)
+        Patch(facecolor='#CBD5E8', label='Australia', edgecolor="black", linewidth=1),
+        Patch(facecolor='#f4cae4', label='Germany', edgecolor="black", linewidth=1)
     ]
-    plt.legend(handles=legend_elements, loc='lower center', bbox_to_anchor=(0.5, 1.0), ncol=3, fontsize=font_size_legend)
+    plt.legend(handles=legend_elements, loc='lower center', bbox_to_anchor=(0.5, 1.0), ncol=4, fontsize=font_size_legend)
 
     plt.savefig("figure_output/figure_6.svg", bbox_inches='tight')
     plt.savefig("figure_output/figure_6.png", bbox_inches='tight')
