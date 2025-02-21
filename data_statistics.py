@@ -35,7 +35,7 @@ def additional_statistics_figure_2():
     """
 
     # load figure 2 data
-    df = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_2", engine="openpyxl")
+    df = pd.read_csv("data_figure2.csv", sep = ";")
 
     # Example years corresponding to your data
     years = list(range(len(df["Year"])))
@@ -49,7 +49,7 @@ def additional_statistics_figure_2():
     model = smReg.OLS(df["Normalized (Non-COVID-19-related)"], X).fit()
     print("Normalized non COVID [2018-2022] | Slope: %.3f, p-value: %.5f" % (model.params[1], model.pvalues[1]))
 
-additional_statistics_figure_2()
+#additional_statistics_figure_2()
 
 def calculate_EU_contribution(df):
     """
@@ -225,14 +225,13 @@ def crossborder_and_domestic_use(df):
     def filter_crossborder_articles(row):
         origin_list = row['Data origin_list']
         origin = origin_list[0]
-        return len(origin_list) > 1 or origin == "various" or origin != row["First author"]
+        return origin != "unknown" and (len(origin_list) > 1 or origin == "various" or origin != row["First author"])
 
     # Provide stats on number of articles
     df_crossborder = df[df.apply(filter_crossborder_articles, axis=1)]
     df_domestic = df[~df.apply(filter_crossborder_articles, axis=1)]
     count_crossborder, count_domestic, count_total = len(df_crossborder.index), len(df_domestic.index), len(df.index)
 
-    print(count_total)
     print("Crossborder articles: %.2f (n=%d); domestic only articles: %.2f (n=%d)" % (count_crossborder *100/count_total, count_crossborder, count_domestic*100/count_total, count_domestic))
 
 #crossborder_and_domestic_use(df_charting)
@@ -320,9 +319,9 @@ def source_usage_for_specific_disease(df, disease, source):
 
     print("Articles on chapter %s using %s: %.1f (n=%d(/%d))" % (disease, source, count_filtered * 100 / count_total, count_filtered, count_total))
 
-#source_usage_for_specific_disease(df_charting, "2", "Flatiron Health")
-#source_usage_for_specific_disease(df_charting, "4", "Optum")
-#source_usage_for_specific_disease(df_charting, "5", "South London and Maudsley NHS Foundation Trust")
+source_usage_for_specific_disease(df_charting, "2", "Flatiron Health")
+source_usage_for_specific_disease(df_charting, "4", "Optum")
+source_usage_for_specific_disease(df_charting, "5", "South London and Maudsley NHS Foundation Trust")
 
 def unique_author_fraction_per_source2(df, other_threshold=5):
     def filter_only_specific_source(row):
@@ -533,4 +532,4 @@ def add_time_to_publication():
 
     df.to_csv("charting_results/results_20250214_with_TtP.csv", sep =";", index=False)
 
-add_time_to_publication()
+#add_time_to_publication()

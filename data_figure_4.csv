@@ -1,0 +1,17 @@
+Country;Count (Data origin);Name (Country);Region (Country);Citable documents_total;Data origin per 1000 citable documents
+JP;18.0;Japan;Asia;221677.0;0.08119922229189316
+KR;7.0;South Korea;Asia;135723.0;0.05157563566970963
+IN;6.0;India;Asia;199794.0;0.03003093185981561
+CN;10.0;China;Asia;824284.0;0.012131741001887698
+DE;34.0;Germany;Continental Europe;262883.0;0.1293351034490629
+ES;11.0;Spain;Continental Europe;158763.0;0.06928566479595372
+FR;11.0;France;Continental Europe;170439.0;0.06453921931013441
+NL;6.0;Netherlands;Continental Europe;125826.0;0.04768489819274236
+IT;3.0;Italy;Continental Europe;220130.0;0.013628310543769591
+GB;178.0;United Kingdom;Core Anglosphere;330877.0;0.5379642586217839
+US;534.0;United States;Core Anglosphere;1156262.0;0.4618330447597517
+AU;53.0;Australia;Core Anglosphere;178579.0;0.29678741621355254
+CA;16.0;Canada;Core Anglosphere;197847.0;0.08087057170439785
+RU;2.0;Russia;Eurasia;92812.0;0.021548937637374477
+BR;1.0;Brazil;South America;129774.0;0.007705703761924577
+other;78.0;other;other;7901658.0;0.00987134598839889

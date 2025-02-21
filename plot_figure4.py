@@ -13,13 +13,13 @@ mpl.rcParams['xtick.color'] = COLOR
 mpl.rcParams['ytick.color'] = COLOR
 
 # File with data to plot
-df = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_4", engine="openpyxl")
+df = pd.read_csv("data_figure_4.csv", sep=";")
 
 # Define colors for each region
 cmap = plt.get_cmap("Pastel2")
-color_dict = {"Asia": cmap.colors[0], "Core Anglosphere": cmap.colors[1], "Eurasia": cmap.colors[2], "European Union": cmap.colors[3], 'South America': cmap.colors[4], 'Europe': cmap.colors[5], "other": "Grey"}
+color_dict = {"Asia": cmap.colors[0],  "Continental Europe": cmap.colors[1], "Core Anglosphere": cmap.colors[2], 'Eurasia':cmap.colors[3], 'South America': cmap.colors[4], "other": "Grey"}
 
-global_average = 0.156817142
+global_average = 0.157
 
 def plot_figure_4(df):
 
@@ -33,7 +33,7 @@ def plot_figure_4(df):
     # Define break range and upper bound
     #break_lower, start_upper = 0.1375, 0.3125
     #y_lim = 0.3625
-    break_lower, start_upper = 0.3, 0.45
+    break_lower, start_upper = 0.3125, 0.4375 # --> diff
     y_lim = 0.55
 
     fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True, figsize=(10, 3), gridspec_kw={'height_ratios': [y_lim-start_upper, break_lower], 'hspace': 0.1})
@@ -51,8 +51,8 @@ def plot_figure_4(df):
             ax2.plot((posx - break_line_width/2, posx + break_line_width/2), (break_lower -break_line_height/2, break_lower + break_line_height/2), color='k', clip_on=False)
 
     # Draw global average
-    ax2.plot((-0.5, 15.5), (global_average, global_average), color='grey', linewidth=1, linestyle="--")
-    fig.text(0.74, 0.49, 'Global average', fontsize=font_size_ticks)
+    ax2.plot((-0.5, 16.5), (global_average, global_average), color='grey', linewidth=1, linestyle="--")
+    fig.text(0.16, 0.4, 'Global average', fontsize=font_size_ticks)
 
     # Set y-axis limits
     ax1.set_ylim(start_upper, y_lim)
@@ -64,17 +64,17 @@ def plot_figure_4(df):
 
     # Set ticks and grid
     ax1.tick_params(axis='x', which='both', bottom=False)
-    #ax1.set_yticks([0.3, 0.325, 0.35])
+    ax1.set_yticks([0.45, 0.50, 0.55])
     ax2.set_xticks(np.arange(len(df["Name (Country)"])), df["Name (Country)"], rotation=45, ha="right", fontsize=font_size_ticks)
-    ax2.set_yticks(np.arange(0, break_lower, 0.025))
+    ax2.set_yticks(np.arange(0, break_lower, 0.05))
     ax1.grid(axis='x')
     ax2.grid(axis='x')
 
     # Label y axis
-    fig.text(0.04, 0.5, 'Articles included per \n1,000 citable documents', va='center', rotation='vertical', fontsize=font_size_label, ha="center")
+    fig.text(0.06, 0.5, 'Articles included per \n1,000 citable documents', va='center', rotation='vertical', fontsize=font_size_label, ha="center")
 
     # Legend with specified colors and no border
-    regions = ["Asia", "Core Anglosphere", "Eurasia", "Europe", "European Union", "South America"]
+    regions = ["Asia", "Continental Europe", "Core Anglosphere", "Eurasia", "South America"]
     legend_elements = []
     for region in regions:
         legend_elements.append(Patch(facecolor=color_dict[region], label=region, edgecolor="black", linewidth=1),)

@@ -12,8 +12,8 @@ mpl.rcParams['axes.labelcolor'] = COLOR
 mpl.rcParams['xtick.color'] = COLOR
 mpl.rcParams['ytick.color'] = COLOR
 
-df_counts = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_5a", engine="openpyxl")
-df_flows = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_5b", engine="openpyxl")
+df_counts = pd.read_csv("data_figure_5a.csv", sep=";")
+df_flows = pd.read_csv("data_figure_5b.csv", sep=";")
 
 def plot_figure_5a(df):
 
@@ -22,8 +22,8 @@ def plot_figure_5a(df):
     font_size_ticks = 10
     font_size_legend = 10
     font_size_bar_label = 10
-    distance_bar_label = 1.5
-    y_lim = 70
+    distance_bar_label = 1
+    y_lim = 60
 
     # Plot configuration
     fig, ax = plt.subplots(figsize=(5, 3.5))
@@ -77,13 +77,10 @@ def plot_figure_5b(df):
                     'United Kingdom': cmap.colors[1],
                     'Australia': cmap.colors[2],
                     'Spain': cmap.colors[5],
-                    'Germany': cmap.colors[6],
-                    'Taiwan': cmap.colors[3],
-                    'France': cmap.colors[4]},
+                    'Germany': cmap.colors[6]},
                   "layer2": {
                     "United States": cmap.colors[7],
                     "United Kingdom": cmap.colors[7],
-                    "Netherlands": cmap.colors[7],
                     "Japan": cmap.colors[7],
                     "Germany": cmap.colors[7],
                     "Canada": cmap.colors[7],
@@ -91,12 +88,15 @@ def plot_figure_5b(df):
                   }
 
     # Costum order
-    layer_labels = {'layer1': ["United Kingdom", "Taiwan", "Germany", "France", "Spain", "Australia", "United States"],
-                    'layer2':["United States", "United Kingdom",  "Netherlands",  "Japan", "Germany", "Canada", "Switzerland"]}
+    #layer_labels = {'layer1': ["United Kingdom", "Spain", "Australia", "Germany", "United States"],
+    #                'layer2':["United States", "United Kingdom",  "Japan", "Canada", "Germany", "Switzerland"]}
+
+    layer_labels = {'layer1': ["United States",  "Australia", "Germany", "Spain", "United Kingdom"],
+                    'layer2':["Switzerland", "Germany", "Canada", "Japan", "United Kingdom", "United States"]}
 
     # Plot sankey
-    #sky = Sankey(df,layerLabels = layer_labels,colorDict=color_dict,colorMode="layer", stripColor='left', )
-    sky = Sankey(df, colorMode="layer", stripColor='left', )
+    sky = Sankey(df,layerLabels = layer_labels,colorDict=color_dict,colorMode="layer", stripColor='left', )
+    #sky = Sankey(df, layerLabels=layer_labels, colorMode="layer", stripColor='left', )
     fig, ax = sky.plot(figSize=(5.5, 3), fontSize=10, boxInterv=0.05, boxWidth=0.5, stripLen=7)
 
     # Add label for "axes"
@@ -114,5 +114,5 @@ def plot_figure_5b(df):
     plt.close()
     plt.show()
 
-#plot_figure_5a(df_counts)
-plot_figure_5b(df_flows)
+plot_figure_5a(df_counts)
+#plot_figure_5b(df_flows)

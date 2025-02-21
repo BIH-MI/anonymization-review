@@ -12,7 +12,7 @@ mpl.rcParams['axes.labelcolor'] = COLOR
 mpl.rcParams['xtick.color'] = COLOR
 mpl.rcParams['ytick.color'] = COLOR
 
-df = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_2", engine="openpyxl")
+df = pd.read_csv("data_figure_2.csv", sep=";")
 
 def plot_figure_2(df):
 
@@ -46,11 +46,11 @@ def plot_figure_2(df):
     ax.grid(axis='x')
 
     # Axis labels and ticks
-    ax.set_ylim(0, 25)
+    ax.set_ylim(0, 22)
     ax.set_xlabel('Year of publication', size=font_size_label)
     ax.set_ylabel('Articles included per \n 100,000 published articles', size=font_size_label)
     ax.set_xticks(years_index, df["Year"], fontsize=font_size_ticks)
-    ax.set_yticks(np.arange(0, 25.1, 5), np.arange(0, 25.1, 5).astype(int), fontsize=font_size_ticks)
+    ax.set_yticks(np.arange(0, 22.1, 5), np.arange(0, 22.1, 5).astype(int), fontsize=font_size_ticks)
 
     # Make CI areas less transparent
     plt.setp(ax.collections[0], alpha=0.25)

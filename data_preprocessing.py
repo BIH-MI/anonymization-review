@@ -66,10 +66,9 @@ def preprocess_figure_2(df):
     df['Normalized (COVID-19-related)'] = (df['Count (COVID-19-related)'] / df['Paper-published-total']) * scaling_factor
 
     # Save to xlsx
-    with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl",  mode="a", if_sheet_exists='replace') as writer:
-        df.to_excel(writer, sheet_name='data_figure_2', index=False)
+    df.to_csv('data_figure_2.csv', sep =";", index=False)
 
-def preprocess_figure_3(df, other_threshold = 23):
+def preprocess_figure_3(df, other_threshold = 5):
     def filter_only_single_data_origin(row):
         origin_list = row['Data origin_list']
         origin = origin_list[0]
@@ -99,8 +98,8 @@ def preprocess_figure_3(df, other_threshold = 23):
     df["Distribution (First author)"] = df["Count (First author)"] * 100 / df["Count (First author)"].sum()
     df["Distribution (Data origin)"] = df["Count (Data origin)"] * 100 / df["Count (Data origin)"].sum()
     # Split country into countries commonly mentioned and "other" by given threshold
-    df_countries_other = df[df["Count (First author)"] < other_threshold]
-    df = df[df["Count (First author)"] >= other_threshold]
+    df_countries_other = df[df["Distribution (First author)"] < other_threshold]
+    df = df[df["Distribution (First author)"] >= other_threshold]
     # Sort
     df = df.sort_values("Count (First author)", ascending=False)
     # Create and append "other" row
@@ -110,9 +109,9 @@ def preprocess_figure_3(df, other_threshold = 23):
                  "Distribution (First author)": df_countries_other["Distribution (First author)"].sum(),
                  "Distribution (Data origin)": df_countries_other["Distribution (Data origin)"].sum()}
     df = df._append(row_other, ignore_index=True)
-    # Save to xlsx
-    with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl",  mode="a", if_sheet_exists='replace') as writer:
-        df.to_excel(writer, sheet_name='data_figure_3', index=False)
+
+    # Save to csv
+    df.to_csv('data_figure_3.csv', sep =";", index=False)
 
 def preprocess_figure_4(df):
 
@@ -150,34 +149,32 @@ def preprocess_figure_4(df):
     df["Data origin per 1000 citable documents"] = df["Count (Data origin)"] * 1000 / df["Citable documents_total"]
 
     # Split countries into top-20 and "other"
-    #df_other = df[df.apply(filter_other, axis=1)]
-    #df = df[~df.apply(filter_other, axis=1)]
+    df_other = df[df.apply(filter_other, axis=1)]
+    df = df[~df.apply(filter_other, axis=1)]
 
     # Sort
     df = df.sort_values(['Region (Country)', 'Data origin per 1000 citable documents'], ascending=[True, False])
-    '''
+
     # Create and append "other" row
     row_other = {"Country": "other", "Name (Country)": "other", "Region (Country)": "other",
                  "Citable documents_total": df_other["Citable documents_total"].sum(),
                  "Count (Data origin)": df_other["Count (Data origin)"].sum(),
                  "Data origin per 1000 citable documents": df_other["Count (Data origin)"].sum() * 1000 / df_other["Citable documents_total"].sum()}
     df = df._append(row_other, ignore_index=True)
-'''
 
-    # Save to xlsx
-    with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl",  mode="a", if_sheet_exists='replace') as writer:
-        df.to_excel(writer, sheet_name='data_figure_4', index=False)
+    # Save to csv
+    df.to_csv('data_figure_4.csv', sep =";", index=False)
 
-def preprocess_figure_5(df, other_threshold_5a=20, other_threshold_5b=4):
+def preprocess_figure_5(df, other_threshold_5a=20, other_threshold_5b=3):
 
     def filter_crossborder_origin(row):
         return row['Data origin_list'] != row["First author"]
 
-    def filter_various(row):
-        return row['Data origin_list'] != "various"
+    def filter_various_and_unknown(row):
+        return row['Data origin_list'] != "various" and row['Data origin_list'] != "unknown"
 
     df = df.explode('Data origin_list')
-    df = df[df.apply(filter_various, axis=1)]
+    df = df[df.apply(filter_various_and_unknown, axis=1)]
     df_crossborder = df[df.apply(filter_crossborder_origin, axis=1)]
     df_domestic = df[~df.apply(filter_crossborder_origin, axis=1)]
 
@@ -241,8 +238,6 @@ def preprocess_figure_5(df, other_threshold_5a=20, other_threshold_5b=4):
 
     # Filter combinations that do occure less than "other_threshold_5b" times
     df_combinations = df_crossborder.groupby(['First author', 'Data origin_list']).filter(lambda x: len(x) >= other_threshold_5b)[['First author', 'Data origin_list']]
-    # Filter to include only those rows where the "First author" appears at least 5 times
-    #df_combinations = df_crossborder.groupby('First author').filter(lambda x: len(x) >= 5)[['First author', 'Data origin_list']]
 
     # Append full country name
     df_combinations = pd.merge(df_combinations, auxiliary_data, left_on='First author', right_on='Country', how='left')
@@ -251,48 +246,9 @@ def preprocess_figure_5(df, other_threshold_5a=20, other_threshold_5b=4):
     df_combinations = df_combinations.rename(columns={"Name (Country)": "Name (Country data origin)"})
     df_combinations = df_combinations[["First author", "Data origin_list",	"Name (Country first author)", "Name (Country data origin)"]]
 
-    with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl", mode="a", if_sheet_exists='replace') as writer:
-        df_counts.to_excel(writer, sheet_name='data_figure_5a', index=False)
-        df_combinations.to_excel(writer, sheet_name='data_figure_5b', index=False)
-
-def preprocess_figure_S2(df, other_threshold = 5):
-    def filter_only_assigned_ICD_chapter(row):
-        return row['ICD-10 chapter'] != ""
-
-    # Remove records not assigned to a chapter
-    df_filtered = df[df.apply(filter_only_assigned_ICD_chapter, axis=1)]
-
-    # Count occurrences of chapters
-    df = df_filtered['ICD-10 chapter'].value_counts().reset_index()
-    df.columns = ['ICD-10 chapter', 'Count (ICD-10 chapter)']
-
-    # Read external CSV with total number of articles published
-    auxiliary_data = pd.read_excel("auxiliary_data/ICD-10_chapter_mapping.xlsx", sheet_name='ICD-10_chapter_mapping', skiprows=0, dtype=str)
-    df = pd.merge(df, auxiliary_data, on='ICD-10 chapter', how='outer')
-
-    # Fill missing values with 0
-    df.fillna(0, inplace=True)
-
-    # Convert float counts to integers
-    df['Count (ICD-10 chapter)'] = df['Count (ICD-10 chapter)'].astype(int)
-
-    # Calculate distribution
-    df['Distribution (ICD-10 chapter)'] = df['Count (ICD-10 chapter)'] * 100 / df['Count (ICD-10 chapter)'].sum()
-
-    # Split country files into countries commonly mentioned and "other" by given threshold
-    df_other = df[df["Distribution (ICD-10 chapter)"] < other_threshold]
-    df = df[df["Distribution (ICD-10 chapter)"] >= other_threshold]
-
-    # Sort
-    df = df.sort_values("Count (ICD-10 chapter)", ascending=False)
-
-    # Create and append "other" column
-    row_other = {"ICD-10 chapter": "other", "Name (ICD-10 chapter)": "other", "Count (ICD-10 chapter)": df_other["Count (ICD-10 chapter)"].sum(), "Distribution (ICD-10 chapter)": df_other["Distribution (ICD-10 chapter)"].sum()}
-    df = df._append(row_other, ignore_index=True)
-
-    # Save to xlsx
-    with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl",  mode="a", if_sheet_exists='replace') as writer:
-        df.to_excel(writer, sheet_name='data_figure_S2', index=False)
+    # Save to csv
+    df_counts.to_csv('data_figure_5a.csv', sep =";", index=False)
+    df_combinations.to_csv('data_figure_5b.csv', sep =";", index=False)
 
 def preprocess_figure_6(df, other_threshold = 10):
 
@@ -318,9 +274,8 @@ def preprocess_figure_6(df, other_threshold = 10):
     # Remove uncommon custodians
     df = df[df["Count (Data source)"] >= other_threshold]
 
-    # Save to xlsx
-    with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl",  mode="a", if_sheet_exists='replace') as writer:
-        df.to_excel(writer, sheet_name='data_figure_6', index=False)
+    # Save to csv
+    df.to_csv('data_figure_6.csv', sep=";", index=False)
 
 def preprocess_figure_7(df, other_threshold_source=10, other_threshold_icd=25):
 
@@ -358,9 +313,46 @@ def preprocess_figure_7(df, other_threshold_source=10, other_threshold_icd=25):
 
     df = df[["Abbreviation (Data source)", "Name (ICD-10 chapter)"]]
 
-    # Save to xlsx
-    with pd.ExcelWriter('data_figures.xlsx', engine="openpyxl",  mode="a", if_sheet_exists='replace') as writer:
-        df.to_excel(writer, sheet_name='data_figure_7', index=False)
+    # Save to csv
+    df.to_csv('data_figure_7.csv', sep=";", index=False)
+
+def preprocess_figure_S1(df, other_threshold = 5):
+    def filter_only_assigned_ICD_chapter(row):
+        return row['ICD-10 chapter'] != ""
+
+    # Remove records not assigned to a chapter
+    df_filtered = df[df.apply(filter_only_assigned_ICD_chapter, axis=1)]
+
+    # Count occurrences of chapters
+    df = df_filtered['ICD-10 chapter'].value_counts().reset_index()
+    df.columns = ['ICD-10 chapter', 'Count (ICD-10 chapter)']
+
+    # Read external CSV with total number of articles published
+    auxiliary_data = pd.read_excel("auxiliary_data/ICD-10_chapter_mapping.xlsx", sheet_name='ICD-10_chapter_mapping', skiprows=0, dtype=str)
+    df = pd.merge(df, auxiliary_data, on='ICD-10 chapter', how='outer')
+
+    # Fill missing values with 0
+    df.fillna(0, inplace=True)
+
+    # Convert float counts to integers
+    df['Count (ICD-10 chapter)'] = df['Count (ICD-10 chapter)'].astype(int)
+
+    # Calculate distribution
+    df['Distribution (ICD-10 chapter)'] = df['Count (ICD-10 chapter)'] * 100 / df['Count (ICD-10 chapter)'].sum()
+
+    # Split country files into countries commonly mentioned and "other" by given threshold
+    df_other = df[df["Distribution (ICD-10 chapter)"] < other_threshold]
+    df = df[df["Distribution (ICD-10 chapter)"] >= other_threshold]
+
+    # Sort
+    df = df.sort_values("Count (ICD-10 chapter)", ascending=False)
+
+    # Create and append "other" column
+    row_other = {"ICD-10 chapter": "other", "Name (ICD-10 chapter)": "other", "Count (ICD-10 chapter)": df_other["Count (ICD-10 chapter)"].sum(), "Distribution (ICD-10 chapter)": df_other["Distribution (ICD-10 chapter)"].sum()}
+    df = df._append(row_other, ignore_index=True)
+
+    # Save to csv
+    df.to_csv('data_figure_S1.csv', sep=";", index=False)
 
 df_raw = load_and_preprocess_charting()
 #preprocess_scimagojr()
@@ -370,4 +362,4 @@ preprocess_figure_4(df_raw)
 preprocess_figure_5(df_raw)
 preprocess_figure_6(df_raw)
 preprocess_figure_7(df_raw)
-preprocess_figure_S2(df_raw)
+preprocess_figure_S1(df_raw)
