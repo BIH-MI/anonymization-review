@@ -357,9 +357,32 @@ def preprocess_figure_S1(df, other_threshold = 5):
 df_raw = load_and_preprocess_charting()
 #preprocess_scimagojr()
 preprocess_figure_2(df_raw)
-preprocess_figure_3(df_raw)
-preprocess_figure_4(df_raw)
-preprocess_figure_5(df_raw)
-preprocess_figure_6(df_raw)
-preprocess_figure_7(df_raw)
-preprocess_figure_S1(df_raw)
+#preprocess_figure_3(df_raw)
+#preprocess_figure_4(df_raw)
+#preprocess_figure_5(df_raw)
+#preprocess_figure_6(df_raw)
+#preprocess_figure_7(df_raw)
+#preprocess_figure_S1(df_raw)
+
+def filter_articles_with_full_date_information(df):
+    def filter_only_full_date_information(row):
+        required_keys = [
+            "Submission year",
+            "Publishing year",
+        ]
+        # Check if any required field is missing, empty, or marked as "na".
+        for key in required_keys:
+             if str(row[key]).strip().lower() in ("na", ""):
+                return False
+        return True
+
+    def filter_year_range(row):
+        return row["Submission year"]  != "2022"
+
+    # Remove records not assigned to a chapter
+    df = df[df.apply(filter_only_full_date_information, axis=1)]
+    df = df[df.apply(filter_year_range, axis=1)]
+
+    df.to_csv('charting_results/results_20250219_submission_year_up_to_2021.csv', sep=";", index=False)
+
+#filter_articles_with_full_date_information(df_raw)
