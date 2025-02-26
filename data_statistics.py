@@ -8,8 +8,8 @@ from collections import Counter
 def load_and_preprocess_charting():
 
     # load data
-    chart_file = "charting_results/results_20250214.csv"
-    df = pd.read_csv(chart_file, dtype=str, sep=";")
+    chart_file = "charting_results/results_20250219.csv"
+    df = pd.read_csv(chart_file, dtype=str, sep=";", encoding='unicode_escape')
 
     # Fill empty cells with empty string
     df = df.fillna('')
@@ -35,13 +35,20 @@ def additional_statistics_figure_2():
     """
 
     # load figure 2 data
-    df = pd.read_csv("data_figure2.csv", sep = ";")
+    #df = pd.read_csv("data_figure_2.csv", sep = ";")
+    df = pd.read_csv("data_figure_2_submission_year.csv", sep = ";")
 
     # Example years corresponding to your data
     years = list(range(len(df["Year"])))
 
     # Adding a column of ones to include an intercept in the model
     X = smApi.add_constant(years)
+
+    model = smReg.OLS(df["Count (Non-COVID-19-related)"]+ df["Count (COVID-19-related)"], X).fit()
+    print("Total all [2018-2021] | Slope: %.3f, p-value: %.5f" % (model.params[1], model.pvalues[1]))
+
+    model = smReg.OLS(df["Count (Non-COVID-19-related)"], X).fit()
+    print("Total non COVID [2018-2021] | Slope: %.3f, p-value: %.5f" % (model.params[1], model.pvalues[1]))
 
     model = smReg.OLS(df["Normalized (Non-COVID-19-related)"]+ df["Normalized (COVID-19-related)"], X).fit()
     print("Normalized all [2018-2022] | Slope: %.3f, p-value: %.5f" % (model.params[1], model.pvalues[1]))
@@ -51,7 +58,7 @@ def additional_statistics_figure_2():
 
 #additional_statistics_figure_2()
 
-def calculate_EU_contribution(df):
+def calculate_region_contribution(df):
     """
     Calculates contributions per country and the EUs contribution
     """
@@ -62,6 +69,7 @@ def calculate_EU_contribution(df):
 
     # Remove records with more than one data origin
     df = df[df.apply(filter_only_single_data_origin, axis=1)]
+    total_articles = len(df.index)
 
     # Count occurrences in each specific column
     first_author_counts = df['First author'].value_counts().reset_index()
@@ -93,27 +101,27 @@ def calculate_EU_contribution(df):
 
     """ 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    EU contribution
+    Continental Europe contribution
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     """
 
-    df = df[df["Region (Country)"] == 'European Union']
+    df = df[df["Region (Country)"] == 'Continental Europe']
     count_first_author = df["Count (First author)"].sum()
     count_data_origin = df["Count (Data origin)"].sum()
     relative_first_author = df["Distribution (First author)"].sum()
     relative_data_origin = df["Distribution (Data origin)"].sum()
     print(relative_data_origin)
 
-    print("EU First author: %.2f (n=%d), EU Data origin: %.2f (n=%d)" % (relative_first_author, count_first_author,  relative_data_origin, count_data_origin))
+    print("EU First author: %.2f (%d of %d), EU Data origin: %.2f (%d of %d)" % (relative_first_author, count_first_author, total_articles, relative_data_origin, count_data_origin, total_articles))
 
-#calculate_EU_contribution(df_charting)
+calculate_region_contribution(df_charting)
 
-def additional_statistics_figure_2():
+def additional_statistics_figure_4():
     """
     Prints values to calculate the Data origin
     per 1000 citable documents for entire regions
     """
-    df = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_2", engine="openpyxl")
+    df = pd.read_csv("data_figure_4.csv", sep=";")
 
     print(f"Global: Mean Score: {df['Data origin per 1000 citable documents'].mean():.3f}, Standard Deviation: {df['Data origin per 1000 citable documents'].std():.3f}")
 
@@ -187,7 +195,7 @@ def author_and_data_origin(df):
     # Count of articles with same author and data origin
     same_author_data_origin_count = len(df_domestic.index)
 
-    print("Articles with same author and data origin: %.2f (n=%d)" % ((same_author_data_origin_count * 100 / single_origin_count), same_author_data_origin_count))
+    print("Articles with same author and data origin: %.1f (n=%d)" % ((same_author_data_origin_count * 100 / single_origin_count), same_author_data_origin_count))
 
     df_multiple_origin = df[~df.apply(filter_only_single_data_origin, axis=1)]
     first_author_counts = df_multiple_origin['First author'].value_counts().reset_index()
@@ -225,7 +233,7 @@ def crossborder_and_domestic_use(df):
     def filter_crossborder_articles(row):
         origin_list = row['Data origin_list']
         origin = origin_list[0]
-        return origin != "unknown" and (len(origin_list) > 1 or origin == "various" or origin != row["First author"])
+        return (len(origin_list) > 1 or origin == "various" or origin != row["First author"])
 
     # Provide stats on number of articles
     df_crossborder = df[df.apply(filter_crossborder_articles, axis=1)]
@@ -257,7 +265,7 @@ def cross_border_flows(df):
 
     print("Crossborder flows: %d" % len(df_crossborder.index))
 
-#cross_border_flows(df_charting)
+cross_border_flows(df_charting)
 
 def custodian_usage(df):
     """
@@ -269,7 +277,7 @@ def custodian_usage(df):
         # Check if any custodian in the row's list is in the common data sources
         return any(custodian in common_data_sources for custodian in row['Data source_list'])
 
-    # Read external CSV with total number of articles published
+    # Read external CSV with list of common sources
     auxiliary_data = pd.read_excel("auxiliary_data/Data_source_information.xlsx", sheet_name='Data_source_information', skiprows=0, dtype=str)
     common_data_sources = auxiliary_data["Data source"].unique()
 
@@ -319,86 +327,41 @@ def source_usage_for_specific_disease(df, disease, source):
 
     print("Articles on chapter %s using %s: %.1f (n=%d(/%d))" % (disease, source, count_filtered * 100 / count_total, count_filtered, count_total))
 
-source_usage_for_specific_disease(df_charting, "2", "Flatiron Health")
-source_usage_for_specific_disease(df_charting, "4", "Optum")
-source_usage_for_specific_disease(df_charting, "5", "South London and Maudsley NHS Foundation Trust")
+#source_usage_for_specific_disease(df_charting, "2", "Flatiron Health")
+#source_usage_for_specific_disease(df_charting, "4", "Optum")
+#source_usage_for_specific_disease(df_charting, "5", "South London and Maudsley NHS Foundation Trust")
 
-def unique_author_fraction_per_source2(df, other_threshold=5):
-    def filter_only_specific_source(row):
-        return row['Data source_list'] != "Multiple" and row['Data source_list'] != "Not precisely specified"
+def datatype_distribution(df):
 
-    df = df.explode('Data source_list')
+    def filter_used_custodian(row):
+        # Check if any custodian in the row's list is in the common data sources
+        return any(custodian in common_data_sources for custodian in row['Data source_list'])
 
-    # Remove records not assigned to a specific source
-    df = df[df.apply(filter_only_specific_source, axis=1)]
+    def analyse_datatype_usage(df):
+        total_articles = len(df.index)
+        only_healthcare_data = len(df[(df["Research data"] == "No") & (df["Healthcare data"] == "Yes")].index)
+        only_research_data = len(df[(df["Research data"] == "Yes") & (df["Healthcare data"] == "No")].index)
+        both = len(df[(df["Research data"] == "Yes") & (df["Healthcare data"] == "Yes")].index)
+        print("Articles only using healthcare data: %.1f (%d of %d)" % (only_healthcare_data*100/total_articles, only_healthcare_data, total_articles))
+        print("Articles only using research data: %.1f (%d of %d)" % (only_research_data * 100 / total_articles, only_research_data, total_articles))
+        print("Articles using both datatypes: %.1f (%d of %d)" % (both * 100 / total_articles, both, total_articles))
 
-    # Count occurrences of sources
-    df['Data source'] = df['Data source_list']
-    source_counts = df['Data source'].value_counts().reset_index()
-    source_counts.columns = ['Data source', 'Count (Data source)']
+    # Read external CSV with list of common sources
+    auxiliary_data = pd.read_excel("auxiliary_data/Data_source_information.xlsx", sheet_name='Data_source_information', skiprows=0, dtype=str)
+    common_data_sources = auxiliary_data["Data source"].unique()
+    df_custodian = df[df.apply(filter_used_custodian, axis=1)]
+    df_no_custodian = df[~df.apply(filter_used_custodian, axis=1)]
 
-    # Read external CSV with total number of articles published
-    auxiliary_data = pd.read_excel("auxiliary_data/Data_source_information.xlsx", sheet_name='Data_source_information', dtype=str)
-    df = pd.merge(source_counts, auxiliary_data, on='Data source', how='left')
+    print("\n### For all articles: ###")
+    analyse_datatype_usage(df)
+    print("\n### For articles using common data source: ###")
+    analyse_datatype_usage(df_custodian)
+    print("\n### For articles NOT using common data source: ###")
+    analyse_datatype_usage(df_no_custodian)
 
-    # Convert float counts to integers
-    df['Count (Data source)'] = df['Count (Data source)'].astype(int)
+#datatype_distribution(df_charting)
 
-    # Remove uncommon sources
-    df = df[df["Count (Data source)"] >= other_threshold]
-
-    # Split authors into list, count total and unique authors per source
-    df['Authors list'] = df['Authors'].str.split(' and ')
-    authors_df = df.explode('Authors list')
-    authors_df = authors_df.groupby('Data source')['Authors list'].agg(Total_Authors=('Authors list', 'size'),
-                                                                       Unique_Authors=(
-                                                                       'Authors list', 'nunique')).reset_index()
-
-    # Merge the authors data back with the source counts
-    final_df = pd.merge(df, authors_df, on='Data source', how='left')
-    final_df = final_df[['Data source', 'Total_Authors', 'Unique_Authors']]
-
-    # Save to xlsx
-    with pd.ExcelWriter('stats_unique_authors.xlsx', engine="openpyxl", mode="a", if_sheet_exists='replace') as writer:
-        final_df.to_excel(writer, sheet_name='stats_unique_authors', index=False)
-
-    return final_df
-
-
-def compute_gini(authors_lists):
-    """
-    Compute the Gini index for a given series of authors lists.
-
-    Parameters:
-        authors_lists (iterable): An iterable (e.g., a pandas Series) where each element is a list of authors.
-
-    Returns:
-        float: The computed Gini index.
-    """
-    # Flatten the lists into one list of all authors for the data source
-    all_authors = [author for authors in authors_lists for author in authors]
-
-    if not all_authors:
-        return 0.0
-
-    # Count the frequency of each author in this data source
-    counts = list(Counter(all_authors).values())
-    arr = np.array(counts, dtype=float)
-
-    if np.sum(arr) == 0:
-        return 0.0
-
-    # Sort the frequency counts in ascending order
-    sorted_arr = np.sort(arr)
-    n = len(arr)
-    # Create an index array starting at 1
-    index = np.arange(1, n + 1)
-
-    # Compute the Gini index using the formula
-    gini_value = (2 * np.sum(index * sorted_arr)) / (n * np.sum(sorted_arr)) - (n + 1) / n
-    return gini_value
-
-def unique_author_fraction_per_source(df, other_threshold=5):
+def unique_author_fraction_per_source(df, other_threshold=10):
     def filter_only_specific_source(row):
         return row['Data source_list'] != "Multiple" and row['Data source_list'] != "Not precisely specified"
 
@@ -417,7 +380,6 @@ def unique_author_fraction_per_source(df, other_threshold=5):
         count=('Data source_list', 'size'),
         Authors=('Authors_list', lambda series: sum(len(authors) for authors in series)),
         Unique_authors=('Authors_list', lambda series: len({author for authors in series for author in authors})),
-        Gini_index=('Authors_list', lambda series: compute_gini(series))
     ).reset_index()
     grouped['Unique_author_fraction'] = grouped["Unique_authors"] / grouped["Authors"]
 
@@ -445,7 +407,7 @@ def unique_author_fraction_per_source(df, other_threshold=5):
     with pd.ExcelWriter('stats_unique_authors.xlsx', engine="openpyxl", mode="a", if_sheet_exists='replace') as writer:
         grouped[output_columns].to_excel(writer, sheet_name='stats_unique_authors', index=False)
 
-#unique_author_fraction_per_source(df_charting, 5)
+#unique_author_fraction_per_source(df_charting, 10)
 
 def calculate_average_delay(df):
 
@@ -493,7 +455,7 @@ def calculate_average_delay(df):
     covid_n_avg = calculate_average_delay(covid_n)
     print(f"Average delay (months) for COVID-19 research (n): {covid_n_avg:.2f}")
 
-#calculate_average_delay(df_charting)
+calculate_average_delay(df_charting)
 
 # DELETE ME - temporary!
 def add_time_to_publication():

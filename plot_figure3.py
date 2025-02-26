@@ -10,7 +10,7 @@ mpl.rcParams['axes.labelcolor'] = COLOR
 mpl.rcParams['xtick.color'] = COLOR
 mpl.rcParams['ytick.color'] = COLOR
 
-df = pd.read_excel("data_figures.xlsx", sheet_name="data_figure_3", engine="openpyxl")
+df = pd.read_csv("data_figure_3.csv", sep=";")
 
 def plot_figure_3(df):
 
@@ -44,7 +44,7 @@ def plot_figure_3(df):
         labels_big = [f'{w:.1f}' if (w := v.get_width()) >= 3.4 else '' for v in c]
         ax.bar_label(c, labels=labels_big, label_type='center')
 
-    plt.legend(loc='lower center', ncols = len(df.columns) /2, bbox_to_anchor=(0.5, 1))
+    plt.legend(loc='lower center', ncols = len(df.columns), bbox_to_anchor=(0.5, 1))
     plt.savefig("figure_output/figure_3.svg", bbox_inches='tight')
     plt.savefig("figure_output/figure_3.png", bbox_inches='tight')
 

@@ -17,7 +17,7 @@ df = pd.read_csv("data_figure_4.csv", sep=";")
 
 # Define colors for each region
 cmap = plt.get_cmap("Pastel2")
-color_dict = {"Asia": cmap.colors[0],  "Continental Europe": cmap.colors[1], "Core Anglosphere": cmap.colors[2], 'Eurasia':cmap.colors[3], 'South America': cmap.colors[4], "other": "Grey"}
+color_dict = {"Asia": cmap.colors[0],   "Core Anglosphere": cmap.colors[1], 'Eurasia':cmap.colors[2], "Continental Europe": cmap.colors[3], 'South America': cmap.colors[4], "other": "Grey"}
 
 global_average = 0.157
 
@@ -52,7 +52,7 @@ def plot_figure_4(df):
 
     # Draw global average
     ax2.plot((-0.5, 16.5), (global_average, global_average), color='grey', linewidth=1, linestyle="--")
-    fig.text(0.16, 0.4, 'Global average', fontsize=font_size_ticks)
+    fig.text(0.75, 0.4, 'Global average', fontsize=font_size_ticks)
 
     # Set y-axis limits
     ax1.set_ylim(start_upper, y_lim)
@@ -74,11 +74,11 @@ def plot_figure_4(df):
     fig.text(0.06, 0.5, 'Articles included per \n1,000 citable documents', va='center', rotation='vertical', fontsize=font_size_label, ha="center")
 
     # Legend with specified colors and no border
-    regions = ["Asia", "Continental Europe", "Core Anglosphere", "Eurasia", "South America"]
+    regions = ["Asia", "Core Anglosphere", "Eurasia", "Continental Europe",  "South America"]
     legend_elements = []
     for region in regions:
         legend_elements.append(Patch(facecolor=color_dict[region], label=region, edgecolor="black", linewidth=1),)
-    plt.legend(handles=legend_elements, loc='lower center', bbox_to_anchor=(0.5, 1.55), ncol=5, fontsize=font_size_legend)
+    plt.legend(handles=legend_elements, loc='lower center', bbox_to_anchor=(0.5, 1.45), ncol=5, fontsize=font_size_legend)
 
     plt.savefig("figure_output/figure_4.svg", bbox_inches='tight')
     plt.savefig("figure_output/figure_4.png", bbox_inches='tight')

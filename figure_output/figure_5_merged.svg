@@ -8,7 +8,10 @@
    style="fill-rule:evenodd;clip-rule:evenodd;"
    id="svg617"
    sodipodi:docname="figure_5_merged.svg"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   inkscape:export-filename="figure_5_merged.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -25,12 +28,12 @@
    inkscape:deskcolor="#505050"
    showgrid="false"
    inkscape:zoom="2.9558824"
-   inkscape:cx="212.45771"
-   inkscape:cy="64.616915"
-   inkscape:window-width="2560"
-   inkscape:window-height="1377"
-   inkscape:window-x="2552"
-   inkscape:window-y="-8"
+   inkscape:cx="212.62686"
+   inkscape:cy="64.786069"
+   inkscape:window-width="4300"
+   inkscape:window-height="1721"
+   inkscape:window-x="2391"
+   inkscape:window-y="-9"
    inkscape:window-maximized="1"
    inkscape:current-layer="Artboard1" />
     <g
@@ -1413,10 +1416,10 @@
    transform="matrix(0.476301,0,0,0.891077,50.4171,119.744)"
    id="g549">
                 <text
-   x="-8.342px"
-   y="0px"
-   style="font-family:'ArialMT', 'Arial', sans-serif;font-size:10px;"
-   id="text547">183</text>
+   x="-8.342"
+   y="0"
+   style="font-size:10px;font-family:ArialMT, Arial, sans-serif"
+   id="text547">184</text>
             </g>
             <g
    transform="matrix(0.476301,0,0,0.891077,65.4748,151.777)"
@@ -1482,10 +1485,10 @@
    x="-7.9710002"
    y="0"
    style="font-size:10px;font-family:ArialMT, Arial, sans-serif"
-   id="text579">1<tspan
-   x="-3.152 2.4100001"
-   y="0 0"
-   id="tspan577">19</tspan></text>
+   id="text579">120<tspan
+   x="-3.152"
+   y="0"
+   id="tspan577" /></text>
             </g>
             <g
    transform="matrix(0.476301,0,0,0.891077,19.9555,13.4118)"

@@ -170,11 +170,11 @@ def preprocess_figure_5(df, other_threshold_5a=20, other_threshold_5b=3):
     def filter_crossborder_origin(row):
         return row['Data origin_list'] != row["First author"]
 
-    def filter_various_and_unknown(row):
-        return row['Data origin_list'] != "various" and row['Data origin_list'] != "unknown"
+    def filter_various(row):
+        return row['Data origin_list'] != "various"
 
     df = df.explode('Data origin_list')
-    df = df[df.apply(filter_various_and_unknown, axis=1)]
+    df = df[df.apply(filter_various, axis=1)]
     df_crossborder = df[df.apply(filter_crossborder_origin, axis=1)]
     df_domestic = df[~df.apply(filter_crossborder_origin, axis=1)]
 
@@ -356,13 +356,15 @@ def preprocess_figure_S1(df, other_threshold = 5):
 
 df_raw = load_and_preprocess_charting()
 #preprocess_scimagojr()
-preprocess_figure_2(df_raw)
-#preprocess_figure_3(df_raw)
-#preprocess_figure_4(df_raw)
-#preprocess_figure_5(df_raw)
-#preprocess_figure_6(df_raw)
-#preprocess_figure_7(df_raw)
+#preprocess_figure_2(df_raw)
+preprocess_figure_3(df_raw)
+preprocess_figure_4(df_raw)
+preprocess_figure_5(df_raw)
+preprocess_figure_6(df_raw)
+preprocess_figure_7(df_raw)
 #preprocess_figure_S1(df_raw)
+
+# temporary scripts
 
 def filter_articles_with_full_date_information(df):
     def filter_only_full_date_information(row):
@@ -386,3 +388,15 @@ def filter_articles_with_full_date_information(df):
     df.to_csv('charting_results/results_20250219_submission_year_up_to_2021.csv', sep=";", index=False)
 
 #filter_articles_with_full_date_information(df_raw)
+
+def add_income_group_information(df):
+
+
+
+    auxiliary_data =  pd.read_excel("auxiliary_data/Country_information.xlsx", sheet_name='Country_information', skiprows=0)[["Country", "World Bank income group"]]
+    auxiliary_data.rename(columns={'Country': 'Data origin', 'World Bank income group': 'Data origin (World Bank income group)'}, inplace=True)
+    df = pd.merge(df, auxiliary_data, on='Data origin', how='left')
+
+    df.to_csv('charting_results/results_20250219_with_income_group.csv', sep=";", index=False)
+
+#add_income_group_information(df_raw)
