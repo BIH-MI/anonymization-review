@@ -8,7 +8,7 @@ from collections import Counter
 def load_and_preprocess_charting():
 
     # load data
-    chart_file = "charting_results/results_20250219.csv"
+    chart_file = "charting_results/results_20250228.csv"
     df = pd.read_csv(chart_file, dtype=str, sep=";", encoding='unicode_escape')
 
     # Fill empty cells with empty string
@@ -45,18 +45,18 @@ def additional_statistics_figure_2():
     X = smApi.add_constant(years)
 
     model = smReg.OLS(df["Count (Non-COVID-19-related)"]+ df["Count (COVID-19-related)"], X).fit()
-    print("Total all [2018-2021] | Slope: %.3f, p-value: %.5f" % (model.params[1], model.pvalues[1]))
+    print("Total all [2018-2021] | Slope: %.3f, p-value: %.5f" % (model.params.iloc[1], model.pvalues.iloc[1]))
 
     model = smReg.OLS(df["Count (Non-COVID-19-related)"], X).fit()
-    print("Total non COVID [2018-2021] | Slope: %.3f, p-value: %.5f" % (model.params[1], model.pvalues[1]))
+    print("Total non COVID [2018-2021] | Slope: %.3f, p-value: %.5f" % (model.params.iloc[1], model.pvalues.iloc[1]))
 
     model = smReg.OLS(df["Normalized (Non-COVID-19-related)"]+ df["Normalized (COVID-19-related)"], X).fit()
-    print("Normalized all [2018-2022] | Slope: %.3f, p-value: %.5f" % (model.params[1], model.pvalues[1]))
+    print("Normalized all [2018-2022] | Slope: %.3f, p-value: %.5f" % (model.params.iloc[1], model.pvalues.iloc[1]))
 
     model = smReg.OLS(df["Normalized (Non-COVID-19-related)"], X).fit()
-    print("Normalized non COVID [2018-2022] | Slope: %.3f, p-value: %.5f" % (model.params[1], model.pvalues[1]))
+    print("Normalized non COVID [2018-2022] | Slope: %.3f, p-value: %.5f" % (model.params.iloc[1], model.pvalues.iloc[1]))
 
-#additional_statistics_figure_2()
+additional_statistics_figure_2()
 
 def calculate_region_contribution(df):
     """
@@ -114,7 +114,7 @@ def calculate_region_contribution(df):
 
     print("EU First author: %.2f (%d of %d), EU Data origin: %.2f (%d of %d)" % (relative_first_author, count_first_author, total_articles, relative_data_origin, count_data_origin, total_articles))
 
-calculate_region_contribution(df_charting)
+#calculate_region_contribution(df_charting)
 
 def additional_statistics_figure_4():
     """
@@ -265,7 +265,7 @@ def cross_border_flows(df):
 
     print("Crossborder flows: %d" % len(df_crossborder.index))
 
-cross_border_flows(df_charting)
+#cross_border_flows(df_charting)
 
 def custodian_usage(df):
     """
