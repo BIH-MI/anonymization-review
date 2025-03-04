@@ -56,7 +56,7 @@ def additional_statistics_figure_2():
     model = smReg.OLS(df["Normalized (Non-COVID-19-related)"], X).fit()
     print("Normalized non COVID [2018-2022] | Slope: %.3f, p-value: %.5f" % (model.params.iloc[1], model.pvalues.iloc[1]))
 
-additional_statistics_figure_2()
+#additional_statistics_figure_2()
 
 def calculate_region_contribution(df):
     """
@@ -82,8 +82,7 @@ def calculate_region_contribution(df):
 
     # Read external CSV with total number of articles published
     auxiliary_data = \
-    pd.read_excel("auxiliary_data/Country_information.xlsx", sheet_name='Country_information', skiprows=0)[
-        ["Country", "Name (Country)", "Region (Country)"]]
+    pd.read_csv("auxiliary_data/Country_information.csv", sep=";")[["Country", "Name (Country)", "Region (Country)"]]
     df = pd.merge(df, auxiliary_data, on='Country', how='outer')
 
     # Fill missing values with 0
@@ -112,7 +111,7 @@ def calculate_region_contribution(df):
     relative_data_origin = df["Distribution (Data origin)"].sum()
     print(relative_data_origin)
 
-    print("EU First author: %.2f (%d of %d), EU Data origin: %.2f (%d of %d)" % (relative_first_author, count_first_author, total_articles, relative_data_origin, count_data_origin, total_articles))
+    print("Continental Europe First author: %.2f (%d of %d), EU Data origin: %.2f (%d of %d)" % (relative_first_author, count_first_author, total_articles, relative_data_origin, count_data_origin, total_articles))
 
 #calculate_region_contribution(df_charting)
 
@@ -217,7 +216,7 @@ def authors_per_income_group(df):
     Calculates the number of first authors
     for each World Bank income group
     """
-    auxiliary_data = pd.read_excel("auxiliary_data/Country_information.xlsx", sheet_name='Country_information', skiprows=0)[["Country", "Name (Country)", "World Bank income group"]]
+    auxiliary_data = pd.read_csv("auxiliary_data/Country_information.csv", sep=";")[["Country", "Name (Country)", "World Bank income group"]]
     df = pd.merge(df, auxiliary_data, left_on='First author', right_on="Country", how='outer')
 
     grouped_data = df.groupby("World Bank income group").count()['First author']
@@ -278,7 +277,7 @@ def custodian_usage(df):
         return any(custodian in common_data_sources for custodian in row['Data source_list'])
 
     # Read external CSV with list of common sources
-    auxiliary_data = pd.read_excel("auxiliary_data/Data_source_information.xlsx", sheet_name='Data_source_information', skiprows=0, dtype=str)
+    auxiliary_data = pd.read_csv("auxiliary_data/Data_source_information.csv", sep=";", dtype=str)
     common_data_sources = auxiliary_data["Data source"].unique()
 
     df_custodian = df[df.apply(filter_used_custodian, axis=1)]
@@ -347,7 +346,7 @@ def datatype_distribution(df):
         print("Articles using both datatypes: %.1f (%d of %d)" % (both * 100 / total_articles, both, total_articles))
 
     # Read external CSV with list of common sources
-    auxiliary_data = pd.read_excel("auxiliary_data/Data_source_information.xlsx", sheet_name='Data_source_information', skiprows=0, dtype=str)
+    auxiliary_data = pd.read_csv("auxiliary_data/Data_source_information.csv", sep=";",dtype=str)
     common_data_sources = auxiliary_data["Data source"].unique()
     df_custodian = df[df.apply(filter_used_custodian, axis=1)]
     df_no_custodian = df[~df.apply(filter_used_custodian, axis=1)]
@@ -364,7 +363,6 @@ def datatype_distribution(df):
 def unique_author_fraction_per_source(df, other_threshold=10):
     def filter_only_specific_source(row):
         return row['Data source_list'] != "Multiple" and row['Data source_list'] != "Not precisely specified"
-
 
     # Explode the Data source_list column so that each row represents a single data source
     df = df.explode('Data source_list')
@@ -393,19 +391,13 @@ def unique_author_fraction_per_source(df, other_threshold=10):
     # The auxiliary file might contain additional info (e.g. total articles published).
     # If you only want the three columns ("Data source", "Authors", "Unique authors"),
     # the merge is optional.
-    auxiliary_data = pd.read_excel(
-        "auxiliary_data/Data_source_information.xlsx",
-        sheet_name='Data_source_information',
-        skiprows=0,
-        dtype=str
-    )
+    auxiliary_data = pd.read_csv("auxiliary_data/Data_source_information.csv", sep=";",dtype=str)
     grouped = pd.merge(grouped, auxiliary_data, on='Data source', how='left')
 
     # Select only the columns for output: "Data source", "Authors", and "Unique authors"
-    output_columns = ['Data source', 'Unique_authors', 'Authors', 'Unique_author_fraction', 'Gini_index']
-    # Save to xlsx
-    with pd.ExcelWriter('stats_unique_authors.xlsx', engine="openpyxl", mode="a", if_sheet_exists='replace') as writer:
-        grouped[output_columns].to_excel(writer, sheet_name='stats_unique_authors', index=False)
+    output_columns = ['Data source', 'Unique_authors', 'Authors', 'Unique_author_fraction']
+
+    print(tabulate(grouped[output_columns], headers='keys', tablefmt='psql'))
 
 #unique_author_fraction_per_source(df_charting, 10)
 
@@ -455,43 +447,4 @@ def calculate_average_delay(df):
     covid_n_avg = calculate_average_delay(covid_n)
     print(f"Average delay (months) for COVID-19 research (n): {covid_n_avg:.2f}")
 
-calculate_average_delay(df_charting)
-
-# DELETE ME - temporary!
-def add_time_to_publication():
-    # Define a helper function to filter rows with complete date information.
-    def calc_delay(row):
-        required_keys = [
-            "Submission year",
-            "Submission month",
-            "Publishing year",
-            "Publishing month",
-        ]
-        # Check if any required field is missing, empty, or marked as "na".
-        for key in required_keys:
-            if pd.isnull(row[key]) or str(row[key]).strip().lower() in ("na", ""):
-                return np.nan  # Return NaN if incomplete info.
-
-        try:
-            # Convert date fields to integers.
-            sub_year = int(row["Submission year"])
-            sub_month = int(row["Submission month"])
-            pub_year = int(row["Publishing year"])
-            pub_month = int(row["Publishing month"])
-
-            # Calculate delay in months.
-            delay = (pub_year - sub_year) * 12 + (pub_month - sub_month)
-            return delay
-        except Exception as e:
-            # In case of any conversion errors, leave the value as NaN.
-            return np.nan
-
-    # load data
-    chart_file = "charting_results/results_20250214.csv"
-    df = pd.read_csv(chart_file, dtype=str, sep=";")
-
-    df["Time-to-Publication"] = df.apply(calc_delay, axis=1)
-
-    df.to_csv("charting_results/results_20250214_with_TtP.csv", sep =";", index=False)
-
-#add_time_to_publication()
+#calculate_average_delay(df_charting)

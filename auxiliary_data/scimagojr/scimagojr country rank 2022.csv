@@ -1,0 +1,226 @@
+﻿Rank;Country;Region;Documents;Citable documents;Citations;Self-citations;Citations per document;H index
+1;United States;Northern America;277123;244371;295603;125322;1.07;1910
+2;China;Asiatic Region;236569;228595;222813;144908;0.94;705
+3;United Kingdom;Western Europe;82900;72384;117603;27720;1.42;1314
+4;Germany;Western Europe;65082;57079;76129;19040;1.17;1096
+5;India;Asiatic Region;59099;52241;54803;18936;0.93;528
+6;Italy;Western Europe;57219;49655;80072;25646;1.4;984
+7;Japan;Asiatic Region;52931;48007;43355;11664;0.82;796
+8;Canada;Northern America;48800;43756;61804;12271;1.27;1111
+9;Australia;Pacific Region;45180;40359;58172;12982;1.29;935
+10;France;Western Europe;40413;35708;51654;9561;1.28;1045
+11;Spain;Western Europe;39646;35878;51086;10246;1.29;824
+12;South Korea;Asiatic Region;31113;29505;32255;6891;1.04;537
+13;Brazil;Latin America;30254;27792;28382;6316;0.94;557
+14;Netherlands;Western Europe;29966;27220;44834;7295;1.5;992
+15;Turkey;Middle East;26182;24487;22051;4516;0.84;397
+16;Iran;Middle East;24707;23784;25237;7076;1.02;296
+17;Switzerland;Western Europe;22681;20317;33029;4922;1.46;870
+18;Russian Federation;Eastern Europe;21304;20902;13954;3720;0.65;399
+19;Sweden;Western Europe;17670;16423;27473;3973;1.55;805
+20;Poland;Eastern Europe;16769;15942;20123;4112;1.2;518
+21;Taiwan;Asiatic Region;15439;14257;16660;3499;1.08;431
+22;Belgium;Western Europe;15169;13745;24604;3161;1.62;789
+23;Saudi Arabia;Middle East;14137;13797;21626;6124;1.53;297
+24;Denmark;Western Europe;13710;12700;20666;3062;1.51;716
+25;Egypt;Africa/Middle East;13491;12986;15154;4378;1.12;261
+26;Pakistan;Asiatic Region;10934;10142;15570;4323;1.42;275
+27;Austria;Western Europe;10869;9687;15690;2388;1.44;605
+28;Portugal;Western Europe;10729;9669;13194;2045;1.23;440
+29;Israel;Middle East;9694;8911;14709;1831;1.52;588
+30;South Africa;Africa;9475;8724;14012;2444;1.48;444
+31;Norway;Western Europe;9354;8763;12760;1963;1.36;591
+32;Greece;Western Europe;9177;8143;13922;2071;1.52;492
+33;Mexico;Latin America;8942;8295;10066;1313;1.13;393
+34;Malaysia;Asiatic Region;8700;8268;11235;2000;1.29;287
+35;Thailand;Asiatic Region;8568;7858;8698;1749;1.02;335
+36;Hong Kong;Asiatic Region;7968;7380;14792;2078;1.86;464
+37;Singapore;Asiatic Region;7909;7127;12858;1544;1.63;446
+38;Ireland;Western Europe;7815;7026;10896;1397;1.39;486
+39;Indonesia;Asiatic Region;7427;7269;4760;1191;0.64;195
+40;Finland;Western Europe;6999;6561;10106;1419;1.44;597
+41;New Zealand;Pacific Region;6331;5784;7777;1198;1.23;485
+42;Czech Republic;Eastern Europe;6253;5879;7976;1089;1.28;443
+43;Colombia;Latin America;5481;5014;5195;779;0.95;276
+44;Chile;Latin America;5068;4684;6490;892;1.28;314
+45;Nigeria;Africa;4839;4468;5649;1218;1.17;208
+46;Romania;Eastern Europe;4817;4610;7358;1564;1.53;282
+47;Argentina;Latin America;4780;4350;5628;586;1.18;392
+48;Ethiopia;Africa;4232;4131;3191;705;0.75;152
+49;Hungary;Eastern Europe;4126;3939;5961;853;1.44;406
+50;United Arab Emirates;Middle East;3612;3367;5478;754;1.52;192
+51;Bangladesh;Asiatic Region;3544;3328;7219;1698;2.04;213
+52;Ukraine;Eastern Europe;3251;3104;2220;450;0.68;201
+53;Croatia;Eastern Europe;2953;2704;3581;511;1.21;253
+54;Iraq;Middle East;2944;2859;3171;956;1.08;116
+55;Serbia;Eastern Europe;2795;2593;3831;412;1.37;240
+56;Viet Nam;Asiatic Region;2733;2638;4350;584;1.59;200
+57;Peru;Latin America;2650;2332;2882;565;1.09;229
+58;Tunisia;Africa;2476;2262;2415;389;0.98;181
+59;Jordan;Middle East;2467;2397;3446;635;1.4;149
+60;Morocco;Africa;2286;2128;2244;462;0.98;154
+61;Slovenia;Eastern Europe;2241;2112;3423;377;1.53;262
+62;Qatar;Middle East;2197;2052;3957;554;1.8;179
+63;Kenya;Africa;2182;2041;2889;428;1.32;237
+64;Lebanon;Middle East;2156;1963;2474;447;1.15;219
+65;Ghana;Africa;2113;2020;2391;422;1.13;166
+66;Philippines;Asiatic Region;2081;1800;2655;360;1.28;219
+67;Nepal;Asiatic Region;1940;1822;1795;216;0.93;136
+68;Slovakia;Eastern Europe;1898;1805;2011;303;1.06;237
+69;Uganda;Africa;1766;1661;1979;325;1.12;193
+70;Bulgaria;Eastern Europe;1528;1449;2300;221;1.51;214
+71;Cyprus;Western Europe;1402;1319;2229;190;1.59;167
+72;Lithuania;Eastern Europe;1349;1291;2346;221;1.74;203
+73;Ecuador;Latin America;1315;1223;1654;343;1.26;130
+74;Tanzania;Africa;1267;1216;1102;210;0.87;177
+75;Sri Lanka;Asiatic Region;1137;1067;1360;148;1.2;164
+76;Oman;Middle East;1082;986;1849;174;1.71;126
+77;Macao;Asiatic Region;1015;989;1392;131;1.37;112
+78;Algeria;Africa;968;928;1361;190;1.41;121
+79;Kazakhstan;Asiatic Region;967;936;1226;163;1.27;87
+80;Cuba;Latin America;898;827;382;49;0.43;142
+81;Georgia;Eastern Europe;892;799;1582;72;1.77;159
+82;Kuwait;Middle East;870;804;1473;113;1.69;142
+83;Cameroon;Africa;838;802;1321;127;1.58;127
+84;Sudan;Africa;755;723;953;135;1.26;104
+85;Malawi;Africa;736;698;765;73;1.04;155
+86;Luxembourg;Western Europe;734;673;1283;128;1.75;176
+87;Estonia;Eastern Europe;733;705;1434;92;1.96;232
+88;Iceland;Western Europe;711;662;909;91;1.28;238
+89;Belarus;Eastern Europe;665;651;655;51;0.98;129
+90;Uruguay;Latin America;650;610;766;71;1.18;164
+91;Bosnia and Herzegovina;Eastern Europe;630;610;515;54;0.82;97
+92;Zambia;Africa;629;583;833;114;1.32;136
+93;Zimbabwe;Africa;567;517;710;106;1.25;136
+94;Syrian Arab Republic;Middle East;549;520;493;55;0.9;86
+95;Puerto Rico;Latin America;547;523;494;17;0.9;187
+96;Latvia;Eastern Europe;546;519;1055;64;1.93;163
+97;Palestine;Middle East;534;515;532;89;1;92
+98;Malta;Western Europe;504;450;728;60;1.44;124
+99;Venezuela;Latin America;471;430;408;50;0.87;178
+100;Rwanda;Africa;469;408;614;196;1.31;93
+101;Bahrain;Middle East;464;441;985;70;2.12;89
+102;Burkina Faso;Africa;459;446;384;82;0.84;109
+103;Costa Rica;Latin America;438;411;475;37;1.08;161
+104;Senegal;Africa;403;376;343;42;0.85;123
+105;Yemen;Middle East;397;389;749;73;1.89;72
+106;Democratic Republic Congo;Africa;395;366;480;31;1.22;63
+107;Mozambique;Africa;362;341;466;41;1.29;117
+108;Macedonia;Eastern Europe;344;328;640;55;1.86;120
+109;Armenia;Eastern Europe;341;320;491;66;1.44;86
+110;Panama;Latin America;334;304;593;20;1.78;126
+111;Uzbekistan;Asiatic Region;332;324;760;49;2.29;61
+112;Afghanistan;Asiatic Region;331;251;412;78;1.24;55
+113;Botswana;Africa;303;288;642;43;2.12;95
+114;Cambodia;Asiatic Region;302;266;323;39;1.07;110
+115;Albania;Eastern Europe;285;271;428;59;1.5;73
+116;Congo;Africa;282;245;394;35;1.4;100
+117;Azerbaijan;Eastern Europe;266;257;664;27;2.5;69
+118;Guatemala;Latin America;263;243;420;27;1.6;100
+119;Côte d’Ivoire;Africa;255;249;189;27;0.74;106
+120;Benin;Africa;252;241;352;24;1.4;94
+121;Mali;Africa;252;221;237;29;0.94;100
+122;Liberia;Africa;246;221;153;9;0.62;54
+123;Brunei Darussalam;Asiatic Region;242;229;526;45;2.17;67
+124;Jamaica;Latin America;231;210;237;21;1.03;100
+125;Paraguay;Latin America;224;213;324;10;1.45;86
+126;Myanmar;Asiatic Region;222;211;234;18;1.05;71
+127;Sierra Leone;Africa;220;189;346;33;1.57;73
+128;Gambia;Africa;219;203;468;23;2.14;135
+129;Grenada;Latin America;216;207;148;15;0.69;63
+130;Dominican Republic;Latin America;214;202;493;21;2.3;79
+131;Bolivia;Latin America;205;184;375;15;1.83;97
+132;Namibia;Africa;202;190;158;21;0.78;68
+133;Libya;Africa;200;188;518;17;2.59;69
+134;Somalia;Africa;199;197;63;17;0.32;28
+135;Mongolia;Asiatic Region;198;191;500;15;2.53;82
+136;Kyrgyzstan;Asiatic Region;181;176;480;15;2.65;69
+137;Gabon;Africa;179;167;156;16;0.87;97
+138;Trinidad and Tobago;Latin America;174;166;254;23;1.46;91
+139;Moldova;Eastern Europe;161;146;412;13;2.56;82
+140;Madagascar;Africa;157;151;164;12;1.04;82
+141;Honduras;Latin America;140;123;151;8;1.08;70
+142;Laos;Asiatic Region;138;128;175;18;1.27;81
+143;Montenegro;Eastern Europe;132;124;174;6;1.32;47
+144;Fiji;Pacific Region;127;123;162;30;1.28;67
+145;Monaco;Western Europe;125;111;170;14;1.36;91
+146;Mauritius;Africa;122;106;196;10;1.61;68
+147;Barbados;Latin America;119;109;188;7;1.58;78
+148;Togo;Africa;118;115;69;5;0.58;54
+149;Papua New Guinea;Pacific Region;112;104;96;27;0.86;90
+150;Guinea;Africa;112;105;70;5;0.63;70
+151;Haïti;Latin America;107;102;114;8;1.07;69
+152;Bhutan;Asiatic Region;104;96;107;6;1.03;41
+153;Niger;Africa;96;94;116;3;1.21;69
+154;Nicaragua;Latin America;90;84;83;14;0.92;78
+155;Angola;Africa;89;83;68;7;0.76;47
+156;Saint Kitts and Nevis;Latin America;85;80;78;8;0.92;41
+157;El Salvador;Latin America;84;79;67;7;0.8;67
+158;Swaziland;Africa;83;81;105;9;1.27;55
+159;Lesotho;Africa;71;69;93;10;1.31;36
+160;Republic of South Sudan;Africa;66;62;30;2;0.45;20
+161;French Guiana;Latin America;62;56;55;7;0.89;65
+162;Faroe Islands;Western Europe;55;54;90;17;1.64;59
+163;Reunion;Africa;54;49;57;2;1.06;45
+164;New Caledonia;Pacific Region;54;52;76;5;1.41;62
+165;Greenland;Western Europe;53;50;49;4;0.92;53
+166;Liechtenstein;Western Europe;47;43;77;8;1.64;41
+167;Martinique;Latin America;46;41;99;5;2.15;49
+168;Gibraltar;Western Europe;46;43;90;13;1.96;15
+169;Burundi;Africa;45;41;30;1;0.67;45
+170;Guinea-Bissau;Africa;45;42;50;3;1.11;68
+171;Tajikistan;Asiatic Region;44;43;48;2;1.09;37
+172;Central African Republic;Africa;44;41;173;5;3.93;50
+173;Guadeloupe;Latin America;40;37;27;0;0.68;64
+174;Maldives;Asiatic Region;39;37;21;1;0.54;24
+175;Curaçao;Latin America;39;36;20;3;0.51;10
+176;Chad;Africa;37;37;36;1;0.97;39
+177;North Korea;Asiatic Region;35;35;48;6;1.37;21
+178;Eritrea;Africa;34;34;36;1;1.06;40
+179;Samoa;Pacific Region;34;33;28;1;0.82;28
+180;French Polynesia;Pacific Region;34;32;28;5;0.82;63
+181;San Marino;Western Europe;33;31;150;3;4.55;35
+182;Bahamas;Latin America;30;28;171;7;5.7;33
+183;Guyana;Latin America;29;29;178;0;6.14;39
+184;Belize;Latin America;29;28;17;4;0.59;28
+185;Aruba;Latin America;28;26;134;3;4.79;19
+186;Bermuda;Latin America;27;27;28;0;1.04;27
+187;Mauritania;Africa;27;25;17;1;0.63;32
+188;Antigua and Barbuda;Latin America;26;24;10;0;0.38;19
+189;Seychelles;Africa;25;25;25;8;1;48
+190;Cape Verde;Africa;24;23;152;3;6.33;20
+191;Vanuatu;Pacific Region;23;22;28;2;1.22;33
+192;Andorra;Western Europe;22;19;29;1;1.32;27
+193;Solomon Islands;Pacific Region;22;15;17;0;0.77;37
+194;Saint Vincent and the Grenadines;Latin America;21;21;11;1;0.52;17
+195;Timor-Leste;Asiatic Region;21;19;14;1;0.67;21
+196;Suriname;Latin America;20;19;24;3;1.2;41
+197;Dominica;Latin America;19;16;13;2;0.68;38
+198;Guam;Pacific Region;18;17;5;2;0.28;53
+199;Cayman Islands;Latin America;13;12;8;1;0.62;24
+200;Equatorial Guinea;Africa;13;13;21;3;1.62;31
+201;Saint Martin (Dutch);Latin America;12;12;4;0;0.33;2
+202;Tonga;Pacific Region;10;10;12;9;1.2;29
+203;Anguilla;Latin America;10;10;5;1;0.5;22
+204;Palau;Pacific Region;10;9;4;0;0.4;20
+205;Djibouti;Africa;9;9;4;0;0.44;23
+206;Federated States of Micronesia;Pacific Region;9;9;179;2;19.89;32
+207;Saint Lucia;Latin America;9;8;16;0;1.78;18
+208;Kiribati;Pacific Region;8;6;11;1;1.38;12
+209;Northern Mariana Islands;Asiatic Region;7;6;0;0;0;11
+210;Marshall Islands;Pacific Region;7;7;1;0;0.14;18
+211;Comoros;Africa;7;7;4;0;0.57;21
+212;American Samoa;Pacific Region;7;7;1;0;0.14;23
+213;Virgin Islands (U.S.);Latin America;6;6;3;0;0.5;22
+214;Sao Tome and Principe;Africa;5;5;4;3;0.8;17
+215;Vatican City State;Western Europe;5;3;2;0;0.4;5
+216;Mayotte;Africa;4;4;0;0;0;12
+217;Nauru;Pacific Region;3;2;5;0;1.67;10
+218;Cook Islands;Pacific Region;3;3;1;0;0.33;11
+219;Turks and Caicos Islands;Latin America;3;3;2;0;0.67;2
+220;Saint Martin (French);Latin America;2;2;2;0;1;1
+221;Montserrat;Latin America;2;2;0;0;0;4
+222;Tuvalu;Pacific Region;2;2;0;0;0;7
+223;Turkmenistan;Asiatic Region;2;2;1;0;0.5;14
+224;Falkland Islands (Malvinas);Latin America;1;1;2;0;2;14
+225;Virgin Islands (British);Latin America;1;1;0;0;0;11

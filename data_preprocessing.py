@@ -3,7 +3,7 @@ import pandas as pd
 def load_and_preprocess_charting():
 
     # load data
-    chart_file = "charting_results/results_20250219.csv"
+    chart_file = "charting_results/results_20250228.csv"
     df = pd.read_csv(chart_file, dtype=str, sep=";", encoding='unicode_escape')
 
     # Fill empty cells with empty string
@@ -26,7 +26,7 @@ def preprocess_scimagojr():
     df = pd.DataFrame()
     for year in years:
         # read csv
-        df_temp = pd.read_excel(f"auxiliary_data/scimagojr/scimagojr country rank {year}.xlsx", sheet_name='Sheet1', skiprows=0)[["Country", "Citable documents"]]
+        df_temp = pd.read_csv(f"auxiliary_data/scimagojr/scimagojr country rank {year}.csv", sep=";")[["Country", "Citable documents"]]
         df_temp.rename(columns={"Citable documents": f"Citable documents_{year}"}, inplace=True)
 
         if year == years[0]:
@@ -37,9 +37,27 @@ def preprocess_scimagojr():
     df.rename(columns={"Country": "Name (Country)"}, inplace=True)
     df["Citable documents_total"] = df[[f'Citable documents_{year}' for year in years]].sum(axis=1)
 
-    df.to_excel("auxiliary_data/Citable_documents_per_country.xlsx", sheet_name='Citable_documents_per_country', engine="openpyxl", index=False)
+    df.to_csv("auxiliary_data/Citable_documents_per_country.csv", sep=";", index=False)
 
 def preprocess_figure_2(df):
+
+    def filter_only_full_date_information(row):
+        required_keys = [
+            "Submission year",
+            "Publishing year",
+        ]
+        # Check if any required field is missing, empty, or marked as "na".
+        for key in required_keys:
+             if str(row[key]).strip().lower() in ("na", ""):
+                return False
+        return True
+
+    def filter_year_range(row):
+        return row["Publishing year"]  != "2022"
+
+    # Remove records without complete date information and recorded after 2021
+    #df = df[df.apply(filter_only_full_date_information, axis=1)]
+    #df = df[df.apply(filter_year_range, axis=1)]
 
     # Group by year and COVID-19 research status, and then count the entries
     df = df.groupby(['Publishing year', 'COVID-19 research']).size().unstack(fill_value=0)
@@ -51,7 +69,7 @@ def preprocess_figure_2(df):
     df.rename(columns={'Publishing year': 'Year', 'No': 'Count (Non-COVID-19-related)', 'Yes':'Count (COVID-19-related)'}, inplace=True)
 
     # Read auxiliary data
-    auxiliary_data = pd.read_excel("auxiliary_data/PubMed_number_paper_published.xlsx", sheet_name='PubMed_number_paper_published', skiprows=0, dtype=str)
+    auxiliary_data = pd.read_csv("auxiliary_data/PubMed_number_paper_published.csv", sep=";", dtype=str)
 
     # Merge the DataFrames
     df = pd.merge(df, auxiliary_data, on='Year')
@@ -86,7 +104,7 @@ def preprocess_figure_3(df, other_threshold = 5):
     # Merge the DataFrames on 'Country'
     df = pd.merge(first_author_counts, data_origin_counts, on='Country', how='outer')
     # Read external CSV with total number of articles published
-    auxiliary_data = pd.read_excel("auxiliary_data/Country_information.xlsx", sheet_name='Country_information', skiprows=0)[["Country", "Name (Country)", "Region (Country)"]]
+    auxiliary_data = pd.read_csv("auxiliary_data/Country_information.csv", sep=";")[["Country", "Name (Country)", "Region (Country)"]]
     df = pd.merge(df, auxiliary_data, on='Country', how='outer')
 
     # Fill missing values with 0
@@ -135,8 +153,8 @@ def preprocess_figure_4(df):
     data_origin_counts = df['Data origin'].value_counts().reset_index()
     data_origin_counts.columns = ['Country', 'Count (Data origin)']
 
-    auxiliary_data_country_information = pd.read_excel("auxiliary_data/Country_information.xlsx", sheet_name='Country_information', skiprows=0)[["Country", "Name (Country)", "Region (Country)"]]
-    auxiliary_data_citable_documents = pd.read_excel("auxiliary_data/Citable_documents_per_country.xlsx", sheet_name='Citable_documents_per_country', skiprows=0)[["Name (Country)", "Citable documents_total"]]
+    auxiliary_data_country_information = pd.read_csv("auxiliary_data/Country_information.csv", sep=";")[["Country", "Name (Country)", "Region (Country)"]]
+    auxiliary_data_citable_documents = pd.read_csv("auxiliary_data/Citable_documents_per_country.csv", sep=";")[["Name (Country)", "Citable documents_total"]]
     df = pd.merge(data_origin_counts, auxiliary_data_country_information, how="outer", on="Country")
     df = pd.merge(df, auxiliary_data_citable_documents, on='Name (Country)', how='outer')
 
@@ -194,7 +212,7 @@ def preprocess_figure_5(df, other_threshold_5a=20, other_threshold_5b=3):
     df_counts = pd.merge(data_origin_counts_crossborder, data_origin_counts_domestic, on='Country', how='outer')
 
     # Read external CSV to append the name of countries
-    auxiliary_data = pd.read_excel("auxiliary_data/Country_information.xlsx", sheet_name='Country_information', skiprows=0)[["Country", "Name (Country)"]]
+    auxiliary_data = pd.read_csv("auxiliary_data/Country_information.csv", sep=";")[["Country", "Name (Country)"]]
     df_counts = pd.merge(df_counts, auxiliary_data, on='Country', how='left')
 
     # Fill missing values with 0
@@ -265,7 +283,7 @@ def preprocess_figure_6(df, other_threshold = 10):
     df.columns = ['Data source', 'Count (Data source)']
 
     # Read external CSV with total number of articles published
-    auxiliary_data = pd.read_excel("auxiliary_data/Data_source_information.xlsx", sheet_name='Data_source_information', skiprows=0, dtype=str)
+    auxiliary_data = pd.read_csv("auxiliary_data/Data_source_information.csv", sep=";")
     df = pd.merge(df, auxiliary_data, on='Data source', how='left')
 
     # Convert float counts to integers
@@ -306,9 +324,9 @@ def preprocess_figure_7(df, other_threshold_source=10, other_threshold_icd=25):
     df = df.rename(columns={"Data source_list":"Data source"})
 
     # Read external CSV to add name of ICD chapter and abbreviation of custodian
-    auxiliary_data = pd.read_excel("auxiliary_data/Data_source_information.xlsx", sheet_name='Data_source_information', skiprows=0, dtype=str)
+    auxiliary_data = pd.read_csv("auxiliary_data/Data_source_information.csv", sep=";")
     df = pd.merge(df, auxiliary_data, on='Data source', how='left')
-    auxiliary_data = pd.read_excel("auxiliary_data/ICD-10_chapter_mapping.xlsx", sheet_name='ICD-10_chapter_mapping', skiprows=0, dtype=str)
+    auxiliary_data = pd.read_csv("auxiliary_data/ICD-10_chapter_mapping.csv", sep=";")
     df = pd.merge(df, auxiliary_data, on='ICD-10 chapter', how='left')
 
     df = df[["Abbreviation (Data source)", "Name (ICD-10 chapter)"]]
@@ -328,7 +346,7 @@ def preprocess_figure_S1(df, other_threshold = 5):
     df.columns = ['ICD-10 chapter', 'Count (ICD-10 chapter)']
 
     # Read external CSV with total number of articles published
-    auxiliary_data = pd.read_excel("auxiliary_data/ICD-10_chapter_mapping.xlsx", sheet_name='ICD-10_chapter_mapping', skiprows=0, dtype=str)
+    auxiliary_data = pd.read_csv("auxiliary_data/ICD-10_chapter_mapping.csv", sep=";", dtype=str)
     df = pd.merge(df, auxiliary_data, on='ICD-10 chapter', how='outer')
 
     # Fill missing values with 0
@@ -356,47 +374,10 @@ def preprocess_figure_S1(df, other_threshold = 5):
 
 df_raw = load_and_preprocess_charting()
 #preprocess_scimagojr()
-#preprocess_figure_2(df_raw)
+preprocess_figure_2(df_raw)
 preprocess_figure_3(df_raw)
 preprocess_figure_4(df_raw)
 preprocess_figure_5(df_raw)
 preprocess_figure_6(df_raw)
 preprocess_figure_7(df_raw)
 #preprocess_figure_S1(df_raw)
-
-# temporary scripts
-
-def filter_articles_with_full_date_information(df):
-    def filter_only_full_date_information(row):
-        required_keys = [
-            "Submission year",
-            "Publishing year",
-        ]
-        # Check if any required field is missing, empty, or marked as "na".
-        for key in required_keys:
-             if str(row[key]).strip().lower() in ("na", ""):
-                return False
-        return True
-
-    def filter_year_range(row):
-        return row["Submission year"]  != "2022"
-
-    # Remove records not assigned to a chapter
-    df = df[df.apply(filter_only_full_date_information, axis=1)]
-    df = df[df.apply(filter_year_range, axis=1)]
-
-    df.to_csv('charting_results/results_20250219_submission_year_up_to_2021.csv', sep=";", index=False)
-
-#filter_articles_with_full_date_information(df_raw)
-
-def add_income_group_information(df):
-
-
-
-    auxiliary_data =  pd.read_excel("auxiliary_data/Country_information.xlsx", sheet_name='Country_information', skiprows=0)[["Country", "World Bank income group"]]
-    auxiliary_data.rename(columns={'Country': 'Data origin', 'World Bank income group': 'Data origin (World Bank income group)'}, inplace=True)
-    df = pd.merge(df, auxiliary_data, on='Data origin', how='left')
-
-    df.to_csv('charting_results/results_20250219_with_income_group.csv', sep=";", index=False)
-
-#add_income_group_information(df_raw)

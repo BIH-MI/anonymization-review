@@ -7,7 +7,7 @@ This repository contains the data as well as the scripts for data preprocessing,
 - **auxiliary_data/**: External data used in the analyses, such as additional information on countries and data sources.
 - **charting_results/**: Results from the charting process of the literature review.
 - **figure_output/**: Directory for outputs of the generated figures.
-- **data_figures.xlsx**: Excel file containing the preprocessed information required to plot the figures.
+- **data_figure_X.csv**: Csv file containing the preprocessed information required to plot the figure.
 - **data_preprocessing.py**: Script to generate 'data_figures.xlsx' from raw data.
 - **data_statistics.py**: Contains additional calculations used in the paper writing.
 - **plot_figureX.py**: Scripts to generate figures for the literature review.
