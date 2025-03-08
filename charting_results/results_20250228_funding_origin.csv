@@ -1,21 +1,25 @@
 ﻿Index;PMID;Data origin;Data origin (World Bank income group);Funding origin
-230;29590150;KE;Lower-middle-income economies;US, UK, Carnegie Corporation of New York, Wellcome Trust (UK), President's Emergency Plan for AIDS Relief (PEPFAR) 
+179;30776955;CM;Lower-middle-income economies;"The Cameroon Baptist Convention Health Services got funding from the USA
+[https://www.usaspending.gov/award/ASST_NON_NU2GGH002179_7523]"
+202;33243227;NG;Lower-middle-income economies;Paper states that HIV treatment programs from which data originate are under supervision of the US and  partly funded by US.
+230;29590150;KE;Lower-middle-income economies;Paper acknowleds that program received funding from USAID.
 471;30766846;IN;Lower-middle-income economies;na
-179;30776955;CM;Lower-middle-income economies;"US, Paper ackknowledges University of Alabama for ""for its long-term commitment to supporting capacity building and action research in resource-constrained global settings"""
-202;33243227;NG;Lower-middle-income economies;US, HIV treatment programs partly funded by US
+1047;35036972;BD;Lower-middle-income economies;Data was from Bangladesh but was maintained by the (US based) Institute for Health Metrics and Evaluation
+1393;35833042;IN;Lower-middle-income economies;na
 2084;36243102;IN;Lower-middle-income economies;na
-2105;29637184;GF;Lower-middle-income economies;EU, This work was supported by the European Regional Development Fund
+2105;29637184;GF;Lower-middle-income economies;na
 2172;30247588;BD;Lower-middle-income economies;na
-2295;33757463;KE;Lower-middle-income economies;US, Emergency Plan for AIDS Relief (PEPFAR)
-2416;32763341;SL;Low-income economies;na
+2295;33757463;KE;Lower-middle-income economies;"The Christian Health Association of Kenya got funding from the USA
+[https://www.usaspending.gov/award/ASST_NON_NU2GGH002450_7523]"
+2416;32763341;SL;Low-income economies;"34 Military Hospital had sponsorship of the US DoD
+[https://sl.usembassy.gov/u-s-embassy-and-sierra-leone-military-build-health-capabilities/]"
 2427;32315335;ZW;Lower-middle-income economies;na
 2441;34305284;IN;Lower-middle-income economies;na
 2447;39816410;KE;Lower-middle-income economies;na
-2608;34403795;PK;Lower-middle-income economies;na
-1047;35036972;BD;Lower-middle-income economies;US, Data from Institute for Health Metrics and Evaluation which is US based
-1393;35833042;IN;Lower-middle-income economies;na
-2612;36648867;GH;Lower-middle-income economies;na
-2636;32316923;SL;Low-income economies;na
+2608;34403795;PK;Lower-middle-income economies;Part of the Aga Khan Development Network
+2612;36648867;GH;Lower-middle-income economies;na / mostly domestic funding
+2636;32316923;SL;Low-income economies;"34 Military Hospital had sponsorship of the US DoD
+[https://sl.usembassy.gov/u-s-embassy-and-sierra-leone-military-build-health-capabilities/]"
 2653;34703730;ET;Low-income economies;na
 2671;34140592;IN;Lower-middle-income economies;na
-2673;32475840;IN;Lower-middle-income economies;GB, Global Challenges Research Fund
+2673;32475840;IN;Lower-middle-income economies;na
