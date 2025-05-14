@@ -1,3 +1,21 @@
+'''
+------------------------------------------------------------------------------
+Copyright 2025, T. Meurers
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+------------------------------------------------------------------------------
+'''
+
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -5,6 +23,7 @@ import numpy as np
 from matplotlib.patches import Patch
 
 # Uniform figure styling
+plt.rcParams['svg.fonttype'] = 'none'
 mpl.style.use("ggplot")
 COLOR = 'black'
 mpl.rcParams['text.color'] = COLOR
@@ -82,6 +101,7 @@ def plot_figure_4(df):
 
     plt.savefig("figure_output/figure_4.svg", bbox_inches='tight')
     plt.savefig("figure_output/figure_4.png", bbox_inches='tight')
+    plt.savefig("figure_output/figure_4.pdf", bbox_inches='tight')
     plt.show()
     plt.close()
 

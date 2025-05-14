@@ -1,8 +1,27 @@
+'''
+------------------------------------------------------------------------------
+Copyright 2025, T. Meurers
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+------------------------------------------------------------------------------
+'''
+
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import pandas as pd
 from tabulate import tabulate
 
+plt.rcParams['svg.fonttype'] = 'none'
 mpl.style.use("ggplot")
 COLOR = 'black'
 mpl.rcParams['text.color'] = COLOR
@@ -47,5 +66,6 @@ def plot_figure_3(df):
     plt.legend(loc='lower center', ncols = len(df.columns), bbox_to_anchor=(0.5, 1))
     plt.savefig("figure_output/figure_3.svg", bbox_inches='tight')
     plt.savefig("figure_output/figure_3.png", bbox_inches='tight')
+    plt.savefig("figure_output/figure_3.pdf", bbox_inches='tight')
 
 plot_figure_3(df)
